@@ -1,0 +1,13 @@
+body {
+    text-align: center; 
+}
+
+.kontener {
+    border: 1px black solid;
+    width: 100em;
+    margin: 0 auto;
+}
+
+.inline-flex {
+    display: inline-flex;
+}
