@@ -1,13 +1,30 @@
 body {
-    text-align: center; 
+    text-align: center;
+}
+
+nav ul {
+    margin: 0 auto;
+}
+
+nav ul li {
+    list-style-type: none;
+    padding: 0 5em;
+}
+
+article p {
+    text-align: justify;
+    text-indent: 1em;
 }
 
 .kontener {
-    border: 1px black solid;
-    width: 100em;
     margin: 0 auto;
+    align-items: center;
 }
 
 .inline-flex {
     display: inline-flex;
+}
+
+.ramka {    
+    border: 1px black solid;
 }

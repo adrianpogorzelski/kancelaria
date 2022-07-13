@@ -5,8 +5,8 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body>
-<header class="inline-flex kontener">
+<body class="ramka" >
+<header id="naglowek" class="inline-flex kontener ramka">
     <h1>Notariusz XXXX XXXXXXXXX</h1>
     <article>
         <a href="tel:123456789">123456789</a>
@@ -14,31 +14,61 @@
     </article>
 </header>
 
-<nav class="kontener">
+<nav class="kontener ramka">
     <ul class="inline-flex">
+        <li><a href="#omnie">O mnie</a></li>
         <li><a href="#lokalizacja">Lokalizacja</a></li>
+        <li><a href="#uslugi">Usługi</a></li>
         <li><a href="#kontakt">Kontakt</a></li>
     </ul>
 </nav>
 
-<main class="kontener">
-    <section id="lokalizacja" class="inline-flex">
+<main class="kontener ramka">
+    <section id="omnie" class="ramka">
+        <h1>O mnie</h1>
         <article>
-            <h1>Lokalizacja</h1>
-            <p>Kancelaria znajduje się na 1 piętrze budynku biurowego przy ulicy Stanisława Spychalskiego 13.</p>
-            <h4>Dojazd</h4>
-            <p>Biurowiec zlokalizowany jest w pobliżu przystanku komunikacji miejskiej - Spychalskiego. W okolicy znajdują się również liczne miejsca parkingowe dla naszych klientów.</p>
+            <p>Nazywam się XXXX XXXXXXXXX. Jestem notariuszem od 2022 roku.</p>
         </article>
+        <a href="#naglowek">Do góry</a>
+    </section>
+    
+    <section id="lokalizacja" class="ramka">
+        <div>
+            <h1>Lokalizacja</h1>
+            <article>
+                <p>Kancelaria znajduje się na 1 piętrze budynku biurowego przy ulicy Stanisława Spychalskiego 13.</p>
+                <h4>Dojazd</h4>
+                <p>Biurowiec zlokalizowany jest w pobliżu przystanku komunikacji miejskiej - Spychalskiego. W okolicy znajdują się również liczne miejsca parkingowe dla naszych klientów.</p>
+            </article>
+        </div>
         <div id="mapa">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2528.812804480113!2d17.9125785!3d50.6677361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471052fd9dc0543b%3A0x26b56dd919d20a2!2sStanis%C5%82awa%20Spychalskiego%2013%2C%2046-020%20Opole!5e0!3m2!1spl!2spl!4v1656449942574!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+        <a href="#naglowek">Do góry</a>
     </section>
-    <section id="kontakt">
+
+    <section id="uslugi" class="ramka">
+        <h1>Usługi</h1>
+        <article>
+            <ul>
+                <li>Sprzedaż lokali mieszkalnych i użytkowych</li>
+                <li>Testamenty i spadki</li>
+                <li>Poświadczone notarialnie kopie dokumentów</li>
+            </ul>
+        </article>
+        <a href="#naglowek">Do góry</a>
+    </section>
+
+    <section id="kontakt" class="ramka">
         <h1>Kontakt</h1>
-        <p></p>
-        <p>Telefon: <a href="tel:123456789">123456789</a></p>
-        <p>e-mail: <a href="mailto:xxxx@xxxxxx.pl">xxxx@xxxxxx.pl</a></p>
+        <article>
+            <p></p>
+            <p class="niewidzialne">Telefon: <a href="tel:123456789">123456789</a></p>
+            <p>e-mail: <a href="mailto:xxxx@xxxxxx.pl">xxxx@xxxxxx.pl</a></p>    
+        </article>
+        <a href="#naglowek">Do góry</a>
     </section>
+
 </main>
 </body>
 </html>
