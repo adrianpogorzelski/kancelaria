@@ -1,9 +1,26 @@
-body {
-    text-align: center;
+:root {
+    --szary: gray;
+    --granatowy: #000080;
+    --brazowy: #966F33;
 }
 
-nav ul {
+body {
     margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+/*** NAGŁÓWEK I KONTAKTY ***/
+
+header {
+    padding: 0 1em;
+}
+
+/*** NAV MENU - KONFIGURACJA***/
+nav {
+    display: flex;
+    background-color: var(--granatowy);
+    justify-content: center;
+    clear: both;
 }
 
 nav ul li {
@@ -11,20 +28,76 @@ nav ul li {
     padding: 0 5em;
 }
 
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color: #966F33;
+    color: white;
+    text-decoration: underline;
+}
+
+/*** TREŚĆ STRONY **/
+main {
+    padding: 0 1em;
+}
+
 article p {
     text-align: justify;
     text-indent: 1em;
 }
 
-.kontener {
-    margin: 0 auto;
-    align-items: center;
+/*** KLASY ***/
+.do-lewej {
+    float: left;
+}
+
+.do-prawej {
+    float: right;
+    padding-left: 2em;
 }
 
 .inline-flex {
     display: inline-flex;
 }
 
-.ramka {    
-    border: 1px black solid;
+.lewo {
+    text-align: left;
 }
+
+.prawo {
+    text-align: right;
+}
+/*** PRZYCISK 'DO GÓRY' 
+.dogory a {
+    margin: 0 auto;
+    width: 5em;
+    background-color: var(--granatowy);
+    display: flex;
+    justify-content: center;
+    padding: 1em 2em;
+    color: white;
+    text-decoration: none;
+}
+
+.dogory:active {
+    color: gray;
+    text-decoration: underline;
+}
+
+.dogory:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.dogory:visited {
+    color: white;
+    text-decoration: none;
+}***/
