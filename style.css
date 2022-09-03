@@ -26,14 +26,11 @@ nav {
 nav ul li {
     list-style-type: none;
     padding: 0 5em;
-}
-
-nav ul li a {
     color: white;
     text-decoration: none;
 }
 
-nav ul li a:visited {
+nav ul li:visited {
     color: white;
     text-decoration: none;
 }
@@ -74,6 +71,10 @@ article p {
 
 .prawo {
     text-align: right;
+}
+
+.ukryte {
+    display: none;
 }
 /*** PRZYCISK 'DO GÓRY' 
 .dogory a {
