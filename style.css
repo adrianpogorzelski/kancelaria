@@ -2,11 +2,14 @@
     --szary: gray;
     --granatowy: #000080;
     --brazowy: #966F33;
+    --margines-maly: 5%;
+    --margines-duzy: 10%;
 }
 
+/*** OGÓLNE ELEMENTY ***/
 body {
-    margin: 0 auto;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 
 /*** STAŁE ELEMENTY: NAGŁÓWEK, MENU I STOPKA ***/
@@ -15,11 +18,17 @@ header, nav, footer {
     width: 100%;
 }
 
+/*** NAGŁÓWEK ***/
 header {
-    padding: 0 1em;
-    background-color: white;
+    height: 8em;
+    justify-content: space-between;
+    background-image: url(naglowek-tlo.jpg);
+    background-position: 0 84%;
 }
 
+#nazwa {
+    padding-left: var(--margines-maly);
+}
 #logo {
     width: 100px;
     height: auto;
@@ -28,28 +37,28 @@ header {
 
 nav {
     margin-top: 7em;
+#godziny-kontakt {
+    width: 500px;
+    justify-content: space-between;
+    padding-right: var(--margines-maly);
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: large;
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    background-color: var(--granatowy);
-    color: white;
-    height: 7em;
+#godziny-kontakt div p {
+    font-weight: bold;
 }
 
-/*** NAV MENU - KONFIGURACJA***/
+/*** NAWIGACJA***/
 nav {
-    display: flex;
     background-color: var(--granatowy);
-    justify-content: center;
-    clear: both;
+    height: 3em;
+    top: 8em;
 }
 
 nav ul li {
     list-style-type: none;
-    padding: 0 5em;
     color: white;
     text-decoration: none;
 }
@@ -67,8 +76,7 @@ nav ul li:hover {
 
 /*** TREŚĆ STRONY **/
 main {
-    padding: 0 1em;
-    padding-top: 10em;
+    padding: 11em var(--margines-duzy) 0 var(--margines-duzy);
     margin-bottom: 8em;
 }
 
@@ -77,54 +85,21 @@ article p {
     text-indent: 1em;
 }
 
+/*** STOPKA ***/
+footer {
+    bottom: 0;
+    left: 0;
+    background-color: var(--granatowy);
+    color: white;
+    padding: 0 var(--margines-maly)
+}
+
 /*** KLASY ***/
-.do-lewej {
-    float: left;
-}
-
-.do-prawej {
-    float: right;
-    padding-left: 2em;
-}
-
-.inline-flex {
-    display: inline-flex;
-}
-
-.lewo {
-    text-align: left;
-}
-
-.prawo {
-    text-align: right;
-}
-
 .ukryte {
     display: none;
 }
-/*** PRZYCISK 'DO GÓRY' 
-.dogory a {
-    margin: 0 auto;
-    width: 5em;
-    background-color: var(--granatowy);
+
+/*** FLEX ***/
+.flex {
     display: flex;
-    justify-content: center;
-    padding: 1em 2em;
-    color: white;
-    text-decoration: none;
 }
-
-.dogory:active {
-    color: gray;
-    text-decoration: underline;
-}
-
-.dogory:hover {
-    color: black;
-    text-decoration: underline;
-}
-
-.dogory:visited {
-    color: white;
-    text-decoration: none;
-}***/
