@@ -2,7 +2,7 @@
 <html lang="pl">
 <head>
     <meta charset="utf-8">
-    <title>Notariusz XXXX XXXXXXXXX</title>
+    <title>Kancelaria Notarialna Anna Wawszczak</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" type="image/x-icon" href="logo.png">
     <script src="script.js"></script>
@@ -58,9 +58,6 @@
     <!-- O kancelarii -->
     <article id="o-kancelarii">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in lectus ligula. Phasellus varius a mi quis facilisis. Aliquam lacinia augue in mauris pretium, vel semper leo iaculis. Vestibulum pulvinar feugiat orci, quis molestie leo. Donec id turpis varius, faucibus mauris sed, lobortis nisi. Praesent convallis neque ac justo sollicitudin, at mollis lorem aliquet. Praesent ultrices, magna quis pharetra viverra, velit quam lacinia massa, ac dapibus augue neque non mi.</p>
-        <div id="mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2528.812804480113!2d17.9125785!3d50.6677361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471052fd9dc0543b%3A0x26b56dd919d20a2!2sStanis%C5%82awa%20Spychalskiego%2013%2C%2046-020%20Opole!5e0!3m2!1spl!2spl!4v1656449942574!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
         <p>Phasellus condimentum, arcu ut posuere porta, magna eros porttitor tellus, vitae dignissim quam leo quis erat. Proin nec mauris ac velit pellentesque efficitur at eu sem. Donec quis facilisis risus, vehicula commodo odio. Proin ex lectus, suscipit non dictum eu, pulvinar ac eros. Pellentesque ut mauris magna. In vehicula diam sed quam fringilla tincidunt ac ultrices ex. In placerat consectetur nibh, non faucibus massa dapibus ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tristique molestie tellus non luctus. Nullam mattis interdum odio ac facilisis. Nullam sed metus laoreet, luctus mi et, vehicula purus. Morbi viverra sit amet tortor tincidunt hendrerit. Maecenas scelerisque eros et dictum dictum. Donec porttitor fringilla turpis vitae scelerisque. Vestibulum sollicitudin enim nulla, vestibulum   aliquet lacus ultrices a. Donec magna velit, luctus at sem in, ullamcorper efficitur dolor.</p>
     </article>
 
@@ -83,12 +80,24 @@
 
     <!-- Kontakt -->
     <article id="kontakt" class="ukryte">
-        <p>Kancelaria Notarialna Anna Wawszczak</p>
-        <p>ul. Spychalskiego 13 lok. 101A – 1 piętro</p>
-        <p>tel. 77 455 80 51</p>
-        <p>tel. 789 789 789</p>
-        <p>mail: notariusz@spychalskiego13.pl</p>
-        <p>NIP: 787 787 78 52</p>
+        <section id="adres" class="flex" >
+            <div>
+                <p><strong>Kancelaria Notarialna Anna Wawszczak</strong></p>
+                <p>ul. Spychalskiego 13 lok. 101A – 1 piętro</p>
+                <p>tel. 77 455 80 51</p>
+                <p>tel. 789 789 789</p>
+                <p>mail: notariusz@spychalskiego13.pl</p>
+                <p>NIP: 787 787 78 52</p>        
+            </div>
+            <div id="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2528.812804480113!2d17.9125785!3d50.6677361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471052fd9dc0543b%3A0x26b56dd919d20a2!2sStanis%C5%82awa%20Spychalskiego%2013%2C%2046-020%20Opole!5e0!3m2!1spl!2spl!4v1656449942574!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <section>
+            <p>Kancelaria Notarialna notariusz Anny Wawszczak mieści się na opolskim Zaodrzu, w pobliżu Zakładu Ubezpieczeń Społecznych. (dalszy opis).</p>
+            <p>Przed wejściem do kancelarii znajduje się przystanek autobusowy linii… (wymienić)</p>
+            <p>Wokół kancelarii znajdują się miejsca postojowe. (Opis parkingów)</p>
+        </section>    
         <form name="formularz" mehtod="POST" data-netlify="true">
             <label>Imię: <input type="text" name="imie" /></label>
             <label>Adres e-mail: <input type="email" name="email" /></label>

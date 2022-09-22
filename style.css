@@ -3,7 +3,7 @@
     --granatowy: #000080;
     --brazowy: #966F33;
     --margines-maly: 5%;
-    --margines-duzy: 50px;
+    --margines-duzy: 100px;
     --wysokosc-naglowka: 8em;
 }
 
@@ -30,12 +30,13 @@ header {
 #logo {
     width: 6em;
     height: 6em;
-    margin: auto var(--margines-duzy);
+    margin: auto var(--margines-maly) auto var(--margines-duzy);
 }
 
 #nazwa, h1, h2 {
     margin-top: auto;
     margin-bottom: auto;
+    width: 300px;
 }
 
 #godziny-kontakt {
@@ -80,12 +81,17 @@ nav ul li:hover {
 /*** TREŚĆ STRONY **/
 main {
     padding: 13em var(--margines-duzy) 0 var(--margines-duzy);
-    margin-bottom: 8em;
+    margin: 0 auto 8em auto;
 }
 
 article p {
     text-align: justify;
     text-indent: 1em;
+}
+
+/*** KONTAKT ***/
+#adres {
+    justify-content: space-between;
 }
 
 /*** STOPKA ***/
