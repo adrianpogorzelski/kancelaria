@@ -3,7 +3,8 @@
     --granatowy: #000080;
     --brazowy: #966F33;
     --margines-maly: 5%;
-    --margines-duzy: 10%;
+    --margines-duzy: 50px;
+    --wysokosc-naglowka: 8em;
 }
 
 /*** OGÓLNE ELEMENTY ***/
@@ -14,53 +15,55 @@ body {
 
 /*** STAŁE ELEMENTY: NAGŁÓWEK, MENU I STOPKA ***/
 header, nav, footer {
-    position: fixed;
-    width: 100%;
+     position: fixed;
+     width: 100%;
 }
 
-/*** NAGŁÓWEK ***/
 header {
-    height: 8em;
+    height: var(--wysokosc-naglowka);
     justify-content: space-between;
     background-image: url(naglowek-tlo.jpg);
-    background-position: 0 84%;
+    background-position: 0 86%;
+    top: 0;
 }
 
-#nazwa {
-    padding-left: var(--margines-maly);
-}
 #logo {
-    width: 100px;
-    height: auto;
-    margin-right: 1em;
+    width: 6em;
+    height: 6em;
+    margin: auto var(--margines-duzy);
 }
 
-nav {
-    margin-top: 7em;
+#nazwa, h1, h2 {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 #godziny-kontakt {
     width: 500px;
     justify-content: space-between;
-    padding-right: var(--margines-maly);
+    margin-right: var(--margines-duzy);
     margin-top: auto;
     margin-bottom: auto;
-    font-size: large;
-}
-
-#godziny-kontakt div p {
     font-weight: bold;
 }
 
-/*** NAWIGACJA***/
+/****** NAWIGACJA ******/
 nav {
     background-color: var(--granatowy);
     height: 3em;
-    top: 8em;
+    top: var(--wysokosc-naglowka);
+}
+
+nav ul {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
 }
 
 nav ul li {
     list-style-type: none;
     color: white;
-    text-decoration: none;
 }
 
 nav ul li:visited {
@@ -76,7 +79,7 @@ nav ul li:hover {
 
 /*** TREŚĆ STRONY **/
 main {
-    padding: 11em var(--margines-duzy) 0 var(--margines-duzy);
+    padding: 13em var(--margines-duzy) 0 var(--margines-duzy);
     margin-bottom: 8em;
 }
 
@@ -91,7 +94,7 @@ footer {
     left: 0;
     background-color: var(--granatowy);
     color: white;
-    padding: 0 var(--margines-maly)
+    padding: 0 var(--margines-duzy)
 }
 
 /*** KLASY ***/
