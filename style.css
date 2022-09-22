@@ -20,6 +20,12 @@ header {
     background-color: white;
 }
 
+#logo {
+    width: 100px;
+    height: auto;
+    margin-right: 1em;
+}
+
 nav {
     margin-top: 7em;
 }
