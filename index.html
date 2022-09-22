@@ -10,39 +10,36 @@
     <script src="script.js"></script>
 
 <!-- NAGŁÓWEK-->    
-<header id="naglowek">
-    <section class="do-lewej">
+<header id="naglowek" class="flex">
+    <div id="nazwa">
         <h1>XXXXXXXXX XXXXXXXXX</h1>
         <h2>XXXX XXXXXXXXX</h2>
-    </section>
-    <section class="inline-flex do-prawej">
-        <div class="lewo">
+    </div>
+    <section id="godziny-kontakt" class="flex">
+        <div>
             <p>Telefon:</p>
             <p>e-mail:</p>
         </div>
-        <div class="prawo">
+        <div>
             <p><a href="tel:123456789">123456789</a></p>
             <p><a href="mailto:xxxx@xxxxxx.pl">xxxx@xxxxxx.pl</a></p>
         </div>
-    </section>
-    <section class="inline-flex do-prawej">
-        <div class="lewo">
+        <div>
             <p>Poniedziałek, Środa:</p>
             <p>Wtorek, Czwartek:</p>
             <p>Piątek:</p>
         </div>
-        <div class="prawo">
-            <p>9.00 - 17.00</p>
+        <div>
+            <p>09.00 - 17.00</p>
             <p>10.00 - 18.30</p>
-            <p>8.00 - 15.00</p>
+            <p>08.00 - 15.00</p>
         </div>   
-    </section>
-
+    </section>      
 </header>
 
 <!-- MENU -->
 <nav>
-    <ul class="inline-flex">
+    <ul class="flex">
         <li onclick="pokazOKancelarii()">O KANCELARII</li>
         <li onclick="pokazDokumenty()">DOKUMENTY</a></li>
         <li onclick="pokazUslugi()">ZAKRES USŁUG</a></li>
@@ -53,7 +50,6 @@
 
 <!-- TREŚĆ STRONY-->
 <main>
-
     <!-- O kancelarii -->
     <article id="o-kancelarii">
         <h1>O kancelarii</h1>
