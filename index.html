@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Kancelaria Notarialna Anna Wawszczak</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
     <script src="script.js"></script>
 </head>
 
@@ -14,7 +14,7 @@
 <!-- NAGŁÓWEK-->    
 <header class="flex">
     <section class="flex">
-        <img id="logo" src="logo.png">
+        <img id="logo" src="logo.png" alt="Logo kancelarii">
         <div id="nazwa">
             <h1>Kancelaria Notarialna</h1>
             <h2>Anna Wawszczak</h2>
@@ -43,13 +43,14 @@
 </header>
 
 <!-- MENU -->
-<nav>
+<nav class="ciemne">
     <ul class="flex">
-        <li onclick="pokazOKancelarii()">O KANCELARII</li>
-        <li onclick="pokazDokumenty()">DOKUMENTY</a></li>
-        <li onclick="pokazCzynnosci()">ZAKRES CZYNNOŚCI</a></li>
-        <li onclick="pokazPlatnosci()">PŁATNOŚCI</a></li>
-        <li onclick="pokazKontakt()">KONTAKT</li>
+        <a href="#o-kancelarii"><li id="do-o-kancelarii" onclick="pokazOKancelarii()">O KANCELARII</li></a>
+        <a href="#dokumenty"><li id="do-dokumenty" onclick="pokazDokumenty()">DOKUMENTY</li></a>
+        <a href="#czynnosci"><li id="do-czynnosci" onclick="pokazCzynnosci()">CZYNNOŚCI</li></a>
+        <a href="#platnosci"><li id="do-platnosci" onclick="pokazPlatnosci()">PŁATNOŚCI</li></a>
+        <a href="#kontakt"><li id="do-kontakt" onclick="pokazKontakt()">KONTAKT</li></a>
+        <a href="#do-pobrania"><li id="do-do-pobrania" onclick="pokazDoPobrania()">DO POBRANIA</li></a>
     </ul>
 </nav>
 
@@ -57,155 +58,185 @@
 <main>
     <!-- O kancelarii -->
     <article id="o-kancelarii">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in lectus ligula. Phasellus varius a mi quis facilisis. Aliquam lacinia augue in mauris pretium, vel semper leo iaculis. Vestibulum pulvinar feugiat orci, quis molestie leo. Donec id turpis varius, faucibus mauris sed, lobortis nisi. Praesent convallis neque ac justo sollicitudin, at mollis lorem aliquet. Praesent ultrices, magna quis pharetra viverra, velit quam lacinia massa, ac dapibus augue neque non mi.</p>
-        <p>Phasellus condimentum, arcu ut posuere porta, magna eros porttitor tellus, vitae dignissim quam leo quis erat. Proin nec mauris ac velit pellentesque efficitur at eu sem. Donec quis facilisis risus, vehicula commodo odio. Proin ex lectus, suscipit non dictum eu, pulvinar ac eros. Pellentesque ut mauris magna. In vehicula diam sed quam fringilla tincidunt ac ultrices ex. In placerat consectetur nibh, non faucibus massa dapibus ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tristique molestie tellus non luctus. Nullam mattis interdum odio ac facilisis. Nullam sed metus laoreet, luctus mi et, vehicula purus. Morbi viverra sit amet tortor tincidunt hendrerit. Maecenas scelerisque eros et dictum dictum. Donec porttitor fringilla turpis vitae scelerisque. Vestibulum sollicitudin enim nulla, vestibulum   aliquet lacus ultrices a. Donec magna velit, luctus at sem in, ullamcorper efficitur dolor.</p>
-    </article>
-
-    <!-- Dokumenty -->
-    <article id="dokumenty" class="ukryte">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in lectus ligula. Phasellus varius a mi quis facilisis. Aliquam lacinia augue in mauris pretium, vel semper leo iaculis. Vestibulum pulvinar feugiat orci, quis molestie leo. Donec id turpis varius, faucibus mauris sed, lobortis nisi. Praesent convallis neque ac justo sollicitudin, at mollis lorem aliquet. Praesent ultrices, magna quis pharetra viverra, velit quam lacinia massa, ac dapibus augue neque non mi.</p>
-        <p>Phasellus condimentum, arcu ut posuere porta, magna eros porttitor tellus, vitae dignissim quam leo quis erat. Proin nec mauris ac velit pellentesque efficitur at eu sem. Donec quis facilisis risus, vehicula commodo odio. Proin ex lectus, suscipit non dictum eu, pulvinar ac eros. Pellentesque ut mauris magna. In vehicula diam sed quam fringilla tincidunt ac ultrices ex. In placerat consectetur nibh, non faucibus massa dapibus ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tristique molestie tellus non luctus. Nullam mattis interdum odio ac facilisis. Nullam sed metus laoreet, luctus mi et, vehicula purus. Morbi viverra sit amet tortor tincidunt hendrerit. Maecenas scelerisque eros et dictum dictum. Donec porttitor fringilla turpis vitae scelerisque. Vestibulum sollicitudin enim nulla, vestibulum   aliquet lacus ultrices a. Donec magna velit, luctus at sem in, ullamcorper efficitur dolor.</p>
-    </article>
-
-    <!-- Zakres czynności-->
-    <article id="zakres-czynnosci" class="ukryte">
-        <p>Notariusz jest powołany do dokonywania czynności, którym strony są obowiązane lub pragną nadać formę notarialną.</p>
-        <p>Notariusz jest obowiązany udzielać stronom niezbędnych wyjaśnień dotyczących dokonywanej czynności notarialnej.</p>
-        <p><strong>Informacje dotyczące dokonywanej czynności notarialnej udzielane są przez notariuszy nieodpłatnie.</strong></p>
-        <h3>Czynności</h3>
-        <details>
-            <summary>Nieruchomości i prawa spółdzielcze</summary>
-            <ul>
-                <li>umowy dotyczące lokali mieszkalnych i niemieszkalnych, działek zabudowanych i niezabudowanych, spółdzielczego własnościowego prawa do lokalu, w tym między innymi:
-                    <ul>
-                        <li>umowy przedwstępne</li>
-                        <li>umowy sprzedaży</li>
-                        <li>umowy darowizny</li>
-                        <li>umowy zamiany</li>
-                        <li>umowy dożywocia</li>
-                        <li>umowy zniesienia współwłasności</li>
-                        <li>umowy deweloperskie</li>
-                        <li>umowy ustanowienia odrębnej własności lokalu</li>
-                        <li>umowy warunkowe i umowy przeniesienia własności</li>
-                        <li>umowy przekształcenia spółdzielczego własnościowego prawa do lokalu w lokal stanowiący odrębną nieruchomość</li>
-                    </ul>
-                </li>
-                <li>hipoteki</li>
-                <li>służebności</li>
-            </ul>
-        </details>
-        <details>
-            <summary>Sprawy majątkowe małżeńskie</summary>
-            <ul>
-                <li>umowa rozdzielności majątkowej, intercyza</li>
-                <li>umowy o podział majątku wspólnego</li>
-            </ul>
-        </details>
-        <details>
-            <summary>Sprawy dotyczące dziedziczenia</summary>
-            <ul>
-                <li>testamenty</li>
-                <li>oświadczenia o przyjęciu lub odrzuceniu spadku</li>
-                <li>protokoły dziedziczenia</li>
-                <li>akty poświadczenia dziedziczenia</li>
-                <li>umowy o dział spadku</li>
-                <li>umowy zrzeczenia się dziedziczenia/li>
-            </ul>
-        </details>
-        <details>
-            <summary>Poświadczenia</summary>
-            <ul>
-                <li>własnoręczności podpisu (poświadczenie podpisu i wzór podpisu)</li>
-                <li>zgodności odpisu, wyciągu lub kopii z okazanym dokumentem</li>
-                <li>daty okazania dokumentu (data pewna)</li>
-                <li>pozostawanie osoby przy życiu lub w określonym miejscu</li>
-            </ul>
-        </details>
-        <details>
-            <summary>Spółki i przedsiębiorcy</summary>
-            <ul>
-                <li>umowy i akty założycielskie spółek</li>
-                <li>protokoły zgromadzeń wspólników</li>
-                <li>zmiany umowy spółki</li>
-                <li>podwyższenie i obniżenie kapitału zakładowego</li>
-                <li>oświadczenia o przystąpieniu do spółki z ograniczoną odpowiedzialnością lub objęciu udziałów w tej spółce</li>
-                <li>poświadczenie własnoręczności podpisu pod umową zbycia udziałów w spółce z ograniczoną odpowiedzialnością</li>
-                <li>przekształcenie jednoosobowej działalności  gospodarczej przedsiębiorcy w spółkę kapitałową</li>
-            </ul>
-        </details>
-        <details>
-            <summary>Inne</summary>
-            <ul>
-                <li>oświadczenia o poddaniu się egzekucji, między innymi do umowy najmu okazjonalnego</li>
-                <li>pełnomocnictwa</li>
-                <li>depozyt notarialny</li>
-                <li>protokoły niestawiennictwa</li>
-                <li>statut fundacji</li>
-                <li>poświadczenie podpisów pod umową zbycia praw do ogródka działkowego - działki ROD</li>
-                <li>poświadczenie podpisów pod zgodą na wyjazd dziecka zagranicę</li>
-                <li>protokoły z różnych czynności, np. z otwarcie strony internetowej, z otwarcia SMS</li>
-            </ul>
-        </details>
-        <p>Czynności notarialnych notariusz dokonuje w kancelarii notarialnej. Czynność notarialna może być dokonana także w innym miejscu, jeżeli przemawia za tym charakter czynności lub szczególne okoliczności.</p>
-        <p>Zgodnie z art. 79 ustawy z dnia 14 lutego 1991 roku Prawo o notariacie notariusz dokonuje następujących czynności:
-            <ul>
-                <li>sporządza akty notarialne</li>
-                <li>sporządza akty poświadczenia dziedziczenia</li>
-                <li>podejmuje czynności dotyczące europejskiego poświadczenia spadkowego</li>
-                <li>podejmuje czynności związane z zarządem sukcesyjnym przedsiębiorstwem osoby fizycznej i z tymczasowym przedstawicielem w zakresie udziału małżonka przedsiębiorcy w przedsiębiorstwie, na zasadach określonych w ustawie z dnia 5 lipca 2018 r. o zarządzie sukcesyjnym przedsiębiorstwem osoby fizycznej i innych ułatwieniach związanych z sukcesją przedsiębiorstw</li>
-                <li>sporządza poświadczenia</li>
-                <li>spisuje protokoły</li>
-                <li>sporządza protesty weksli i czeków</li>
-                <li>przyjmuje na przechowanie pieniądze, papiery wartościowe, dokumenty, dane na informatycznym nośniku danych, o którym mowa w przepisach o informatyzacji działalności podmiotów realizujących zadania publiczne;</li>
-                <li>prowadzi rejestry akcjonariuszy prostych spółek akcyjnych oraz podejmuje związane z tym czynności</li>
-                <li>sporządza wypisy, odpisy i wyciągi dokumentów</li>
-                <li>sporządza, na żądanie stron, projekty aktów, oświadczeń i innych dokumentów</li>
-                <li>składa wnioski o wpis w księdze wieczystej wraz z dokumentami stanowiącymi podstawę wpisu w księdze wieczystej</li>
-                <li>sporządza inne czynności wynikające z odrębnych przepisów</li>
-            </ul>
-        </p>
-    </article>
-
-    <!-- Płatności-->
-    <article id="platnosci" class="ukryte">
-        <p>Nulla id ullamcorper augue. Maecenas ligula purus, sollicitudin sed diam vitae, malesuada sagittis neque. Aenean in nibh in lectus finibus commodo et sit amet neque. Sed tincidunt imperdiet nulla, non scelerisque ligula tristique in. Duis rhoncus eget ipsum vitae malesuada. Pellentesque vel enim eget ligula pretium dignissim non in orci. Vestibulum commodo dolor massa, a luctus enim bibendum auctor. Sed lectus mi, mollis eu dictum nec, fermentum sit amet ligula. Proin euismod, sapien nec ultricies aliquam, libero nisi egestas elit, ut pharetra lorem quam nec nulla. Fusce efficitur lacinia ante. Sed eu faucibus massa. Curabitur maximus dui et leo ultricies cursus.</p>
-     </article>
-
-    <!-- Kontakt -->
-    <article id="kontakt" class="ukryte">
-        <section id="adres" class="flex" >
-            <div>
-                <p><strong>Kancelaria Notarialna Anna Wawszczak</strong></p>
-                <p>ul. Spychalskiego 13 lok. 101A – 1 piętro</p>
-                <p>tel. 77 455 80 51</p>
-                <p>tel. 789 789 789</p>
-                <p>mail: <a href="mailto:">xxxx@xxxxxx.pl</a></p>
-                <p>NIP: 787 787 78 52</p>        
-            </div>
-            <div id="mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2528.812804480113!2d17.9125785!3d50.6677361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471052fd9dc0543b%3A0x26b56dd919d20a2!2sStanis%C5%82awa%20Spychalskiego%2013%2C%2046-020%20Opole!5e0!3m2!1spl!2spl!4v1656449942574!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </section>
+        <p>Kancelaria Notarialna notariusz Anny Wawszczak mieści się na opolskim Zaodrzu, w pobliżu Zakładu Ubezpieczeń Społecznych. (dalszy opis).</p>
+        <div id="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2528.812804480113!2d17.9125785!3d50.6677361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471052fd9dc0543b%3A0x26b56dd919d20a2!2sStanis%C5%82awa%20Spychalskiego%2013%2C%2046-020%20Opole!5e0!3m2!1spl!2spl!4v1656449942574!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
         <section>
-            <p>Kancelaria Notarialna notariusz Anny Wawszczak mieści się na opolskim Zaodrzu, w pobliżu Zakładu Ubezpieczeń Społecznych. (dalszy opis).</p>
             <p>Przed wejściem do kancelarii znajduje się przystanek autobusowy linii… (wymienić)</p>
             <p>Wokół kancelarii znajdują się miejsca postojowe. (Opis parkingów)</p>
         </section>
         <section>
             <p>Udogodnienia, które zapewniamy naszym klientom:
-                <ul>
-                    <li>bezpłatny dostęp do sieci Wi-Fi</li>
-                    <li>dostęp do komputera</li>
-                    <li>możliwość płatności kartami płatniczymi, BLIKiem</li>
-                    <li>liczarka do banknotów</li>
-                </ul>
+            <ul>
+                <li>bezpłatny dostęp do sieci Wi-Fi</li>
+                <li>dostęp do komputera</li>
+                <li>możliwość płatności kartami płatniczymi, BLIKiem</li>
+                <li>liczarka do banknotów</li>
+            </ul>
             </p>
         </section>
         <section>
-            <p>GODZINY OTWARCIA</p>
-            <p>Poniedziałek i środa 9:00-17:00</p>
-            <p>Wtorek i czwartek 10:00-18:30</p>
-            <p>Piątek 8:00-15:00</p>
+            <h2>Galeria</h2>
+            <div id="galeria" class="flex">
+                <img src="logo.png" alt="Zdjecie">
+                <img src="logo.png" alt="Zdjecie">
+                <img src="logo.png" alt="Zdjecie">
+                <img src="logo.png" alt="Zdjecie">
+                <img src="logo.png" alt="Zdjecie">
+                <img src="logo.png" alt="Zdjecie">
+                <img src="logo.png" alt="Zdjecie">
+            </div>
+        </section>
+    </article>
+
+    <!-- Dokumenty -->
+    <article id="dokumenty" class="ukryte">
+        <p>Szczegółowy wykaz dokumentów wymaganych do transakcji można ustalić podczas kontaktu z kancelarią – <a href="#" onclick="pokazKontakt()">osobiście</a>, <a href="tel:123456789">telefonicznie</a> lub <a href="mailto: xxx@xxx.xx">mailowo</a>.</p>
+        <h2>Niezbędne dane</h2>
+        <p>Podczas dokonywania czynności w kancelarii strona umowy <strong><u>obowiązkowo</u></strong> musi mieć przy sobie <strong>dowód osobisty</strong> lub <strong>paszport</strong>.
+            Nie ma możliwości okazania aplikacji mObywatel.</p>
+        <p>W przypadku działania strony przez pełnomocnika należy przedłożyć <strong>oryginał pełnomocnictwa</strong>.</p>
+        <p>Sporządzenie każdej czynności wymaga wskazania danych osób uczestniczących w transakcji:
+            <ul>
+                <li>Dla osób fizycznych:</li>
+                <ul>
+                    <li>imiona</li>
+                    <li>nazwiska</li>
+                    <li>imiona rodziców</li>
+                    <li>PESEL</li>
+                    <li>adres zamieszkania</li>
+                    <li>adres do korespondencji (opcjonalnie)</li>
+                    <li>numer dowodu osobistego lub paszportu</li>
+                    <li>stan cywilny</li>
+                </ul>
+                <li>Dla spółek:</li>
+                <ul>
+                    <li>numer KRS</li>
+                    <li>informacja o osobie reprezentującej podmiot</li>
+                </ul>
+            </ul>
+        </p>
+        <p></p>
+        <h2>Gdzie uzyskać dokumenty</h2>
+        <p>Wypis z rejestru gruntów, wyciąg z kartoteki budynków, wyrys z mapy ewidencyjnej oraz wyciąg z wykazu zmian danych ewidencyjnych – wydawany przez Starostwo Powiatowe.</p>
+        <p>Dla nieruchomości położonych na terenie powiatu opolskiego: Wydział Geodezji i Kartografii, Opole, Plac Wolności 7-8 (uwaga ściągnięte od palejowej)</p>
+        <p>Ostateczna decyzja zatwierdzająca podział nieruchomości, zaświadczenie o przeznaczeniu działki w miejscowym planie zagospodarowania przestrzennego lub zaświadczenie o jego braku, decyzja o warunkach zabudowy – wydawane przez Urząd Gminy właściwy dla położenia nieruchomości  (uwaga ściągnięte od palejowej)</p>
+        <p>Harmonijka z czynnościami:
+            Rodzaj czynności + wykaz dokumentów (wzór u palejowej)</p>
+        <p>Zaświadczenie urzędu skarbowego o wywiązaniu się spadkobierców z obowiązku podatkowego jest wymagane, jeżeli sprzedający nabył przedmiot umowy w drodze dziedziczenia, zapisu, dalszego zapisu, polecenia testamentowego, darowizny, polecenia darczyńcy, zasiedzenia, nieodpłatnego zniesienia współwłasności, zachowku, jeżeli uprawniony nie uzyskał go w postaci uczynionej przez spadkodawcę darowizny lub w drodze dziedziczenia albo w postaci zapisu nieodpłatnej renty, użytkowania oraz służebności dokonanej po 1 stycznia 2007 roku; przy czym zaświadczenie z urzędu skarbowego, odnośnie nabycia w drodze dziedziczenia, zawsze jest wymagane.</p>
+        <p>Jeżeli notariusz po wglądzie do księgi wieczystej stwierdzi, że nabycie nastąpiło na podstawie dziedziczenia, wówczas zażąda takiego zaświadczenia. Jeżeli zbywca zgubi lub nie znajdzie w posiadanych dokumentach odpisu postanowienia o stwierdzeniu nabycia spadku, to przed udaniem się do urzędu skarbowego będzie musiał zamówić taki odpis w sądzie cywilnym, gdzie toczyła się sprawa o stwierdzenie nabycia spadku. Zaświadczenie z urzędu skarbowego jest potrzebne niezależnie od tego, czy osoba dziedzicząca czy obdarowana jest zwolniona od podatku lub nastąpiło przedawnienie. (uwaga ściągnięte od piekarczykowej)</p>
+        <p>Zaświadczenie Naczelnika Urzędu Skarbowego o wywiązaniu się spadkobierców z obowiązku podatkowego jest wymagane, jeżeli sprzedający nabył przedmiot umowy w drodze dziedziczenia, zapisu, dalszego zapisu, polecenia testamentowego, darowizny, polecenia darczyńcy, zasiedzenia, nieodpłatnego zniesienia współwłasności, zachowku, jeżeli uprawniony nie uzyskał go w postaci uczynionej przez spadkodawcę darowizny lub w drodze dziedziczenia albo w postaci zapisu nieodpłatnej: renty, użytkowania oraz służebności dokonanej po 1 stycznia 2007 roku; przy czym zaświadczenie z Urzędu Skarbowego odnośnie nabycia w drodze dziedziczenia zawsze jest wymagane. Zaświadczenie z Urzędu Skarbowego jest potrzebne niezależnie od tego, czy osoba dziedzicząca czy obdarowana jest zwolniona od podatku lub nastąpiło przedawnienie. (ściągnięte od gębali)</p>
+    </article>
+
+    <!-- Zakres czynności-->
+    <article id="czynnosci" class="ukryte">
+        <section>
+            <p class="flex"><img class="info" src="info.png">Notariusz jest powołany do dokonywania czynności, którym strony są obowiązane lub pragną nadać formę notarialną. Czynności notarialnych notariusz dokonuje w kancelarii notarialnej. Czynność notarialna może być dokonana także w innym miejscu, jeżeli przemawia za tym charakter czynności lub szczególne okoliczności.</p>
+            <p class="flex"><img class="info" src="info.png"><span>Notariusz jest obowiązany udzielać stronom niezbędnych wyjaśnień dotyczących dokonywanej czynności notarialnej. Informacje dotyczące dokonywanej czynności notarialnej udzielane są przez notariuszy <strong>bezpłatnie</strong>.</span></p>
+        </section>
+        <section id="rodzaje-czynnosci" class="flex">
+            <div class="kratka">
+                <h3>Nieruchomości i prawa spółdzielcze</h3>
+                <ul>
+                    <li>umowy dotyczące lokali mieszkalnych i niemieszkalnych, działek zabudowanych i niezabudowanych, spółdzielczego własnościowego prawa do lokalu, w tym między innymi:
+                        <ul>
+                            <li>umowy przedwstępne</li>
+                            <li>umowy sprzedaży</li>
+                            <li>umowy darowizny</li>
+                            <li>umowy zamiany</li>
+                            <li>umowy dożywocia</li>
+                            <li>umowy zniesienia współwłasności</li>
+                            <li>umowy deweloperskie</li>
+                            <li>umowy ustanowienia odrębnej własności lokalu</li>
+                            <li>umowy warunkowe i umowy przeniesienia własności</li>
+                            <li>umowy przekształcenia spółdzielczego własnościowego prawa do lokalu w lokal stanowiący odrębną nieruchomość</li>
+                        </ul>
+                    </li>
+                    <li>hipoteki</li>
+                    <li>służebności</li>
+                </ul>
+            </div>
+            <div class="kratka">
+                <h3>Sprawy majątkowe małżeńskie</h3>
+                <ul>
+                    <li>umowa rozdzielności majątkowej, intercyza</li>
+                    <li>umowy o podział majątku wspólnego</li>
+                </ul>
+            </div>
+            <div class="kratka">
+                <h3>Sprawy dotyczące dziedziczenia</h3>
+                <ul>
+                    <li>testamenty</li>
+                    <li>oświadczenia o przyjęciu lub odrzuceniu spadku</li>
+                    <li>protokoły dziedziczenia</li>
+                    <li>akty poświadczenia dziedziczenia</li>
+                    <li>umowy o dział spadku</li>
+                    <li>umowy zrzeczenia się dziedziczenia</li>
+                </ul>
+            </div>
+            <div class="kratka">
+                <h3>Poświadczenia</h3>
+                <ul>
+                    <li>własnoręczności podpisu (poświadczenie podpisu i wzór podpisu)</li>
+                    <li>zgodności odpisu, wyciągu lub kopii z okazanym dokumentem</li>
+                    <li>daty okazania dokumentu (data pewna)</li>
+                    <li>pozostawanie osoby przy życiu lub w określonym miejscu</li>
+                </ul>
+            </div>
+            <div class="kratka">
+                <h3>Spółki i przedsiębiorcy</h3>
+                <ul>
+                    <li>umowy i akty założycielskie spółek</li>
+                    <li>protokoły zgromadzeń wspólników</li>
+                    <li>zmiany umowy spółki</li>
+                    <li>podwyższenie i obniżenie kapitału zakładowego</li>
+                    <li>oświadczenia o przystąpieniu do spółki z ograniczoną odpowiedzialnością lub objęciu udziałów w tej spółce</li>
+                    <li>poświadczenie własnoręczności podpisu pod umową zbycia udziałów w spółce z ograniczoną odpowiedzialnością</li>
+                    <li>przekształcenie jednoosobowej działalności  gospodarczej przedsiębiorcy w spółkę kapitałową</li>
+                </ul>
+            </div>
+            <div class="kratka">
+                <h3>Inne</h3>
+                <ul>
+                    <li>oświadczenia o poddaniu się egzekucji, między innymi do umowy najmu okazjonalnego</li>
+                    <li>pełnomocnictwa</li>
+                    <li>depozyt notarialny</li>
+                    <li>protokoły niestawiennictwa</li>
+                    <li>statut fundacji</li>
+                    <li>poświadczenie podpisów pod umową zbycia praw do ogródka działkowego - działki ROD</li>
+                    <li>poświadczenie podpisów pod zgodą na wyjazd dziecka zagranicę</li>
+                    <li>protokoły z różnych czynności, np. z otwarcie strony internetowej, z otwarcia SMS</li>
+                </ul>
+            </div>
+        </section>
+    </article>
+
+    <!-- Płatności-->
+    <article id="platnosci" class="ukryte">
+        <p>Kancelaria oferuje możliwość płatności kartą oraz BLIK. Istnieje możliwość dokonania przedpłaty przelewem, w tym celu prosimy o kontakt telefoniczny.</p>
+        <p>Numer rachunku bieżącego kancelarii: 05 1010 1010 1010 1010 1010</p>
+        <p>Numer rachunku depozytowego kancelarii: 02 1010 1010 1010 1010 1010 </p>
+     </article>
+
+    <!-- Kontakt -->
+    <article id="kontakt" class="ukryte">
+        <section class="flex">
+            <div id="adres">
+                <p><strong>Kancelaria Notarialna Anna Wawszczak</strong></p>
+                <p>ul. Spychalskiego 13 lok. 101A – 1 piętro</p>
+                <p>tel. 77 455 80 51</p>
+                <p>tel. 789 789 789</p>
+                <p>mail: <a href="mailto:">xxxx@xxxxxx.pl</a></p>
+                <p>NIP: 787 787 78 52</p>
+            </div>
+            <div>
+                <p>GODZINY OTWARCIA</p>
+                <p>Poniedziałek i środa 9:00-17:00</p>
+                <p>Wtorek i czwartek 10:00-18:30</p>
+                <p>Piątek 8:00-15:00</p>
+            </div>
+
         </section>
         <form name="formularz" mehtod="POST" data-netlify="true">
             <label>Imię: <input type="text" name="imie" /></label>
@@ -216,11 +247,17 @@
             <p><button type="submit">Wyślij</button></p>
         </form>
     </article>
+
+    <!-- DO POBRANIA -->
+    <article id="do-pobrania" class="ukryte">
+        <p><a href="Dokument2.pdf">Dokument 1</a></p>
+        <p><a href="Dokument2.pdf">Dokument 2</a></p>
+        <p><a href="Dokument2.pdf">Dokument 3</a></p>
+    </article>
 </main>
-<footer>
-    <p>Kancelaria oferuje możliwość płatności kartą oraz BLIK. Istnieje możliwość dokonania przedpłaty przelewem, w tym celu prosimy o kontakt telefoniczny.</p>
-    <p>Numer rachunku bieżącego kancelarii: 05 1010 1010 1010 1010 1010</p>
-    <p>Numer rachunku depozytowego kancelarii: 02 1010 1010 1010 1010 1010 </p>
+<footer class="flex ciemne">
+    <p><a href="https://www.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_15873388.htm#query=texture&position=22&from_view=search">Gradient image by benzoix</a> on Freepik</p>
+    <p><a href="https://www.flaticon.com/free-icons/info" title="info icons">Info icons created by Freepik - Flaticon</a></p>
 </footer>
 </body>
 </html>
