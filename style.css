@@ -3,7 +3,7 @@
     --granatowy:navy;
     --brazowy:#966F33;
     --margines-maly:30px;
-    --margines-duzy:100px;
+    --margines-duzy:5%;
     --wysokosc-naglowka:8em
 }
 
@@ -122,12 +122,13 @@ article p {
 
 #galeria {
     flex-wrap:wrap;
-    justify-content:space-around
+    justify-content:center;
 }
 
 #galeria img {
-    width:330px;
-    height:220px;
+    width:40%;
+    max-width: 300px;
+    height:auto;
     border:1px solid #000;
     margin:1em;
     padding:1em
@@ -153,9 +154,7 @@ footer a,footer p {
 }
 
 .ciemne {
-    color:var(--granatowy);
-    background-image:url(granatowe-tlo.jpg);
-    background-position:80%
+    background-image: linear-gradient(to right,black,navy,navy,navy,black);
 }
 
 .flex {
@@ -183,9 +182,13 @@ footer a,footer p {
     padding: 0 1em 1em 0;
     margin: 1em;
     background-color: rgba(100, 100, 100, 0.2);
-    border-radius: 20px
+    border-radius: 20px;
 }
 
 .kratka h3 {
     text-align: center;
+}
+
+.kratka ul li ul {
+    padding-left: 1em;
 }
