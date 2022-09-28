@@ -15,7 +15,7 @@ html {
 body {
     height:100%;
     overflow:auto;
-    font-family:"Times New Roman",Verdana,sans-serif;
+    font-family:"Times New Roman";
     margin:0;
     background-image:url(naglowek-tlo.jpg);
     background-size:cover;
@@ -71,13 +71,9 @@ nav ul {
     padding-left:0
 }
 
-nav ul a {
+.przycisk-menu {
     margin-top:auto;
     margin-bottom:auto;
-    text-decoration:none
-}
-
-nav ul li {
     list-style-type:none;
     color:#fff;
     align-content:center;
@@ -87,15 +83,20 @@ nav ul li {
     border-radius:10px
 }
 
-nav ul li:visited {
-    color:#fff;
-    text-decoration:none
+.przycisk-menu a {
+    color: white;
+    text-decoration: none;
 }
 
-nav ul li:hover {
+.przycisk-menu:hover {
     background-color:#fff;
     color:var(--granatowy);
-    text-decoration:underline
+    text-decoration:underline;
+    cursor: pointer;
+}
+
+.przycisk-menu:hover a {
+    color:var(--granatowy);
 }
 
 main {
