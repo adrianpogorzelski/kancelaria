@@ -3,7 +3,7 @@
     --granatowy:navy;
     --brazowy:#966F33;
     --margines-maly:30px;
-    --margines-duzy:5%;
+    --margines-duzy:50px;
     --wysokosc-naglowka:8em
 }
 
@@ -15,7 +15,7 @@ html {
 body {
     height:100%;
     overflow:auto;
-    font-family:"Times New Roman";
+    font-family:"Times New Roman", Helvetica, sans-serif;
     margin:0;
     background-image:url(naglowek-tlo.jpg);
     background-size:cover;
@@ -111,14 +111,6 @@ main {
 
 article {
     scroll-margin-top:15em
-}
-
-* li {
-    text-align: justify;
-}
-
-article p {
-    text-align:justify
 }
 
 #galeria {
