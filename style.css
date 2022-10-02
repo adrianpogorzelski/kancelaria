@@ -17,7 +17,6 @@ body {
     overflow:auto;
     font-family:"Times New Roman", Helvetica, sans-serif;
     margin:0;
-    background-image:url(naglowek-tlo.jpg);
     background-size:cover;
     background-attachment:fixed
 }
@@ -50,7 +49,7 @@ header {
 
 #godziny-kontakt {
     width:500px;
-    justify-content:space-around;
+    justify-content:space-between;
     margin-right:var(--margines-duzy);
     margin-top:auto;
     margin-bottom:auto;
@@ -113,6 +112,7 @@ article {
     scroll-margin-top:15em
 }
 
+
 #galeria {
     flex-wrap:wrap;
     justify-content:center;
@@ -126,9 +126,41 @@ article {
     margin:1em;
     padding:1em
 }
-
-#adres {
+#kontakt section {
     justify-content:space-between
+}
+#adres {
+    padding-left: 1em;
+}
+
+form {
+    width: 60% !important;
+    min-width: 500px !important;
+    flex-direction: column;
+    margin-right: 0;
+}
+
+.formularz-opcja {
+    justify-content: space-between;
+    padding-left: 1em;
+}
+
+.formularz-pole {
+    width: 60%;
+}
+
+#pole-wiadomosc {
+    width: 60%;
+    height: 200px;
+}
+
+#mapa {
+    justify-content: center;
+}
+
+#mapa iframe {
+    width: 80%;
+    height: 400px;
 }
 
 footer {
