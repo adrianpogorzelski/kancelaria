@@ -7,6 +7,8 @@
     --wysokosc-naglowka:8em
 }
 
+* {box-sizing:border-box}
+
 html {
     overflow:hidden;
     height:100%
@@ -84,7 +86,7 @@ nav ul {
 
 .przycisk-menu a {
     color: white;
-    text-decoration: none;
+    text-decoration-style: dotted;
 }
 
 .przycisk-menu:hover {
@@ -102,10 +104,14 @@ main {
     margin:12em var(--margines-duzy) 1em;
     padding: 10px var(--margines-maly);
     line-height:1.5em;
-    background:rgba(255,255,255,0.9);
+    background:rgba(200,200,200,0.2);
     min-height:80%;
     border-radius:10px;
     overflow:initial
+}
+
+h3 {
+    border-bottom: 1px solid black;
 }
 
 article {
