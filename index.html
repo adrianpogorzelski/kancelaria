@@ -14,11 +14,11 @@
 
 <!-- NAGŁÓWEK-->    
 <header class="flex">
-    <section class="flex">
+    <section id="logo-nazwa" class="flex" onclick="pokazOKancelarii()">
         <img id="logo" src="logo.png" alt="Logo kancelarii">
         <div id="nazwa">
             <h1>Kancelaria Notarialna</h1>
-            <h2>Anna Wawszczak</h2>
+            <h1>Anna Wawszczak</h1>
         </div>
     </section>
     <section id="godziny-kontakt" class="flex">
@@ -59,8 +59,10 @@
 <main>
     <!-- O kancelarii -->
     <article id="o-kancelarii">
+        <h2>Kancelaria Notarialna notariusz Anny Wawszczak</h2>
         <p>Kancelaria notarialna notariusz Anny Wawszczak zlokalizowana jest na opolskim Zaodrzu.</p>
         <p>Oferta kancelarii skierowana jest do osób fizycznych, osób prawnych i innych podmiotów, które poszukują pomocy notariusza.</p>
+        <h3>Udogodnienia</h3>
         <p>Dla wygody naszych klientów zapewniamy następujące udogodnienia:
         <ul>
             <li>bezpłatny dostęp do sieci Wi-Fi</li>
@@ -69,6 +71,14 @@
             <li>liczarka do banknotów</li>
         </ul>
         </p>
+        <h3>Na stronie dowiesz się...</h3>
+        <ul>
+            <li>czym zajmuje się notariusz i jakich <a href="#czynności" onclick="pokazCzynnosci()">czynności</a> możesz dokonać</li>
+            <li>jakie <a href="#dokumenty" onclick="pokazDokumenty()">dokumenty</a> przygotować do sprawnego przejścia przez procedurę aktu notarialnego</li>
+            <li>w jaki sposób możesz wygodnie uregulować <a href="#platnosci" onclick="pokazPlatnosci()">płatność</a></li>
+            <li>jak najłatwiej <a href="#kontakt" onclick="pokazKontakt()">skontaktować się</a> z kancelarią</li>
+            <li>jak wyglądają <a href="#do-pobrania" onclick="pokazDoPobrania()">wzory dokumentów</a></li>
+        </ul>
     </article>
 
     <!-- Dokumenty -->
