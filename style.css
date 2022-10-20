@@ -1,7 +1,7 @@
 :root {
     --szary: rgb(100, 100, 100);
-    --granatowy:navy;
-    --brazowy:#966F33;
+    --granatowy: 0, 61, 153;
+    --brazowy: 153, 77, 0;
     --margines-maly:30px;
     --margines-duzy:50px;
     --wysokosc-naglowka:8em
@@ -66,7 +66,7 @@ header {
 nav {
     height:3em;
     top:var(--wysokosc-naglowka);
-    border-bottom:1px solid var(--brazowy)
+    border-bottom:1px solid rgb(var(--brazowy))
 }
 
 nav ul {
@@ -97,14 +97,14 @@ nav ul {
 
 .przycisk-menu:hover {
     background-color:#fff;
-    color:var(--granatowy);
+    color:rgb(var(--granatowy));
     text-decoration:underline;
     text-underline-offset: 5px;
     cursor: pointer;
 }
 
 .przycisk-menu:hover a {
-    color:var(--granatowy);
+    color:rgb(var(--granatowy));
 }
 
 main {
@@ -180,11 +180,88 @@ form {
     height: 400px;
 }
 
+.karuzela {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.slajd {
+    display: none;
+}
+
+.poprzedni-slajd, .nastepny-slajd {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.nastepny-slajd {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.poprzedni-slajd:hover, .nastepny-slajd:hover {
+    background-color: rgba(255,255,255,0.8);
+}
+
+.podpis-slajdu {
+    color: #000;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numer-slajdu {
+    color: #000;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.przejscie {
+    animation-name: przejscie;
+    animation-duration: 1.5s;
+}
+
+@keyframes przejscie {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
 footer {
     margin:0 auto;
     padding:.5em;
     justify-content:space-around;
-    border-top:1px var(--brazowy) solid
+    border-top:1px rgb(var(--brazowy)) solid
 }
 
 footer a,footer p {
@@ -196,7 +273,7 @@ footer a,footer p {
 }
 
 .ciemne {
-    background-image: linear-gradient(to right,black,navy,navy,navy,black);
+    background-color: rgb(var(--granatowy));
 }
 
 .flex {
