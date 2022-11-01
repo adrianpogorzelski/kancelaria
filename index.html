@@ -10,7 +10,7 @@
 </head>
 <body>
 <header class="flex">
-    <section id="logo-nazwa" class="flex" onclick="pokazOKancelarii()">
+    <section id="logo-nazwa" class="flex" onclick="switchView('o-kancelarii')">
         <img id="logo" src="logo.png" alt="Logo kancelarii">
         <div id="nazwa">
             <h1>Kancelaria Notarialna</h1>
@@ -40,12 +40,12 @@
 </header>
 <nav class="ciemne">
     <ul class="flex">
-        <li id="do-o-kancelarii" class="przycisk-menu" onclick="pokazOKancelarii()"><a href="#o-kancelarii">O KANCELARII</a></li>
-        <li id="do-dokumenty" class="przycisk-menu" onclick="pokazDokumenty()"><a href="#dokumenty">DOKUMENTY</a></li>
-        <li id="do-czynnosci" class="przycisk-menu" onclick="pokazCzynnosci()"><a href="#czynnosci">CZYNNOŚCI</a></li>
-        <li id="do-platnosci" class="przycisk-menu" onclick="pokazPlatnosci()"><a href="#platnosci">PŁATNOŚCI</a></li>
-        <li id="do-kontakt" class="przycisk-menu" onclick="pokazKontakt()"><a href="#kontakt">KONTAKT</a></li>
-        <li id="do-do-pobrania" class="przycisk-menu ukryte" onclick="pokazDoPobrania()"><a href="#do-pobrania">DO POBRANIA</a></li>
+        <li id="do-o-kancelarii" class="przycisk-menu" onclick="switchView('o-kancelarii')"><a href="#o-kancelarii">O KANCELARII</a></li>
+        <li id="do-dokumenty" class="przycisk-menu" onclick="switchView('dokumenty')"><a href="#dokumenty">DOKUMENTY</a></li>
+        <li id="do-czynnosci" class="przycisk-menu" onclick="switchView('czynnosci')"><a href="#czynnosci">CZYNNOŚCI</a></li>
+        <li id="do-platnosci" class="przycisk-menu" onclick="switchView('platnosci')"><a href="#platnosci">PŁATNOŚCI</a></li>
+        <li id="do-kontakt" class="przycisk-menu" onclick="switchView('kontakt')"><a href="#kontakt">KONTAKT</a></li>
+        <li id="do-do-pobrania" class="przycisk-menu ukryte" onclick="switchView('do-pobrania')"><a href="#do-pobrania">DO POBRANIA</a></li>
     </ul>
 </nav>
 <main>
@@ -64,14 +64,14 @@
         </p>
         <h3>Na stronie dowiesz się...</h3>
         <ul>
-            <li>czym zajmuje się notariusz i jakich <a href="#czynności" onclick="pokazCzynnosci()">czynności</a> możesz dokonać</li>
-            <li>jakie <a href="#dokumenty" onclick="pokazDokumenty()">dokumenty</a> przygotować do sprawnego przejścia przez procedurę aktu notarialnego</li>
-            <li>w jaki sposób możesz wygodnie uregulować <a href="#platnosci" onclick="pokazPlatnosci()">płatność</a></li>
-            <li>jak najłatwiej <a href="#kontakt" onclick="pokazKontakt()">skontaktować się</a> z kancelarią</li>
+            <li>czym zajmuje się notariusz i jakich <a href="#czynności" onclick="switchView('czynnosci')">czynności</a> możesz dokonać</li>
+            <li>jakie <a href="#dokumenty" onclick="switchView('dokumenty')">dokumenty</a> przygotować do sprawnego przejścia przez procedurę aktu notarialnego</li>
+            <li>w jaki sposób możesz wygodnie uregulować <a href="#platnosci" onclick="switchView('platnosci')">płatność</a></li>
+            <li>jak najłatwiej <a href="#kontakt" onclick="switchView('kontakt')">skontaktować się</a> z kancelarią</li>
         </ul>
     </article>
     <article id="dokumenty" class="ukryte">
-        <p>Szczegółowy wykaz dokumentów wymaganych do transakcji można ustalić podczas kontaktu z kancelarią – <a href="#" onclick="pokazKontakt()">osobiście</a>, <a href="tel:123456789">telefonicznie</a> lub <a href="mailto: xxx@xxx.xx">mailowo</a>.</p>
+        <p>Szczegółowy wykaz dokumentów wymaganych do transakcji można ustalić podczas kontaktu z kancelarią – <a href="#" onclick="switchView('kontakt')">osobiście</a>, <a href="tel:123456789">telefonicznie</a> lub <a href="mailto: xxx@xxx.xx">mailowo</a>.</p>
         <h3>Niezbędne dane</h3>
         <p>Podczas dokonywania czynności w kancelarii strona umowy <strong>obowiązkowo</strong> musi mieć przy sobie <strong>dowód osobisty</strong> lub <strong>paszport</strong>. Nie ma możliwości okazania aplikacji mObywatel.</p>
         <p>W przypadku działania strony przez pełnomocnika należy przedłożyć <strong>oryginał pełnomocnictwa</strong>.</p>
