@@ -37,13 +37,12 @@ header {
 
 #logo-nazwa:hover {
     cursor: pointer;
-    text-decoration:underline;
 }
 
 #logo {
     width:6em;
     height:6em;
-    margin:auto var(--margines-maly) auto var(--margines-duzy)
+    margin:auto var(--margines-maly)
 }
 
 #nazwa,h1 {
@@ -55,7 +54,7 @@ header {
 #godziny-kontakt {
     width:500px;
     justify-content:space-between;
-    margin-right:var(--margines-duzy);
+    margin-right:var(--margines-maly);
     margin-top:auto;
     margin-bottom:auto;
     font-weight:700
