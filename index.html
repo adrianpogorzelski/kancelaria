@@ -18,17 +18,18 @@
         </div>
     </section>
     <section id="godziny-kontakt" class="flex">
-        <div>
-            <p>Czynne w dni robocze:</p>
+        <div id="kontakt-etykiety">
+            <p>Czynne:</p>
             <p>Telefon:</p>
             <p>e-mail:</p>
         </div>
         <div>
-            <p>09.00 - 17.00</p>
+            <p>09.00 - 17.00 (Pon - Pt)</p>
             <p><a href="tel:775577898">(77) 55 77 898</a></p>
             <p><a href="mailto:notariusz@spychalskiego13.pl">notariusz@spychalskiego13.pl</a></p>
         </div>
     </section>
+    <button id="mobile-menu" onclick="mobileMenuToggle()">Menu</button>
 </header>
 <nav class="ciemne">
     <ul class="flex">
@@ -45,7 +46,7 @@
         <p>Szanowni Państwo,</p>
         <p>witamy na stronie Kancelarii Notarialnej notariusz Anny Wawszczak!</p>
         <p>Oferta kancelarii skierowana jest do osób fizycznych, osób prawnych i innych podmiotów, które poszukują pomocy notariusza.</p>
-        <p>Kancelaria mieści się w Opolu, przy ulicy Stanisława Spychalskiego 13/101A, na pierwszym piętrze budynku (opolskie Nadodorze, budynek położony pomiędzy Odrą, a Kanałem Ulgi). Położenie kancelarii zapewnia wygodny dojazd z Zaodrza oraz pobliskich gmin (...). W okolicach kancelarii nie obowiązuje płatna strefa parkowania, a bezpośrednio przed budynkiem znajduje się przystanek komunikacji miejskiej (przystanek Spychalskiego).</p>
+        <p>Kancelaria mieści się w Opolu, przy ulicy Stanisława Spychalskiego 13/101A, na pierwszym piętrze budynku (opolskie Nadodorze, budynek położony pomiędzy Odrą, a Kanałem Ulgi). Położenie kancelarii zapewnia wygodny dojazd z Zaodrza oraz pobliskich gmin. W okolicach kancelarii nie obowiązuje płatna strefa parkowania, a bezpośrednio przed budynkiem znajduje się przystanek komunikacji miejskiej (przystanek Spychalskiego).</p>
         <p>Jesteśmy do Państwa dyspozycji od poniedziałku do piątku w godzinach 9:00-17:00.  Po indywidualnym uzgodnieniu możliwe jest umówienie czynności w innych godzinach lub dniach (np. w sobotę).</p>
         <p>Zdajemy sobie sprawę, że klienci kancelarii notarialnej liczą na szybką i kompleksową obsługę prawną, z drugiej strony, często powierzają nam najważniejsze informacje dotyczące majątku, sytuacji rodzinnej oraz biznesowej, w związku z czym sprawę każdego klienta traktujemy indywidualnie, analizując przedstawioną sytuację staramy się znaleźć optymalne rozwiązanie, zgodne z wolą stron oraz obowiązującymi przepisami. Notariusz, jako osoba zaufania publicznego gwarantuje Państwu całkowitą poufność.</p>
         <p>Notariusz udziela bezpłatnych informacji dotyczących dokonywanych czynności notarialnych, telefonicznie, za pomocą poczty elektronicznej lub podczas spotkania w siedzibie Kancelarii.</p>
@@ -262,31 +263,31 @@
         <p>Wychodząc naprzeciw Państwa potrzebom kancelaria oferuje możliwość płatności kartami oraz BLIK. Istnieje możliwość dokonania przedpłaty przelewem, w tym celu prosimy o <a href="tel:775577898">kontakt telefoniczny</a>.</p>
         <h3>Numery rachunków</h3>
         <p>Rachunek do wpłat podatków, opłat sądowych i wynagrodzenia notariusza:</p>
-        <p>05 1010 1010 1010 1010 1010</p>
+        <p>75 1050 1575 1000 0097 6817 2711</p>
         <p>Rachunek depozytowy (wyłącznie do wpłaty środków na depozyt notarialny związany z dokonywaną czynnością):
-        <p>02 1010 1010 1010 1010 1010</p>
+        <p>04 1050 1575 1000 0097 6910 2667</p>
      </article>
     <article id="kontakt" class="ukryte">
-        <section class="flex">
+        <section class="flex" id="adres-formularz">
             <div id="adres">
                 <h3>Dane adresowe</h3>
                 <p><strong>Kancelaria Notarialna Anna Wawszczak</strong></p>
-                <p>ul. Spychalskiego 13 lok. 101A – 1 piętro</p>
+                <p>ul. Spychalskiego 13 lok. 101A (1 piętro)</p>
                 <p><a href="tel:775577898">Tel: (77) 55 77 898</a></p>
                 <p><a href="mailto:notariusz@spychalskiego13.pl">notariusz@spychalskiego13.pl</a></p>
-                <p>NIP: 787 787 78 52</p>
+                <p>NIP: 754 299 28 52</p>
                 <h3>Godziny otwarcia</h3>
                 <p>Poniedziałek - Piątek: 9:00-17:00</p>
                 <p>Po indywidualnym uzgodnieniu możliwe jest umówienie czynności w innych godzinach lub dniach.</p>
             </div>
-            <form id="formularz" class="kratka" name="formularz" method="POST" data-netlify="true">
+            <form id="formularz" name="formularz" method="POST" data-netlify="true">
                 <h3>Formularz kontaktowy</h3>
                 <p class="flex formularz-opcja"><label>Imię</label><input class="formularz-pole" type="text" name="imie" required></p>
                 <p class="flex formularz-opcja"><label>Adres e-mail:</label> <input class="formularz-pole" type="email" name="email"  required/></p>
                 <p class="flex formularz-opcja"><label>Telefon kontaktowy:</label><input class="formularz-pole" type="tel" name="telefon" /></p>
                 <p class="flex formularz-opcja"><label>Proszę o kontakt telefoniczny</label><input type="checkbox"></p>
                 <p class="flex formularz-opcja"><label>Wiadomość:</label><textarea id="pole-wiadomosc" name="message" required></textarea></p>
-                <p class="flex formularz-opcja"><label></label><input type="checkbox" required>Zgadzam się na przetwarzanie danych osobowych podanych w formularzu przez Kancelarię Notarialną Anny Wawszczak w celu kontaktu i przygotowania do przeprowadzenia czynności notarialnej</p>
+                <p class="flex formularz-opcja"><label>Zgadzam się na przetwarzanie danych osobowych podanych w formularzu przez Kancelarię Notarialną Anny Wawszczak w celu kontaktu i przygotowania do przeprowadzenia czynności notarialnej</label><input type="checkbox" required></p>
                 <p class="flex formularz-opcja"><button type="submit">Wyślij</button></p>
             </form>
         </section>

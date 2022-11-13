@@ -1,3 +1,23 @@
+let mobileMenuVisible = false
+const mobileMenu = document.getElementsByTagName('nav')[0]
+
+const hideMobileMenuAfterClick = () => {
+    if (mobileMenuVisible) {
+        mobileMenu.style.display = 'none'
+        mobileMenuVisible = false
+    }
+}
+
+const mobileMenuToggle = () => {
+    if (!mobileMenuVisible) {
+        mobileMenu.style.display = 'inline'
+        mobileMenuVisible = true
+    } else {
+        mobileMenu.style.display = 'none'
+        mobileMenuVisible = false
+    }
+}
+
 const switchView = (view) => {
     document.getElementById('o-kancelarii').classList.add('ukryte')
     document.getElementById('dokumenty').classList.add('ukryte')
@@ -6,6 +26,7 @@ const switchView = (view) => {
     document.getElementById('kontakt').classList.add('ukryte')
     document.getElementById('do-pobrania').classList.add('ukryte')
     document.getElementById(view).classList.remove('ukryte')
+    hideMobileMenuAfterClick();
 }
 
 let slideIndex = 1;

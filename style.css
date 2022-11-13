@@ -52,7 +52,7 @@ header {
 }
 
 #godziny-kontakt {
-    width:500px;
+    width:350px;
     justify-content:space-between;
     margin-right:var(--margines-maly);
     margin-top:auto;
@@ -99,6 +99,10 @@ nav ul {
     cursor: pointer;
 }
 
+#mobile-menu {
+    display: none;
+}
+
 .przycisk-menu:hover a {
     color:rgb(var(--granatowy));
 }
@@ -110,10 +114,6 @@ main {
     min-height:80%;
     border-radius:10px;
     overflow:initial
-}
-
-h3 {
-    border-bottom: 1px solid black;
 }
 
 article {
@@ -159,6 +159,10 @@ form {
 
 .formularz-pole {
     width: 60%;
+}
+
+.przystanki {
+    padding-left: 0;
 }
 
 .przystanki li {
@@ -313,4 +317,71 @@ footer a,footer p {
 
 .kratka ul li ul {
     padding-left: 1em;
+}
+
+@media only screen and (max-width: 480px) {
+    #nazwa, #kontakt-etykiety {
+        display: none;
+    }
+
+    header {
+        height: 6em;
+        border-bottom: 1px solid rgb(var(--granatowy));
+        justify-content: space-between;
+    }
+
+    #logo {
+        width: 75px;
+        height: auto;
+        margin: 0.5em;
+    }
+
+    #godziny-kontakt {
+        font-size: smaller;
+    }
+
+    nav {
+        top: 4em;
+        width: 200px;
+        height: 500px;
+        position: absolute;
+        right: 0;
+        display: none;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    #mobile-menu {
+        display: inline;
+        margin-right: 0.5em;
+        padding: 5px;
+        height: 2em;
+        align-self: center;
+        background-color: rgb(var(--granatowy));
+        color: white
+    }
+
+    main {
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-top: 6em;
+    }
+
+    .kratka {
+        width: 100%;
+    }
+
+    #adres-formularz {
+        display: block;
+    }
+
+    form p {
+        flex-direction: column;
+    }
+
+    .formularz-opcja {
+        width: 300px;
+    }
 }
