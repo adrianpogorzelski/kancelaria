@@ -1,13 +1,13 @@
 :root {
-    --szary: rgb(100, 100, 100);
+    --szary:
+    rgb(100, 100, 100);
     --granatowy: 0, 10, 123;
-    --brazowy: 153, 77, 0;
     --margines-maly:30px;
     --margines-duzy:50px;
-    --wysokosc-naglowka:8em
+    --wysokosc-naglowka:8em;
 }
 
-* {box-sizing:border-box}
+* {box-sizing:border-box;}
 
 html {
     overflow:hidden;
@@ -19,20 +19,17 @@ body {
     overflow:auto;
     font-family: Arial;
     margin:0;
-    background-size:cover;
-    background-attachment:fixed
 }
+
+header {justify-content: space-between;}
 
 header,nav {
     position:fixed;
-    width:100%
+    width:100%;
 }
 
-header {
-    height:var(--wysokosc-naglowka);
-    justify-content:space-between;
-    top:0;
-    background-color: white;
+li {
+    text-align: justify;
 }
 
 #logo-nazwa:hover {
@@ -40,9 +37,7 @@ header {
 }
 
 #logo {
-    width:6em;
-    height:6em;
-    margin:auto var(--margines-maly)
+    width:8em;
 }
 
 #nazwa,h1 {
@@ -60,18 +55,21 @@ header {
     font-weight:700
 }
 
+#godziny-kontakt a {
+    text-decoration: none;
+}
+
 nav {
-    height:3em;
+    height:4em;
     top:var(--wysokosc-naglowka);
-    border-bottom:1px solid rgb(var(--brazowy))
+    background-color: rgb(20, 50, 150);
 }
 
 nav ul {
-    width:80%;
     height:100%;
-    justify-content:center;
+    justify-content:space-evenly;
     margin:0 auto;
-    padding-left:0
+    padding-left: 0;
 }
 
 .przycisk-menu {
@@ -80,10 +78,11 @@ nav ul {
     list-style-type:none;
     color:#fff;
     align-content:center;
-    width:150px;
+    width:200px;
     padding:.5em;
     text-align:center;
-    border-radius:10px
+    border-radius:10px;
+    font-size: 1.25em;
 }
 
 .przycisk-menu a {
@@ -141,8 +140,14 @@ p {
 #kontakt section {
     justify-content:space-between
 }
-#adres {
-    padding-left: 1em;
+
+#adres p {
+    margin: 0.25em 0 0 0;
+}
+
+#adres a {
+    text-decoration: none;
+    color: black;
 }
 
 form {
@@ -268,7 +273,6 @@ footer {
     margin:0 auto;
     padding:.5em;
     justify-content:space-around;
-    border-top:1px rgb(var(--brazowy)) solid
 }
 
 footer a,footer p {
@@ -279,8 +283,12 @@ footer a,footer p {
     display:none
 }
 
-.ciemne {
+.dark {
     background-color: rgb(var(--granatowy));
+}
+
+.dark * {
+    color: white;
 }
 
 .flex {
@@ -333,7 +341,6 @@ footer a,footer p {
     #logo {
         width: 75px;
         height: auto;
-        margin: 0.5em;
     }
 
     #godziny-kontakt {
@@ -361,6 +368,11 @@ footer a,footer p {
         align-self: center;
         background-color: rgb(var(--granatowy));
         color: white
+    }
+
+    .przycisk-menu {
+        width: 150px;
+        font-size: 1em;
     }
 
     main {
