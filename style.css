@@ -1,6 +1,5 @@
 :root {
-    --szary:
-    rgb(100, 100, 100);
+    --szary: rgb(100, 100, 100);
     --granatowy: 0, 10, 123;
     --margines-maly:30px;
     --margines-duzy:50px;
@@ -38,6 +37,7 @@ li {
 
 #logo {
     width:8em;
+    height: 8em;
 }
 
 #nazwa,h1 {
@@ -60,7 +60,6 @@ li {
 }
 
 nav {
-    height:4em;
     top:var(--wysokosc-naglowka);
     background-color: rgb(20, 50, 150);
 }
@@ -77,12 +76,15 @@ nav ul {
     margin-bottom:auto;
     list-style-type:none;
     color:#fff;
-    /* align-content:center; */
-    width:200px;
+    width:20%;
     padding:.5em;
     text-align:center;
-    border-radius:10px;
-    font-size: 1.25em;
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+}
+
+.przycisk-menu:first-child {
+    border-left: none;
 }
 
 .przycisk-menu a {
@@ -107,7 +109,7 @@ nav ul {
 }
 
 main {
-    margin:12em var(--margines-duzy) 1em;
+    margin:10em var(--margines-duzy) 1em;
     padding: 10px var(--margines-maly);
     line-height:1.5em;
     min-height:80%;
@@ -348,8 +350,8 @@ footer a,footer p {
     }
 
     #logo {
-        width: 75px;
-        height: auto;
+        width: 6em;
+        height: 6em;
     }
 
     #godziny-kontakt {
@@ -380,10 +382,8 @@ footer a,footer p {
     }
 
     .przycisk-menu {
-        width: 150px;
-        font-size: 1em;
-        text-align: left;
-        padding-left: 1.5em;
+        width: 100%;
+        border: none;
     }
 
     main {
