@@ -4,7 +4,8 @@
     --jasny-niebieski: 50, 100, 175;
     --margines-maly:30px;
     --margines-duzy:50px;
-    --wysokosc-naglowka:8em;
+    --wysokosc-naglowka:5em;
+    --border-radius: 10px;
 }
 
 html {
@@ -19,15 +20,26 @@ body {
     margin:0;
 }
 
-header {justify-content: space-between;}
-
-header,nav {
+header {
     position:fixed;
     width:100%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+
+header img {
+    height: 1em;
+    width: auto;
+    padding: 0 1em;
 }
 
 li {
     text-align: justify;
+}
+
+#logo-nazwa {
+    align-items: center;
 }
 
 #logo-nazwa:hover {
@@ -35,14 +47,8 @@ li {
 }
 
 #logo {
-    width:8em;
-    height: 8em;
-}
-
-#nazwa,h1 {
-    margin-top:auto;
-    margin-bottom:auto;
-    width:500px
+    width:7em;
+    height: 7em;
 }
 
 #godziny-kontakt {
@@ -58,16 +64,9 @@ li {
     text-decoration: none;
 }
 
-nav {
-    top:var(--wysokosc-naglowka);
-    background-color: rgb(var(--jasny-niebieski))
-}
-
 nav ul {
-    height:100%;
     justify-content:center;
     margin:0 auto;
-    padding-left: 0;
 }
 
 .przycisk-menu {
@@ -75,7 +74,7 @@ nav ul {
     margin-bottom:auto;
     list-style-type:none;
     color:#fff;
-    width:200px;
+    width:120px;
     padding:.5em;
     text-align:center;
     border-right: 1px solid white;
@@ -109,8 +108,7 @@ nav ul {
 main {
     line-height:1.5em;
     min-height: 800px;
-    width: 1024px;
-    margin: 10em auto;
+    margin: var(--wysokosc-naglowka) auto;
     font-size: 18px;
 }
 
@@ -121,7 +119,14 @@ main a {
 article {
     scroll-margin-top:15em;
     background-color: white;
-    padding: 1em;
+}
+
+section {
+    width: 1024px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 100%;
+    padding-top: 1em;
 }
 
 p {
@@ -129,11 +134,24 @@ p {
     text-align: justify;
 }
 
+#opole {
+    height: 400px;
+    width: 100%;
+}
+
 .hero {
-    height: 20em;
-    justify-content: space-between;
-    padding-bottom: 3em;
-    align-items: center;
+    height: 40em;
+    background-image: url("opole.jpg");
+    background-position-y: 50%;
+}
+
+.hero section {
+    justify-content: center;
+}
+
+.hero * {
+    color: white;
+    font-weight: bolder;
 }
 
 .hero h2 {
@@ -205,7 +223,7 @@ form h3 {
     border: 1px solid black;
     width: 200px;
     height: 50px;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     margin: 0 auto;
     background-color: rgba(var(--granatowy), 0.2);
 }
@@ -225,7 +243,7 @@ form h3 {
     background-color: rgba(var(--granatowy), 0.1);
     width: 50px;
     justify-content: center;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
 }
 
 #pole-wiadomosc {
@@ -349,6 +367,7 @@ footer a,footer p {
     border: 1px solid black;
     padding: 1em;
     box-shadow: 1px 1px gray;
+    border-radius: var(--border-radius);
 }
 
 .info-icon {
@@ -374,7 +393,7 @@ footer a,footer p {
     background-color: rgba(var(--granatowy), 0.1);
     border: 1px black solid;
     box-shadow: 1px 1px gray;
-    border-radius: 10px;
+    border-radius: var(--border-radius);
 }
 
 .tile-head {
