@@ -1,6 +1,6 @@
 :root {
     --szary: 100, 100, 100;
-    --granatowy: 0, 10, 123;
+    --granatowy: 20, 50, 100;
     --margines-maly:30px;
     --margines-duzy:50px;
     --wysokosc-naglowka:8em;
@@ -59,7 +59,7 @@ li {
 
 nav {
     top:var(--wysokosc-naglowka);
-    background-color: rgb(20, 50, 175);
+    background-color: rgb(50, 100, 175);
 }
 
 nav ul {
