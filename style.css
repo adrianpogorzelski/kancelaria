@@ -452,7 +452,7 @@ footer a,footer p {
     }
 
     #godziny-kontakt {
-        font-size: smaller;
+        font-size: 12px;
         margin: 0;
     }
 
@@ -468,7 +468,7 @@ footer a,footer p {
 
     #nazwa p {
         flex-direction: column;
-        font-size: 14px;
+        font-size: 12px;
     }
 
     nav {
