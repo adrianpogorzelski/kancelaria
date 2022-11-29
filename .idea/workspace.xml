@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9937761a-ade0-4c24-a098-78a7f0525521" name="Changes" comment="Kolory nagłówków">
+    <list default="true" id="9937761a-ade0-4c24-a098-78a7f0525521" name="Changes" comment="Hero">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
@@ -114,7 +114,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669641773145</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Hero">
+      <created>1669669554135</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1669669554135</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Hero">
+      <created>1669669567870</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1669669567870</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,6 +153,7 @@
     <MESSAGE value="Menu i logo wyrównane" />
     <MESSAGE value="Hero section, wyrównania, cieniowanie" />
     <MESSAGE value="Kolory nagłówków" />
-    <option name="LAST_COMMIT_MESSAGE" value="Kolory nagłówków" />
+    <MESSAGE value="Hero" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hero" />
   </component>
 </project>
