@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9937761a-ade0-4c24-a098-78a7f0525521" name="Changes" comment="Hero">
+    <list default="true" id="9937761a-ade0-4c24-a098-78a7f0525521" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/favicon.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opole.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,6 +101,7 @@
       <updated>1669205711646</updated>
       <workItem from="1669205715015" duration="1402000" />
       <workItem from="1669640732368" duration="5815000" />
+      <workItem from="1669811664870" duration="1965000" />
     </task>
     <task id="LOCAL-00007" summary="Hero section, wyrównania, cieniowanie">
       <created>1669206519974</created>
