@@ -39,7 +39,6 @@ li {
 
 #logo-nazwa {
     align-items: center;
-    width: 50%;
     margin:  0;
 }
 
@@ -58,6 +57,7 @@ li {
 
 #nazwa {
     flex-direction: column;
+    line-height: 1.5em;
 }
 
 #nazwa a {
@@ -92,6 +92,7 @@ nav ul {
     /* height: 100%; */
     /* padding: 0; */
     /* margin: 0; */
+    float: right;
 }
 
 .przycisk-menu {
@@ -152,6 +153,10 @@ section {
     background-color: rgba(255, 255, 255, 0.2);
     height: 100%;
     padding: 0 1em;
+}
+
+h1 {
+    text-align: center;
 }
 
 p {
@@ -448,7 +453,7 @@ footer a,footer p {
 @media only screen and (max-width: 1023px) {
     nav {
         top: 4em;
-        width: 150px;
+        width: 200px;
         position: absolute;
         right: 10px;
         display: none;
@@ -574,5 +579,9 @@ footer a,footer p {
 @media only screen and (max-width: 480px) {
     form p {
         flex-direction: column;
+    }
+
+    #nazwa {
+        font-size: 12px;
     }
 }

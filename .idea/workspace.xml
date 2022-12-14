@@ -4,6 +4,7 @@
     <list default="true" id="9937761a-ade0-4c24-a098-78a7f0525521" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,7 +14,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="whatsapp" />
+        <entry key="$PROJECT_DIR$" value="seo" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -44,6 +45,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
@@ -157,6 +159,7 @@
     <MESSAGE value="Hero section, wyrównania, cieniowanie" />
     <MESSAGE value="Kolory nagłówków" />
     <MESSAGE value="Hero" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hero" />
+    <MESSAGE value="Messenger" />
+    <option name="LAST_COMMIT_MESSAGE" value="Messenger" />
   </component>
 </project>
