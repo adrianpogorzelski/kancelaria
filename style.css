@@ -29,9 +29,7 @@ header {
     justify-content: space-between;
 }
 
-h1 {
-    font-size: 24px;
-}
+
 
 li {
     text-align: justify;
@@ -61,13 +59,16 @@ li {
 }
 
 #nazwa a {
-    margin-right: 0.5em
+    margin-right: 0.5em;
+    font-size: 12px;
 }
 
 #nazwa img {
     padding-right: 0.25em;
     height: 1em;
 }
+
+h1 {font-size: 20px}
 
 #godziny-kontakt {
     width:350px;
@@ -153,10 +154,6 @@ section {
     background-color: rgba(255, 255, 255, 0.2);
     height: 100%;
     padding: 0 1em;
-}
-
-h1 {
-    text-align: center;
 }
 
 p {
@@ -547,6 +544,10 @@ footer a,footer p {
         line-height: 1.5em;
     }
 
+    #nazwa div {
+        flex-direction: column;
+    }
+
     h1 {
         display: none;
     }
@@ -579,9 +580,5 @@ footer a,footer p {
 @media only screen and (max-width: 480px) {
     form p {
         flex-direction: column;
-    }
-
-    #nazwa {
-        font-size: 12px;
     }
 }
