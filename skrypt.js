@@ -18,17 +18,6 @@ const mobileMenuToggle = () => {
     }
 }
 
-const switchView = (view) => {
-    document.getElementById('o-kancelarii').classList.add('ukryte')
-    document.getElementById('dokumenty').classList.add('ukryte')
-    document.getElementById('czynnosci').classList.add('ukryte')
-    document.getElementById('platnosci').classList.add('ukryte')
-    document.getElementById('kontakt').classList.add('ukryte')
-    document.getElementById('do-pobrania').classList.add('ukryte')
-    document.getElementById(view).classList.remove('ukryte')
-    hideMobileMenuAfterClick();
-}
-
 let slideIndex = 1;
 showSlides(slideIndex);
 

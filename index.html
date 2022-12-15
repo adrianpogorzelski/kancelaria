@@ -5,37 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Notariusz Opole, Zaodrze - Kancelaria Notarialna Anna Wawszczak, ulica Stanisława Spychalskiego 13, lokal 101A">
     <title>Notariusz Opole, Zaodrze - Kancelaria Notarialna Anna Wawszczak</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="favicon.png">
 </head>
 <body>
 <header class="flex dark">
-    <div id="logo-nazwa" class="flex" onclick="switchView('o-kancelarii')">
-        <img id="logo" src="logo.png" alt="Logo kancelarii">
+    <div id="logo-nazwa" class="flex">
+        <a href="index.html"><img id="logo" src="img/logo.png" alt="Logo kancelarii"></a>
         <div id="nazwa" class="flex">
                 <h1>Kancelaria Notarialna Anna Wawszczak</h1>
                 <div class="flex">
-                    <span><img src="phone-white.png" alt="Telefon"><a href="tel:775577898">77 55 77 898</a></span>
-                    <span><img src="cell-phone-white.png" alt="Telefon komórkowy"><a href="tel:533987456">533 987 456</a></span>
-                    <span><img src="email-white.png" alt="e-mail"><a href="mailto:notariusz@spychalskiego13.pl">notariusz@spychalskiego13.pl</a></span>
+                    <span><img src="img/phone-white.png" alt="Telefon"><a href="tel:775577898">77 55 77 898</a></span>
+                    <span><img src="img/cell-phone-white.png" alt="Telefon komórkowy"><a href="tel:533987456">533 987 456</a></span>
+                    <span><img src="img/email-white.png" alt="e-mail"><a href="mailto:notariusz@spychalskiego13.pl">notariusz@spychalskiego13.pl</a></span>
                 </div>
         </div>
     </div>
     <nav>
         <ul class="flex">
-            <li id="do-dokumenty" class="przycisk-menu" onclick="switchView('dokumenty')"><a href="#dokumenty">DOKUMENTY</a></li>
+            <li id="do-dokumenty" class="przycisk-menu"><a href="strony/dokumenty.html">DOKUMENTY</a></li>
             <li id="do-czynnosci" class="przycisk-menu" onclick="switchView('czynnosci')"><a href="#czynnosci">CZYNNOŚCI</a></li>
             <li id="do-platnosci" class="przycisk-menu" onclick="switchView('platnosci')"><a href="#platnosci">PŁATNOŚCI</a></li>
             <li id="do-kontakt" class="przycisk-menu" onclick="switchView('kontakt')"><a href="#kontakt">KONTAKT</a></li>
             <li id="do-do-pobrania" class="przycisk-menu ukryte" onclick="switchView('do-pobrania')"><a href="#do-pobrania">DO POBRANIA</a></li>
         </ul>
     </nav>
-    <img src="menu.png" id="mobile-menu" onclick="mobileMenuToggle()">
+    <img src="img/menu.png" id="mobile-menu" onclick="mobileMenuToggle()">
 </header>
 <main>
     <article id="o-kancelarii">
         <section class="hero">
-            <img src="panorama.jpg" alt="Opole Zaodrze">
+            <img src="img/panorama.webp" alt="Opole Zaodrze">
         </section>
         <section>
             <h2>Kancelaria Notarialna Anna Wawszczak</h2>
@@ -50,9 +50,9 @@
             <p>Czynności notarialne polegające na poświadczaniu własnoręczności podpisu. zgodności kopii z okazanym dokumentem dokonywane są „od ręki”, podczas Państwa wizyty. Pozostałe czynności, którym strony obowiązane są nadać formę aktu notarialnego, dokonywane są po uprzednim telefonicznym, elektronicznym lub osobistym uzgodnieniu terminów oraz dostarczeniu wymaganych dokumentów.</p>
             <p>Dla Państwa wygody zapewniamy następujące udogodnienia:
             <ul class="udogodnienia">
-                <li><img src="wifi.png" alt="Wi-Fi">bezpłatny dostęp do sieci Wi-Fi</li>
-                <li><img src="credit-card.png" alt="Płatność kartą">możliwość płatności kartami płatniczymi, BLIKiem</li>
-                <li><img src="money.png" alt="Liczarka do banknotów">liczarkę do banknotów</li>
+                <li><img src="img/wifi.png" alt="Wi-Fi">bezpłatny dostęp do sieci Wi-Fi</li>
+                <li><img src="img/credit-card.png" alt="Płatność kartą">możliwość płatności kartami płatniczymi, BLIKiem</li>
+                <li><img src="img/money.png" alt="Liczarka do banknotów">liczarkę do banknotów</li>
             </ul>
             <p>Zapraszam,</p>
             <p><b>Anna Wawszczak</b><br>Notariusz w Opolu</p>
@@ -85,7 +85,7 @@
         </section>
         <section>
             <h3>Dodatkowe dokumenty</h3>
-            <p class="flex info"><img class="info-icon" src="info.png" alt="Informacja"><span>Szczegółowy wykaz dokumentów wymaganych do transakcji można ustalić podczas kontaktu z kancelarią – <a href="#" onclick="switchView('kontakt')">osobiście</a>, <a href="tel:775577898">telefonicznie</a> lub <a href="mailto:notariusz@spychalskiego13.pl">mailowo</a>.</span></p>
+            <p class="flex info"><img class="info-icon" src="img/info.png" alt="Informacja"><span>Szczegółowy wykaz dokumentów wymaganych do transakcji można ustalić podczas kontaktu z kancelarią – <a href="#" onclick="switchView('kontakt')">osobiście</a>, <a href="tel:775577898">telefonicznie</a> lub <a href="mailto:notariusz@spychalskiego13.pl">mailowo</a>.</span></p>
             <p>Przykładowe dokumenty niezbędne do sporządzenia najczęstszych umów:
                 <details>
                     <summary>Umowa sprzedaży lokalu mieszkalnego</summary>
@@ -165,14 +165,14 @@
     </article>
     <article id="czynnosci" class="ukryte">
         <section>
-            <p class="flex info"><img class="info-icon" src="info.png" alt="Informacja">Notariusz jest powołany do dokonywania czynności, którym strony są obowiązane lub pragną nadać formę notarialną. Czynności notarialnych notariusz dokonuje w kancelarii notarialnej. Czynność notarialna może być dokonana także w innym miejscu, jeżeli przemawia za tym charakter czynności lub szczególne okoliczności.</p>
-            <p class="flex info"><img class="info-icon" src="info.png" alt="Informacja"><span>Notariusz jest obowiązany udzielać stronom niezbędnych wyjaśnień dotyczących dokonywanej czynności notarialnej. Informacje dotyczące dokonywanej czynności notarialnej udzielane są przez notariuszy <strong>bezpłatnie</strong>.</span></p>
+            <p class="flex info"><img class="info-icon" src="img/info.png" alt="Informacja">Notariusz jest powołany do dokonywania czynności, którym strony są obowiązane lub pragną nadać formę notarialną. Czynności notarialnych notariusz dokonuje w kancelarii notarialnej. Czynność notarialna może być dokonana także w innym miejscu, jeżeli przemawia za tym charakter czynności lub szczególne okoliczności.</p>
+            <p class="flex info"><img class="info-icon" src="img/info.png" alt="Informacja"><span>Notariusz jest obowiązany udzielać stronom niezbędnych wyjaśnień dotyczących dokonywanej czynności notarialnej. Informacje dotyczące dokonywanej czynności notarialnej udzielane są przez notariuszy <strong>bezpłatnie</strong>.</span></p>
         </section>
         <section id="rodzaje-czynnosci" class="flex">
             <p>Kancelaria Notarialna Anny Wawszczak oferuje pełen zakres czynności notarialnych świadczonych zgodnie z ustawą z dnia 14 lutego 1991 roku Prawo o notariacie. Poniżej prezentujemy przykłady najczęściej dokonywanych przez notariusza czynności.</p>
             <div class="kratka">
                 <div class="flex tile-head">
-                    <img src="nieruchomosci.png" alt="Nieruchomości i prawa spółdzielcze">
+                    <img src="img/nieruchomosci.png" alt="Nieruchomości i prawa spółdzielcze">
                     <h3>Nieruchomości i prawa spółdzielcze</h3>
                 </div>
                 <ul>
@@ -196,7 +196,7 @@
             </div>
             <div class="kratka">
                 <div class="flex tile-head">
-                    <img src="malzenskie.png" alt="Sprawy majątkowe małżeńskie" />
+                    <img src="img/malzenskie.png" alt="Sprawy majątkowe małżeńskie" />
                     <h3>Sprawy majątkowe małżeńskie</h3>
                 </div>
                 <ul>
@@ -206,7 +206,7 @@
             </div>
             <div class="kratka">
                 <div class="flex tile-head">
-                    <img src="dziedziczenie.png" alt="Sprawy dotyczące dziedziczenia" />
+                    <img src="img/dziedziczenie.png" alt="Sprawy dotyczące dziedziczenia" />
                     <h3>Sprawy dotyczące dziedziczenia</h3>
                 </div>
                 <ul>
@@ -220,7 +220,7 @@
             </div>
             <div class="kratka">
                 <div class="flex tile-head">
-                    <img src="poswiadczenia.png" alt="Poświadczenia">
+                    <img src="img/poswiadczenia.png" alt="Poświadczenia">
                     <h3>Poświadczenia</h3>
                 </div>
                 <ul>
@@ -232,7 +232,7 @@
             </div>
             <div class="kratka">
                 <div class="flex tile-head">
-                    <img src="przedsiebiorcy.png" alt="Spółki i przedsiębiorcy">
+                    <img src="img/przedsiebiorcy.png" alt="Spółki i przedsiębiorcy">
                     <h3>Spółki i przedsiębiorcy</h3>
                 </div>
                 <ul>
@@ -247,7 +247,7 @@
             </div>
             <div class="kratka">
                 <div class="flex tile-head">
-                    <img src="inne.png" alt="Inne" />
+                    <img src="img/inne.png" alt="Inne" />
                     <h3>Inne</h3>
                 </div>
                 <ul>
@@ -274,7 +274,7 @@
         </section>
         <section>
             <h3>Opłaty</h3>
-            <p class="flex info"><img class="info-icon" src="info.png" alt="Informacja"><span>W kancelarii notarialnej nie obowiązuje stały cennik. Maksymalną wysokość wynagrodzenia notariusza określa rozporządzenia Ministra Sprawiedliwości z dnia 28 czerwca 2004 roku w sprawie maksymalnych stawek taksy notarialnej. Szczegółowe zestawienie kosztów związanych z planowaną czynnością można uzyskać podczas kontaktu z kancelarią - <a href="#" onclick="switchView('kontakt')">osobiście</a>, <a href="tel:775577898">telefonicznie</a> lub <a href="mailto:notariusz@spychalskiego13.pl">mailowo</a>.</span></p>
+            <p class="flex info"><img class="info-icon" src="img/info.png" alt="Informacja"><span>W kancelarii notarialnej nie obowiązuje stały cennik. Maksymalną wysokość wynagrodzenia notariusza określa rozporządzenia Ministra Sprawiedliwości z dnia 28 czerwca 2004 roku w sprawie maksymalnych stawek taksy notarialnej. Szczegółowe zestawienie kosztów związanych z planowaną czynnością można uzyskać podczas kontaktu z kancelarią - <a href="#" onclick="switchView('kontakt')">osobiście</a>, <a href="tel:775577898">telefonicznie</a> lub <a href="mailto:notariusz@spychalskiego13.pl">mailowo</a>.</span></p>
             <p>W zależności od rodzaju dokonywanej czynności notarialnej poniesiecie Państwo następujące opłaty:
             <ul>
                 <li>Podatek od czynności cywilnoprawnych, którego płatnikiem jest notariusz, tzn. że podczas umowy notariusz pobierze od Państwa podatek, a potem odprowadzi tę kwotę na konto właściwego organu podatkowego. Wysokość podatku oraz okoliczność jego wystąpienia przy dokonywaniu konkretnej czynności określa ustawa z dnia 9 września 2000 roku o podatku od czynności cywilnoprawnych.</li>
@@ -296,12 +296,12 @@
                 <h3>Kancelaria Notarialna Anna Wawszczak</h3>
                 <p><b>Opole, Zaodrze</b><p>
                 <p>ul. Spychalskiego 13 lok. 101A (1 piętro)</p>
-                <p><img src="phone.png" alt="Telefon"><a href="tel:775577898">77 55 77 898</a></p>
-                <p><img src="cell-phone.png" alt="Telefon komórkowy"><a href="tel:533987456">533 987 456</a></p>
-                <p><img src="email.png" alt="e-mail"><a href="mailto:notariusz@spychalskiego13.pl">notariusz@spychalskiego13.pl</a></p>
+                <p><img src="img/phone.png" alt="Telefon"><a href="tel:775577898">77 55 77 898</a></p>
+                <p><img src="img/cell-phone.png" alt="Telefon komórkowy"><a href="tel:533987456">533 987 456</a></p>
+                <p><img src="img/email.png" alt="e-mail"><a href="mailto:notariusz@spychalskiego13.pl">notariusz@spychalskiego13.pl</a></p>
                 <p>NIP: 754 299 28 52</p>
                 <p>REGON: 523 540 579</p>
-                <h3><img src="time.png" alt="Godziny otwarcia">Godziny otwarcia</h3>
+                <h3><img src="img/time.png" alt="Godziny otwarcia">Godziny otwarcia</h3>
                 <p>Poniedziałek - Piątek: 9:00-17:00</p>
                 <h4>Indywidualne terminy</h4>
                 <p>Skontaktuj się z kancelarią, aby umówić indywidualny termin poza godzinami, w których pracuje notariusz: sobota, wczesne godziny poranne lub późne wieczorne.</p>
@@ -323,7 +323,7 @@
             <p>Dojazd od centrum Opola możliwy jest przez Most Piastowski, przy którym krzyżują się ulice Piastowska i Katedralna. Dojazd od zachodniej strony, z dzielnic Zaodrze, Szczepanowice, osiedla Dambonia, oraz okolicznych miejscowości (Chmielowice, Chróścina, Mechnice, itd), umożliwia ulica Niemodlińska i Most Zaodrzański.</p>
             </p>
             <div id="mapa" class="flex">
-                <iframe title="Lokalizacja kancelarii notariusz Anny Wawszczak w Opolu" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2528.812804480113!2d17.9125785!3d50.6677361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471052fd9dc0543b%3A0x26b56dd919d20a2!2sStanis%C5%82awa%20Spychalskiego%2013%2C%2046-020%20Opole!5e0!3m2!1spl!2spl!4v1656449942574!5m2!1spl!2spl" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe title="Lokalizacja kancelarii notariusz Anny Wawszczak w Opolu" src="img/https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2528.812804480113!2d17.9125785!3d50.6677361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471052fd9dc0543b%3A0x26b56dd919d20a2!2sStanis%C5%82awa%20Spychalskiego%2013%2C%2046-020%20Opole!5e0!3m2!1spl!2spl!4v1656449942574!5m2!1spl!2spl" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <h4>Parkingi</h4>
             <p>W pobliżu kancelarii <b>nie obowiązuje strefa płatnego parkowania</b>, miejsca postojowe znajdują się w bezpośrednim pobliżu biurowca.</p>
@@ -343,27 +343,27 @@
             <div class="karuzela">
                 <div class="slajd przejscie">
                     <div class="numer-slajdu">1 / 5</div>
-                    <img src="info.png" style="width:100%; height:300px">
+                    <img src="img/info.png" style="width:100%; height:300px">
                     <div class="podpis-slajdu">Zdjęcie 1</div>
                 </div>
                 <div class="slajd przejscie">
                     <div class="numer-slajdu">2 / 5</div>
-                    <img src="favicon.png" style="width:100%; height:300px">
+                    <img src="img/favicon.png" style="width:100%; height:300px">
                     <div class="podpis-slajdu">Zdjęcie 2</div>
                 </div>
                 <div class="slajd przejscie">
                     <div class="numer-slajdu">3 / 5</div>
-                    <img src="logo.png" style="width:100%; height:300px">
+                    <img src="img/logo.png" style="width:100%; height:300px">
                     <div class="podpis-slajdu">Zdjęcie 3</div>
                 </div>
                 <div class="slajd przejscie">
                     <div class="numer-slajdu">4 / 5</div>
-                    <img src="favicon.png" style="width:100%; height:300px">
+                    <img src="img/favicon.png" style="width:100%; height:300px">
                     <div class="podpis-slajdu">Zdjęcie 4</div>
                 </div>
                 <div class="slajd przejscie">
                     <div class="numer-slajdu">5 / 5</div>
-                    <img src="logo.png" style="width:100%; height:300px">
+                    <img src="img/logo.png" style="width:100%; height:300px">
                     <div class="podpis-slajdu">Zdjęcie 5</div>
                 </div>
                 <a class="poprzedni-slajd" onclick="zmianaSlajdu(-1)">&#10094;</a>
