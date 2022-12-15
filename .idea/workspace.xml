@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9937761a-ade0-4c24-a098-78a7f0525521" name="Changes" comment="">
+    <list default="true" id="9937761a-ade0-4c24-a098-78a7f0525521" name="Changes" comment="Struktura">
       <change afterPath="$PROJECT_DIR$/img/panorama.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/img/panorama.webp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/strony/dokumenty.html" afterDir="false" />
@@ -136,7 +136,7 @@
       <workItem from="1669640732368" duration="5815000" />
       <workItem from="1669811664870" duration="1965000" />
       <workItem from="1670921888052" duration="1999000" />
-      <workItem from="1671108107908" duration="3668000" />
+      <workItem from="1671108107908" duration="4918000" />
     </task>
     <task id="LOCAL-00007" summary="Hero section, wyrównania, cieniowanie">
       <created>1669206519974</created>
@@ -173,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671029574274</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Struktura">
+      <created>1671113545985</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1671113545985</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,6 +207,7 @@
     <MESSAGE value="Kolory nagłówków" />
     <MESSAGE value="Hero" />
     <MESSAGE value="Messenger" />
-    <option name="LAST_COMMIT_MESSAGE" value="Messenger" />
+    <MESSAGE value="Struktura" />
+    <option name="LAST_COMMIT_MESSAGE" value="Struktura" />
   </component>
 </project>
