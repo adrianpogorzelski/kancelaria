@@ -90,6 +90,7 @@ nav {
 
 nav ul {
     float: right;
+    margin-right: 10px;
 }
 
 .przycisk-menu {
@@ -97,22 +98,14 @@ nav ul {
     padding: 1em;
     text-align:center;
     font-weight: bold;
-    height: 2em;
     display: flex;
     align-items: center;
 }
-
-/*
-.przycisk-menu:first-child {
-    border-left: none;
-}
- */
 
 .przycisk-menu:hover {
     background-color: rgb(var(--jasny-niebieski));
     border-radius: 10px;
     cursor: pointer;
-    border-bottom: 1px solid white;
 }
 
 #mobile-menu {
@@ -131,7 +124,7 @@ main a {
 }
 
 article {
-    scroll-margin-top:15em;
+    scroll-margin-top:16em;
     background-color: white;
 }
 
