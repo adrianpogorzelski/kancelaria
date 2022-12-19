@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9937761a-ade0-4c24-a098-78a7f0525521" name="Changes" comment="Dodano najem okazjonalny&#10;Usunięto wszystkie nieużywane ukryte elementy strony">
-      <change afterPath="$PROJECT_DIR$/strony/najem-okazjonalny.html" afterDir="false" />
+    <list default="true" id="9937761a-ade0-4c24-a098-78a7f0525521" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/panorama.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skrypt.js" beforeDir="false" afterPath="$PROJECT_DIR$/skrypt.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/strony/czynnosci.html" beforeDir="false" afterPath="$PROJECT_DIR$/strony/czynnosci.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/strony/dokumenty.html" beforeDir="false" afterPath="$PROJECT_DIR$/strony/dokumenty.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/strony/kontakt.html" beforeDir="false" afterPath="$PROJECT_DIR$/strony/kontakt.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/strony/najem-okazjonalny.html" beforeDir="false" afterPath="$PROJECT_DIR$/strony/najem-okazjonalny.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/strony/platnosci.html" beforeDir="false" afterPath="$PROJECT_DIR$/strony/platnosci.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,17 +43,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/a.pogorzelski/IdeaProjects/kancelaria/strony",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/a.pogorzelski/IdeaProjects/kancelaria/strony&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/strony" />
@@ -69,6 +69,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.index.html" />
@@ -180,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671114741469</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Dodano najem okazjonalny&#10;Usunięto wszystkie nieużywane ukryte elementy strony">
+      <created>1671442807767</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1671442807767</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

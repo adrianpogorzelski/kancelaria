@@ -16,7 +16,7 @@ html {
 body {
     height:100%;
     overflow:auto;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     margin:0;
     width:  100%;
 }
@@ -70,15 +70,6 @@ h1 {
     font-size: 20px
 }
 
-#godziny-kontakt {
-    width:350px;
-    justify-content:space-between;
-    margin-right:var(--margines-maly);
-    margin-top:auto;
-    margin-bottom:auto;
-    font-weight:700
-}
-
 #godziny-kontakt a {
     text-decoration: none;
 }
@@ -91,6 +82,7 @@ nav {
 nav ul {
     float: right;
     margin-right: 10px;
+    list-style: none;
 }
 
 .przycisk-menu {
