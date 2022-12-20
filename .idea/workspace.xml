@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9937761a-ade0-4c24-a098-78a7f0525521" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/strony/pytania-i-odpowiedzi.html" afterDir="false" />
+    <list default="true" id="9937761a-ade0-4c24-a098-78a7f0525521" name="Changes" comment="Poprawiona nawigacja&#10;Dodano Pytania">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/strony/czynnosci.html" beforeDir="false" afterPath="$PROJECT_DIR$/strony/czynnosci.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/strony/dokumenty.html" beforeDir="false" afterPath="$PROJECT_DIR$/strony/dokumenty.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/strony/kontakt.html" beforeDir="false" afterPath="$PROJECT_DIR$/strony/kontakt.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/strony/najem-okazjonalny.html" beforeDir="false" afterPath="$PROJECT_DIR$/strony/najem-okazjonalny.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/strony/platnosci.html" beforeDir="false" afterPath="$PROJECT_DIR$/strony/platnosci.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/godlo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/strony/pytania.html" beforeDir="false" afterPath="$PROJECT_DIR$/strony/pytania.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671442807767</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Poprawiona nawigacja&#10;Dodano Pytania">
+      <created>1671527647820</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1671527647820</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,6 +220,7 @@
     <MESSAGE value="Messenger" />
     <MESSAGE value="Struktura" />
     <MESSAGE value="Dodano najem okazjonalny&#10;Usunięto wszystkie nieużywane ukryte elementy strony" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dodano najem okazjonalny&#10;Usunięto wszystkie nieużywane ukryte elementy strony" />
+    <MESSAGE value="Poprawiona nawigacja&#10;Dodano Pytania" />
+    <option name="LAST_COMMIT_MESSAGE" value="Poprawiona nawigacja&#10;Dodano Pytania" />
   </component>
 </project>

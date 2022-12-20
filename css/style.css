@@ -182,19 +182,14 @@ p {
     padding-right: 1em;
 }
 
-#galeria {
-    flex-wrap:wrap;
-    justify-content:center;
+details {
+    border: 1px solid rgb(var(--granatowy));
+    border-radius: var(--border-radius);
+    box-shadow: 1px 1px gray;
+    margin: 1em 0;
+    padding: 1em;
 }
 
-#galeria img {
-    width:40%;
-    max-width: 300px;
-    height:auto;
-    border:1px solid #000;
-    margin:1em;
-    padding:1em
-}
 #kontakt section {
     justify-content:space-between
 }
