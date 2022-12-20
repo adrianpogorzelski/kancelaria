@@ -88,10 +88,13 @@ nav ul {
 .przycisk-menu {
     list-style-type:none;
     padding: 1em;
-    text-align:center;
     font-weight: bold;
     display: flex;
     align-items: center;
+    justify-content: center;
+    text-align:center;
+    height: 2em;
+    width: 100px;
 }
 
 .przycisk-menu:hover {
@@ -128,6 +131,11 @@ section {
     padding: 0 1em;
 }
 
+h2 {
+    padding: 0.5em 0;
+    border-bottom: 1px solid rgb(var(--granatowy));
+}
+
 p {
     color: black;
     text-align: justify;
@@ -150,13 +158,12 @@ p {
     font-weight: bolder;
 }
 
-.hero h2 {
-    font-size: 2em;
-    margin-top: 0.5em;
-}
-
 .hero img {
     width: 100%;
+}
+
+#hero-nazwa {
+    border-bottom: none;
 }
 
 .udogodnienia {
@@ -342,7 +349,7 @@ footer a,footer p {
     padding-left: 1em;
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1199px) {
     nav {
         top: 4em;
         width: 200px;
