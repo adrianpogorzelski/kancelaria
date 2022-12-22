@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9937761a-ade0-4c24-a098-78a7f0525521" name="Changes" comment="Pytania">
+    <list default="true" id="68bde836-661c-4aac-a15c-397ef6633b1c" name="Changes" comment="Poprawiona nawigacja&#10;Dodano Pytania">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/strony/dokumenty.html" beforeDir="false" afterPath="$PROJECT_DIR$/strony/dokumenty.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/strony/platnosci.html" beforeDir="false" afterPath="$PROJECT_DIR$/strony/platnosci.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/strony/pytania.html" beforeDir="false" afterPath="$PROJECT_DIR$/strony/pytania.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +61,19 @@
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Strona/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="kancelaria" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="kancelaria" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JavaScript Debug.index.html" />
@@ -117,7 +128,7 @@
       <updated>1668932592309</updated>
     </task>
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9937761a-ade0-4c24-a098-78a7f0525521" name="Changes" comment="Hero section, wyrównania, cieniowanie" />
+      <changelist id="68bde836-661c-4aac-a15c-397ef6633b1c" name="Changes" comment="Poprawiona nawigacja&#10;Dodano Pytania" />
       <created>1669205711646</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -128,6 +139,7 @@
       <workItem from="1670921888052" duration="1999000" />
       <workItem from="1671108107908" duration="7557000" />
       <workItem from="1671611369435" duration="2208000" />
+      <workItem from="1671703152311" duration="461000" />
     </task>
     <task id="LOCAL-00007" summary="Hero section, wyrównania, cieniowanie">
       <created>1669206519974</created>
