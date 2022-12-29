@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="68bde836-661c-4aac-a15c-397ef6633b1c" name="Changes" comment="Poprawiona nawigacja&#10;Dodano Pytania">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+    <list default="true" id="9937761a-ade0-4c24-a098-78a7f0525521" name="Changes" comment="Pytania">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,7 +19,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="prod" />
+        <entry key="$PROJECT_DIR$" value="stage" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -80,6 +79,7 @@
         <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
   </component>
@@ -128,7 +128,7 @@
       <updated>1668932592309</updated>
     </task>
     <task active="true" id="Default" summary="Default task">
-      <changelist id="68bde836-661c-4aac-a15c-397ef6633b1c" name="Changes" comment="Poprawiona nawigacja&#10;Dodano Pytania" />
+      <changelist id="9937761a-ade0-4c24-a098-78a7f0525521" name="Changes" comment="Pytania" />
       <created>1669205711646</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -140,6 +140,8 @@
       <workItem from="1671108107908" duration="7557000" />
       <workItem from="1671611369435" duration="2208000" />
       <workItem from="1671703152311" duration="461000" />
+      <workItem from="1671788291240" duration="420000" />
+      <workItem from="1672231266623" duration="4382000" />
     </task>
     <task id="LOCAL-00007" summary="Hero section, wyrównania, cieniowanie">
       <created>1669206519974</created>
@@ -234,6 +236,7 @@
     <MESSAGE value="Struktura" />
     <MESSAGE value="Dodano najem okazjonalny&#10;Usunięto wszystkie nieużywane ukryte elementy strony" />
     <MESSAGE value="Poprawiona nawigacja&#10;Dodano Pytania" />
-    <option name="LAST_COMMIT_MESSAGE" value="Poprawiona nawigacja&#10;Dodano Pytania" />
+    <MESSAGE value="Mapa" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mapa" />
   </component>
 </project>
