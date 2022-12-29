@@ -46,9 +46,8 @@
     <article id="o-kancelarii">
         <section class="hero">
             <picture>
-                <source srcset="img/panorama.webp">
-                <source media="(max-width:480px)" srcset="img/panorama-480px.webp">
-                <img  alt="Opole - Zaodrze">
+                <source media="(min-width: 481px)" srcset="img/panorama.webp" alt="Opole - Zaodrze">
+                <img src="img/panorama-480px.webp" alt="Opole - Zaodrze">
             </picture>
         </section>
         <section>
@@ -73,33 +72,6 @@
         </section>
     </article>
 </main>
-<!-- Messenger Wtyczka czatu Code -->
-<div id="fb-root"></div>
-    <!-- Your Wtyczka czatu code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
-    <script>
-        var chatbox = document.getElementById('fb-customer-chat');
-        chatbox.setAttribute("page_id", "113065188301994");
-        chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
-    <!-- Your SDK code -->
-    <script>
-        window.fbAsyncInit = function() {
-            FB.init({
-                xfbml            : true,
-                version          : 'v15.0'
-            });
-        };
-
-        (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = 'https://connect.facebook.net/pl_PL/sdk/xfbml.customerchat.js';
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
 <footer class="flex dark">
     <p><a href="https://www.flaticon.com/authors/freepik" title="Icons attribution">All icons created by Freepik - Flaticon</a></p>
 </footer>

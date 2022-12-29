@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9937761a-ade0-4c24-a098-78a7f0525521" name="Changes" comment="Pytania">
+    <list default="true" id="9937761a-ade0-4c24-a098-78a7f0525521" name="Changes" comment="SEO i obrazek mobilny">
+      <change afterPath="$PROJECT_DIR$/img/panorama-480px.webp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +21,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="stage" />
+        <entry key="$PROJECT_DIR$" value="prod" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -141,7 +143,7 @@
       <workItem from="1671611369435" duration="2208000" />
       <workItem from="1671703152311" duration="461000" />
       <workItem from="1671788291240" duration="420000" />
-      <workItem from="1672231266623" duration="4382000" />
+      <workItem from="1672231266623" duration="4998000" />
     </task>
     <task id="LOCAL-00007" summary="Hero section, wyrównania, cieniowanie">
       <created>1669206519974</created>
@@ -206,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671527647820</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="SEO i obrazek mobilny">
+      <created>1672320259228</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1672320259228</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,6 +246,7 @@
     <MESSAGE value="Dodano najem okazjonalny&#10;Usunięto wszystkie nieużywane ukryte elementy strony" />
     <MESSAGE value="Poprawiona nawigacja&#10;Dodano Pytania" />
     <MESSAGE value="Mapa" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mapa" />
+    <MESSAGE value="SEO i obrazek mobilny" />
+    <option name="LAST_COMMIT_MESSAGE" value="SEO i obrazek mobilny" />
   </component>
 </project>
