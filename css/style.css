@@ -86,7 +86,8 @@ nav ul {
 }
 
 .przycisk-menu {
-    list-style-type:none;
+    font-size: 14px;
+    letter-spacing: 1px;
     padding: 1em;
     font-weight: bold;
     display: flex;
@@ -94,7 +95,7 @@ nav ul {
     justify-content: center;
     text-align:center;
     height: 2em;
-    width: 100px;
+    width: 80px;
 }
 
 .przycisk-menu:hover {
@@ -180,6 +181,10 @@ p {
     height: 1em;
     width: auto;
     padding-right: 1em;
+}
+
+picture {
+    width: 800px;
 }
 
 details {
