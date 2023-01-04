@@ -206,6 +206,10 @@ details {
     text-decoration: none;
 }
 
+address {
+    font-style: normal;
+}
+
 form {
     /* width: 60% !important; */
     width: 500px;
