@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bf94b446-c9d0-494b-9fca-a7c8c95d8a89" name="Changes" comment="Google seo">
-      <change afterPath="$PROJECT_DIR$/strony/postepowanie-spadkowe.html" afterDir="false" />
+    <list default="true" id="bf94b446-c9d0-494b-9fca-a7c8c95d8a89" name="Changes" comment="Postępowanie spadkowe">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapa.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mapa.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/strony/czynnosci.html" beforeDir="false" afterPath="$PROJECT_DIR$/strony/czynnosci.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/strony/postepowanie-spadkowe.html" beforeDir="false" afterPath="$PROJECT_DIR$/strony/postepowanie-spadkowe.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +42,14 @@
     </recent_temporary>
   </component>
   <component name="TaskManager">
+    <task id="LOCAL-00001" summary="Postępowanie spadkowe">
+      <created>1672917177425</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1672917177425</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -56,5 +62,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Postępowanie spadkowe" />
+    <option name="LAST_COMMIT_MESSAGE" value="Postępowanie spadkowe" />
   </component>
 </project>
