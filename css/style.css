@@ -119,12 +119,11 @@ main a {
     color: rgb(var(--jasny-niebieski))
 }
 
-article {
+section {
     scroll-margin-top:16em;
-    background-color: white;
 }
 
-section {
+article {
     max-width: 1024px;
     margin: 0 auto;
     background-color: rgba(255, 255, 255, 0.2);
@@ -143,28 +142,43 @@ p {
 }
 
 .hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url("../img/panorama.webp");
     background-size: cover;
-    background-position-y: 50%;
-    max-width:  100% !important;
-    padding: 0;
     margin-top: -1em;
-}
-
-.hero section {
-    justify-content: center;
-}
-
-.hero * {
-    color: white;
-    font-weight: bolder;
-}
-
-.hero img {
-    width: 100%;
+    background-position-y: 50%;
+    margin-bottom: 3em;
 }
 
 #hero-nazwa {
+    text-align: center;
+    color: white;
+    padding: 3em 0;
+}
+
+#hero-nazwa h2 {
+    font-size: 42px;
     border-bottom: none;
+}
+
+#hero-nazwa h3 {
+    font-size: 36px;
+}
+
+#hero-nazwa h4 {
+    font-size: 24px;
+}
+
+#hero-nazwa div {
+    justify-content: center;
+}
+
+#hero-nazwa div a {
+    padding: 0 1em;
+    color: white;
+}
+
+.mobile-break {
+    display: none;
 }
 
 .udogodnienia {
@@ -173,8 +187,6 @@ p {
 
 .udogodnienia li {
     list-style-type: none;
-    /* list-style: none; */
-    /* padding:  0; */
 }
 
 .udogodnienia img, #adres img {
@@ -383,6 +395,18 @@ footer a,footer p {
         padding: 1em;
     }
 
+    #hero-nazwa h2 {
+        font-size: 36px;
+    }
+
+    #hero-nazwa h3 {
+        font-size: 30px;
+    }
+
+    #hero-nazwa h4 {
+        font-size: 24px;
+    }
+
     .formularz-opcja {
         width: 90% !important;
         padding: 2% 5%;
@@ -398,6 +422,26 @@ footer a,footer p {
 }
 
 @media only screen and (max-width: 748px) {
+    .mobile-break {
+        display: block;
+    }
+
+    #hero-nazwa h2 {
+        font-size: 30px;
+    }
+
+    #hero-nazwa h3 {
+        font-size: 24px;
+    }
+
+    #hero-nazwa h4 {
+        font-size: 18px;
+    }
+
+    #hero-nazwa div {
+        flex-direction: column;
+    }
+
     .kratka {
         width: 100%;
     }
