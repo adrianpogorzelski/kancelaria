@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bf94b446-c9d0-494b-9fca-a7c8c95d8a89" name="Changes" comment="">
+    <list default="true" id="bf94b446-c9d0-494b-9fca-a7c8c95d8a89" name="Changes" comment="Poprawiona nawigacja&#10;Dodano Pytania">
+      <change afterPath="$PROJECT_DIR$/custom.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -35,12 +45,16 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/a.pogorzelski/IdeaProjects/kancelaria/strony&quot;
+    &quot;last_opened_file_path&quot;: &quot;/Users/a.pogorzelski/IdeaProjects/kancelaria/strony&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/strony" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pogor\OneDrive\Desktop\Kancelaria\Strona" />
     </key>
   </component>
   <component name="RunManager">
@@ -79,6 +93,7 @@
       <updated>1673863584234</updated>
       <workItem from="1673863585628" duration="779000" />
       <workItem from="1673949775789" duration="13138000" />
+      <workItem from="1678386104064" duration="11034000" />
     </task>
     <option name="localTasksCounter" value="3" />
     <servers />
