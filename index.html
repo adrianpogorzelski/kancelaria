@@ -58,7 +58,7 @@
 
 <!-- *** BODY *** -->
 <body>
-    <header class="fixed-top">
+    <header class="fixed-top border-bottom border-light">
         <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
@@ -75,11 +75,16 @@
                 <div class="collapse navbar-collapse justify-content-end" id="nav">
                     <ul class="navbar-nav">
                         <li class="nav-item"><a class="nav-link active" href="index.html">STRONA GŁÓWNA</a></li>
-                        <li class="nav-item"><a class="nav-link" href="strony/dokumenty.html">DOKUMENTY</a></li>
-                        <li class="nav-item"><a class="nav-link" href="strony/czynnosci.html">CZYNNOŚCI</a></li>
-                        <li class="nav-item"><a class="nav-link" href="strony/platnosci.html">PŁATNOŚCI</a></li>
-                        <li class="nav-item"><a class="nav-link" href="strony/pytania.html">FAQ</a></li>
-                        <li class="nav-item"><a class="nav-link" href="strony/kontakt.html">KONTAKT</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">CZYNNOŚCI</a>
+                            <ul class="dropdown-menu bg-light">
+                                <li><a class="dropdown-item" href="czynnosci/czynnosci.html">CZYNNOŚCI</a></li>
+                                <li><a class="dropdown-item" href="czynnosci/dokumenty.html">DOKUMENTY</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="platnosci.html">PŁATNOŚCI</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pytania.html">PYTANIA I ODPOWIEDZI</a></li>
+                        <li class="nav-item"><a class="nav-link" href="kontakt.html">KONTAKT</a></li>
                     </ul>
                 </div>
             </div>
@@ -87,8 +92,8 @@
     </header>
 
     <main>
-        <section id="hero" class="text-bg-dark text-center">
-            <div class="transparent-bg">
+        <section id="hero" class="text-bg-dark text-center mt-0">
+            <div class="transparent-bg py-5 mt-5">
                 <h2 class="display-2">Kancelaria Notarialna<br> Anna Wawszczak</h2>
                 <h3 class="display-4">Notariusz<br>Opole - Zaodrze</h3>
                 <address><p>ul. Stanisława Spychalskiego 13<br>lokal 101A (1 piętro)</p></address>
@@ -100,18 +105,18 @@
             </div>
         </section>
 
-        <section class="container">
-            <h2>Szanowni Państwo,<br>witamy na stronie kancelarii Notariusz Anny Wawszczak</h2>
+        <section class="container mt-3">
+            <h4>Szanowni Państwo,<br>witamy na stronie kancelarii Notariusz Anny Wawszczak!</h4>
             <p>Oferta kancelarii skierowana jest do osób fizycznych, osób prawnych i innych podmiotów, które poszukują pomocy notariusza.</p>
             <p>Kancelaria mieści się w Opolu, przy ulicy Stanisława Spychalskiego 13/101A, na pierwszym piętrze budynku (opolskie Zaodrze, budynek położony pomiędzy Odrą, a Kanałem Ulgi). Położenie kancelarii zapewnia wygodny dojazd z Zaodrza, Wójtowej Wsi, Szczepanowic oraz pobliskich miejscowości. W okolicach kancelarii nie obowiązuje płatna strefa parkowania, a bezpośrednio przed budynkiem znajduje się przystanek komunikacji miejskiej (przystanek Spychalskiego).</p>
-            <picture>
+            <picture class="text-center">
                 <source media="(min-width: 481px)" srcset="img/budynek.webp" alt="Budynek przy Spychalskiego 13 w Opolu, w którym znajduje się kancelaria notariusz Anny Wawszczak">
-                <img width="100%" srcset="img/budynek-480.webp" alt="Budynek przy Spychalskiego 13 w Opolu, w którym znajduje się kancelaria notariusz Anny Wawszczak">
+                <img class="img-fluid mx-auto d-block" srcset="img/budynek-480.webp" alt="Budynek przy Spychalskiego 13 w Opolu, w którym znajduje się kancelaria notariusz Anny Wawszczak">
             </picture>
             <p>Jesteśmy do Państwa dyspozycji od poniedziałku do piątku w godzinach 9:00-17:00.  Po indywidualnym uzgodnieniu możliwe jest umówienie spotkania z notariuszem w soboty, dni wolne od pracy lub innych niż wskazane godzinach. W sytuacjach tego wymagających, notariusz może dokonać czynności z dojadem do domu.</p>
             <picture>
                 <source media="(min-width: 481px)" srcset="img/sekretariat.webp" alt="Wejście i sekretariat kancelarii notariusz Anny Wawszczak">
-                <img width="100%" srcset="img/sekretariat-480.webp" alt="Wejście i sekretariat kancelarii notariusz Anny Wawszczak">
+                <img class="img-fluid mx-auto d-block" srcset="img/sekretariat-480.webp" alt="Wejście i sekretariat kancelarii notariusz Anny Wawszczak">
             </picture>
             <p>Notariusz udziela bezpłatnych informacji dotyczących dokonywanych czynności notarialnych, telefonicznie, za pomocą poczty elektronicznej lub podczas spotkania w siedzibie Kancelarii.</p>
             <p>Czynności notarialne polegające na poświadczaniu własnoręczności podpisu. zgodności kopii z okazanym dokumentem dokonywane są „od ręki”, podczas Państwa wizyty. Pozostałe czynności, którym strony obowiązane są nadać formę aktu notarialnego, dokonywane są po uprzednim telefonicznym, elektronicznym lub osobistym uzgodnieniu terminów oraz dostarczeniu wymaganych dokumentów.</p>
@@ -121,8 +126,9 @@
                 <li><img class="icon" src="img/credit-card.png" alt="Płatność kartą">możliwość płatności kartami płatniczymi, BLIKiem</li>
                 <li><img class="icon" src="img/money.png" alt="Liczarka do banknotów">liczarkę do banknotów</li>
             </ul>
-            <p>Zapraszam,</p>
-            <p><b>Anna Wawszczak</b><br>Notariusz w Opolu</p>
+            <p>Zapraszam,<br>
+            <b>Anna Wawszczak</b>
+            <br>Notariusz w Opolu</p>
         </section>
 
     <!-- Messenger Wtyczka czatu Code -->
@@ -151,10 +157,12 @@
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     </script>
+    </main>
 
     <footer class="navbar bg-primary navbar-dark">
-        <div class="container-fluid">
-            <a class="text-white" href="https://www.flaticon.com/authors/freepik" title="Icons attribution">All icons created by Freepik - Flaticon</a>
+        <div class="container-fluid text-center">
+            <p class="text-white mx-auto">&copy; 2023 Kancelaria Notarialna Anna Wawszczak</p>
+            <p class="text-white mx-auto">All icons created by <a class="text-white" href="https://www.flaticon.com/authors/freepik" title="Icons attribution">Freepik - Flaticon</a></p>
         </div>
     </footer>
 </body>

@@ -6,12 +6,9 @@
   background-color: rgb(var(--primary)) !important;
 }
 
-header {
-  border-bottom: 1px solid white
-}
-
 #logo {
   width: 3rem;
+  height: auto
 }
 
 #contact a {
@@ -26,10 +23,6 @@ header {
   padding-left: 0.1rem
 }
 
-main {
-  margin-top: 4rem
-}
-
 #hero {
   background-image: url('img/panorama.webp');
   background-size: cover;
@@ -37,9 +30,13 @@ main {
 
 .transparent-bg {
   background-color: rgba(0,0,0,0.5);
-  padding: 2rem 0;
 }
 
 #hero a {
   color: white
+}
+
+section:first-of-type {
+  margin-top: 4rem;
+  padding-top: 1rem
 }
