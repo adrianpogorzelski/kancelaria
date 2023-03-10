@@ -33,7 +33,11 @@ main {
 #hero {
   background-image: url('img/panorama.webp');
   background-size: cover;
-  padding: 3rem 0;
+}
+
+.transparent-bg {
+  background-color: rgba(0,0,0,0.5);
+  padding: 2rem 0;
 }
 
 #hero a {
