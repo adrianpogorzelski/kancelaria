@@ -1,9 +1,5 @@
-:root {
-  --primary: 20, 50, 100;
-}
-
 .bg-primary {
-  background-color: rgb(var(--primary)) !important;
+  background-color: rgb(20, 50, 100) !important;
 }
 
 #logo {
@@ -12,7 +8,7 @@
 }
 
 #contact a {
-  font-size: 0.75rem;
+  font-size: 12px;
   color: white
 }
 

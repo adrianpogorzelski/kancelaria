@@ -61,25 +61,43 @@
     <header class="fixed-top border-bottom border-light">
         <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand m-0" href="index.html">
                     <img id="logo" src="img/logo.png" alt="Kancelaria Notarialna Anna Wawszczak: logo">
                 </a>
-                <div id="contact" class="col justify-content-start">
-                    <a class="row align-items-end" href="tel:775577898"><img class="icon" src="img/phone-white.png" alt="Telefon">77 55 77 898</a>
-                    <a class="row align-items-end" href="tel:533987456"><img class="icon" src="img/cell-phone-white.png" alt="Telefon komórkowy">533 987 456</a>
-                    <a class="row align-items-end" href="mailto:notariusz@spychalskiego13.pl"><img class="icon" src="img/email-white.png" alt="e-mail">notariusz@spychalskiego13.pl</a>
+                <div id="contact" class="col justify-content-start ps-1">
+                    <div class="text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                        </svg>
+                        <a href="tel:775577898">77 55 77 898</a>
+                    </div>
+                    <div class="text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-phone-fill" viewBox="0 0 16 16">
+                            <path d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0z"/>
+                        </svg>
+                        <a href="tel:533987456">533 987 456</a>
+                    </div>
+                    <div class="text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                        </svg>
+                        <a href="mailto:notariusz@spychalskiego13.pl">notariusz@spychalskiego13.pl</a>
+                    </div>
                 </div>
                 <button class="navbar-toggler justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="nav">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link active" href="index.html">STRONA GŁÓWNA</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">CZYNNOŚCI</a>
                             <ul class="dropdown-menu bg-light">
-                                <li><a class="dropdown-item" href="czynnosci/czynnosci.html">CZYNNOŚCI</a></li>
                                 <li><a class="dropdown-item" href="czynnosci/dokumenty.html">DOKUMENTY</a></li>
+                                <li><a class="dropdown-item" href="czynnosci/czynnosci.html">ZAKRES CZYNNOŚCI</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><h6 class="dropdown-header">Informacje o czynnościach</h6></li>
+                                <li><a class="dropdown-item" href="czynnosci/najem-okazjonalny.html">NAJEM OKAZJONALNY</a></li>
+                                <li><a class="dropdown-item" href="czynnosci/postepowanie-spadkowe.html">POSTĘPOWANIE SPADKOWE</a></li>
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="platnosci.html">PŁATNOŚCI</a></li>
@@ -92,15 +110,30 @@
     </header>
 
     <main>
-        <section id="hero" class="text-bg-dark text-center mt-0">
+        <section id="hero" class="text-bg-dark text-center mt-3">
             <div class="transparent-bg py-5 mt-5">
                 <h2 class="display-2">Kancelaria Notarialna<br> Anna Wawszczak</h2>
-                <h3 class="display-4">Notariusz<br>Opole - Zaodrze</h3>
-                <address><p>ul. Stanisława Spychalskiego 13<br>lokal 101A (1 piętro)</p></address>
+                <h3 class="lead display-6">Notariusz<br>Opole - Zaodrze</h3>
+                <address class="lead">ul. Stanisława Spychalskiego 13<br>lokal 101A (1 piętro)</address>
                 <div class="d-flex flex-column">
-                    <a href="tel:775577898">Tel: 77 55 77 898</a>
-                    <a href="tel:533987456">Kom: 533 987 456</a>
-                    <a href="mailto:notariusz@spychalskiego13.pl">e-mail: notariusz@spychalskiego13.pl</a>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                        </svg>
+                        <a href="tel:775577898">77 55 77 898</a>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone-fill" viewBox="0 0 16 16">
+                            <path d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0z"/>
+                        </svg>
+                        <a href="tel:533987456">533 987 456</a>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                        </svg>
+                        <a href="mailto:notariusz@spychalskiego13.pl">notariusz@spychalskiego13.pl</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -110,12 +143,12 @@
             <p>Oferta kancelarii skierowana jest do osób fizycznych, osób prawnych i innych podmiotów, które poszukują pomocy notariusza.</p>
             <p>Kancelaria mieści się w Opolu, przy ulicy Stanisława Spychalskiego 13/101A, na pierwszym piętrze budynku (opolskie Zaodrze, budynek położony pomiędzy Odrą, a Kanałem Ulgi). Położenie kancelarii zapewnia wygodny dojazd z Zaodrza, Wójtowej Wsi, Szczepanowic oraz pobliskich miejscowości. W okolicach kancelarii nie obowiązuje płatna strefa parkowania, a bezpośrednio przed budynkiem znajduje się przystanek komunikacji miejskiej (przystanek Spychalskiego).</p>
             <picture class="text-center">
-                <source media="(min-width: 481px)" srcset="img/budynek.webp" alt="Budynek przy Spychalskiego 13 w Opolu, w którym znajduje się kancelaria notariusz Anny Wawszczak">
+                <source media="(min-width: 481px)" srcset="img/budynek.webp">
                 <img class="img-fluid mx-auto d-block" srcset="img/budynek-480.webp" alt="Budynek przy Spychalskiego 13 w Opolu, w którym znajduje się kancelaria notariusz Anny Wawszczak">
             </picture>
             <p>Jesteśmy do Państwa dyspozycji od poniedziałku do piątku w godzinach 9:00-17:00.  Po indywidualnym uzgodnieniu możliwe jest umówienie spotkania z notariuszem w soboty, dni wolne od pracy lub innych niż wskazane godzinach. W sytuacjach tego wymagających, notariusz może dokonać czynności z dojadem do domu.</p>
             <picture>
-                <source media="(min-width: 481px)" srcset="img/sekretariat.webp" alt="Wejście i sekretariat kancelarii notariusz Anny Wawszczak">
+                <source media="(min-width: 481px)" srcset="img/sekretariat.webp">
                 <img class="img-fluid mx-auto d-block" srcset="img/sekretariat-480.webp" alt="Wejście i sekretariat kancelarii notariusz Anny Wawszczak">
             </picture>
             <p>Notariusz udziela bezpłatnych informacji dotyczących dokonywanych czynności notarialnych, telefonicznie, za pomocą poczty elektronicznej lub podczas spotkania w siedzibie Kancelarii.</p>
