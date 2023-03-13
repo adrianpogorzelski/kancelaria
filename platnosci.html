@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Z jakimi kosztami wiążą się czynności notarialne i w jaki sposób można uregulować płatność - Kancelaria Notarialna Anna Wawszczak, Opole - Zaodrze, ulica Stanisława Spychalskiego 13, lokal 101A">
     <title>Płatności i koszty czynności notarialnych - Kancelaria Notarialna Anna Wawszczak</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="custom.css">
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
 </head>
 <!-- Google tag (gtag.js) -->
@@ -18,58 +20,110 @@
   gtag('config', 'G-XMWL5N4B40');
 </script>
 <body>
-<header class="flex dark">
-    <div id="logo-nazwa" class="flex">
-        <a href="index.html"><img id="logo" src="img/logo.png" alt="Logo kancelarii"></a>
-        <div id="nazwa" class="flex">
-            <h1>Kancelaria Notarialna Anna Wawszczak</h1>
-            <div class="flex">
-                <span><img src="img/phone-white.png" alt="Telefon"><a href="tel:775577898">77 55 77 898</a></span>
-                <span><img src="img/cell-phone-white.png" alt="Telefon komórkowy"><a href="tel:533987456">533 987 456</a></span>
-                <span><img src="img/email-white.png" alt="e-mail"><a href="mailto:notariusz@spychalskiego13.pl">notariusz@spychalskiego13.pl</a></span>
+<header class="fixed-top border-bottom border-light">
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand m-0" href="index.html">
+                <img id="logo" src="img/logo.png" alt="Kancelaria Notarialna Anna Wawszczak: logo">
+            </a>
+            <div id="contact" class="col justify-content-start ps-1">
+                <div class="text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                    </svg>
+                    <a href="tel:775577898">77 55 77 898</a>
+                </div>
+                <div class="text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-phone-fill" viewBox="0 0 16 16">
+                        <path d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0z"/>
+                    </svg>
+                    <a href="tel:533987456">533 987 456</a>
+                </div>
+                <div class="text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                    </svg>
+                    <a href="mailto:notariusz@spychalskiego13.pl">notariusz@spychalskiego13.pl</a>
+                </div>
+            </div>
+            <button class="navbar-toggler justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">CZYNNOŚCI</a>
+                        <ul class="dropdown-menu bg-light">
+                            <li><a class="dropdown-item" href="czynnosci/dokumenty.html">DOKUMENTY</a></li>
+                            <li><a class="dropdown-item" href="czynnosci/czynnosci.html">ZAKRES CZYNNOŚCI</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><h6 class="dropdown-header">Informacje o czynnościach</h6></li>
+                            <li><a class="dropdown-item" href="czynnosci/najem-okazjonalny.html">NAJEM OKAZJONALNY</a></li>
+                            <li><a class="dropdown-item" href="czynnosci/postepowanie-spadkowe.html">POSTĘPOWANIE SPADKOWE</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="platnosci.html">PŁATNOŚCI</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pytania.html">PYTANIA I ODPOWIEDZI</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kontakt.html">KONTAKT</a></li>
+                </ul>
             </div>
         </div>
-    </div>
-    <nav>
-        <ul class="flex">
-            <li><a class="przycisk-menu" href="index.html">STRONA GŁÓWNA</a></li>
-            <li id="do-dokumenty" > <a class="przycisk-menu" href="dokumenty.html">DOKUMENTY</a></li>
-            <li id="do-czynnosci"> <a class="przycisk-menu" href="czynnosci.html">CZYNNOŚCI</a></li>
-            <li id="do-platnosci"><a class="przycisk-menu" href="platnosci.html">PŁATNOŚCI</a></li>
-            <li><a class="przycisk-menu" href="pytania.html">PYTANIA I ODPOWIEDZI</a></li>
-            <li id="do-kontakt"><a class="przycisk-menu" href="kontakt.html">KONTAKT</a></li>
-        </ul>
     </nav>
-    <img src="img/menu.png" alt="Menu" id="mobile-menu" onclick="mobileMenuToggle()">
 </header>
 <main>
-    <article id="platnosci">
-        <section>
-            <h2>Płatności</h2>
+    <section class="text-bg-secondary border-bottom bg-gradient text-center">
+        <div class="py-5">
+            <h2 class="display-2">Płatności</h2>
+        </div>
+    </section>
+    <section class="container mb-5">
+        <nav class="mt-2" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Strona główna</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Płatności</li>
+            </ol>
+        </nav>
+        <article>
             <h3>Numery rachunków</h3>
             <p>Rachunek do wpłat podatków, opłat sądowych i wynagrodzenia notariusza:</p>
             <p>ING Bank Śląski S.A. - <b>75 1050 1575 1000 0097 6817 2711</b></p>
             <p>Rachunek depozytowy (wyłącznie do wpłaty środków na depozyt notarialny związany z dokonywaną czynnością):
             <p>ING Bank Śląski S.A. - <b>04 1050 1575 1000 0097 6910 2667</b></p>
-        </section>
-        <section>
+        </article>
+        <article>
             <h3>Opłaty</h3>
-            <p class="flex info"><img class="info-icon" src="img/info.png" alt="Informacja"><span>W kancelarii notarialnej nie obowiązuje stały cennik. Maksymalną wysokość wynagrodzenia notariusza określa rozporządzenia Ministra Sprawiedliwości z dnia 28 czerwca 2004 roku w sprawie maksymalnych stawek taksy notarialnej. Szczegółowe zestawienie kosztów związanych z planowaną czynnością można uzyskać podczas kontaktu z kancelarią - <a href="tel:775577898">telefonicznie</a>, <a href="mailto:notariusz@spychalskiego13.pl">mailowo</a>, za pomocą <a href="kontakt.html">formularza</a> lub <a href="kontakt.html#dojazd">osobiście</a> w kancelarii przy ul. Spychalskiego 13 w Opolu.</span></p>
-            <p>W zależności od rodzaju dokonywanej czynności notarialnej poniesiecie Państwo następujące opłaty:
-            <ul>
-                <li>Podatek od czynności cywilnoprawnych, którego płatnikiem jest notariusz, tzn. że podczas umowy notariusz pobierze od Państwa podatek, a potem odprowadzi tę kwotę na konto właściwego organu podatkowego. Wysokość podatku oraz okoliczność jego wystąpienia przy dokonywaniu konkretnej czynności określa ustawa z dnia 9 września 2000 roku o podatku od czynności cywilnoprawnych.</li>
-                <li>Podatek od spadków i darowizn, którego płatnikiem jest notariusz, tzn. że podczas umowy notariusz pobierze od Państwa podatek, a potem odprowadzi tę kwotę na konto właściwego organu podatkowego. Wysokość podatku, a także okoliczność jego wystąpienia przy dokonywaniu konkretnej czynności określa ustawa z dnia 28 lipca 1983 roku o podatku od spadków i darowizn. Podatek nie występuje przy czynnościach dokonywanych pomiędzy najbliższą rodziną.</li>
-                <li>Opłaty sądowe pobierane przez notariusza od wniosków wieczystoksięgowych zawartych w aktach notarialnych, które przekazywane są na rachunki bankowe właściwych sądów. Wysokość opłat (uzależnioną od rodzaju dokonywanych wpisów) określa ustawa z dnia 28 lipca 2005 roku o kosztach sądowych w sprawach cywilnych.</li>
-                <li>Taksę notarialną wraz z podatkiem VAT z tytułu dokonania określonej czynności notarialnej, której wysokość ustalana jest indywidualnie z notariuszem.</li>
-                <li>Opłatę za wypisy aktu notarialnego, w wysokości 6,00 zł + VAT 23% za jedną stronę. Wypisy mają moc prawną oryginału aktu i wydawane są stronom oraz wysyłane są przez notariusza do instytucji, które ma on obowiązek zawiadomić o dokonanej czynności (sąd wieczystoksięgowy, spółdzielnia mieszkaniowa, urząd skarbowy, gmina, geodezja…).</li>
+            <div class="card shadow-sm mb-3">
+                <div class="card-body">
+                    <h5 class="card-title align-content-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                        </svg>
+                        Informacja
+                    </h5>
+                    <p class="card-text">W kancelarii notarialnej nie obowiązuje stały cennik. Maksymalną wysokość wynagrodzenia notariusza określa rozporządzenia Ministra Sprawiedliwości z dnia 28 czerwca 2004 roku w sprawie maksymalnych stawek taksy notarialnej.</p>
+                    <p class="card-text">Szczegółowe zestawienie kosztów związanych z planowaną czynnością można uzyskać podczas kontaktu z kancelarią - <a href="tel:775577898">telefonicznie</a>, <a href="mailto:notariusz@spychalskiego13.pl">mailowo</a>, za pomocą <a href="kontakt.html">formularza</a> lub <a href="kontakt.html#dojazd">osobiście</a> w kancelarii przy ul. Spychalskiego 13 w Opolu.</p>
+                    <!--
+                    <a class="card-link" href="tel:775577898">Telefon</a>
+                    <a class="card-link" href="mailto:notariusz@spychalskiego13.pl">e-mail</a>
+                    <a class="card-link" href="kontakt.html">Formularz kontaktowy</a>
+                    <a class="card-link" href="kontakt.html#dojazd">Wizyta osobista</a>
+                    -->
+                </div>
+            </div>
+            <p>W zależności od rodzaju dokonywanej czynności notarialnej poniesiecie Państwo następujące opłaty:</p>
+            <ul class="list-group shadow-sm mb-3">
+                <li class="list-group-item">Podatek od czynności cywilnoprawnych, którego płatnikiem jest notariusz, tzn. że podczas umowy notariusz pobierze od Państwa podatek, a potem odprowadzi tę kwotę na konto właściwego organu podatkowego. Wysokość podatku oraz okoliczność jego wystąpienia przy dokonywaniu konkretnej czynności określa ustawa z dnia 9 września 2000 roku o podatku od czynności cywilnoprawnych.</li>
+                <li class="list-group-item">Podatek od spadków i darowizn, którego płatnikiem jest notariusz, tzn. że podczas umowy notariusz pobierze od Państwa podatek, a potem odprowadzi tę kwotę na konto właściwego organu podatkowego. Wysokość podatku, a także okoliczność jego wystąpienia przy dokonywaniu konkretnej czynności określa ustawa z dnia 28 lipca 1983 roku o podatku od spadków i darowizn. Podatek nie występuje przy czynnościach dokonywanych pomiędzy najbliższą rodziną.</li>
+                <li class="list-group-item">Opłaty sądowe pobierane przez notariusza od wniosków wieczystoksięgowych zawartych w aktach notarialnych, które przekazywane są na rachunki bankowe właściwych sądów. Wysokość opłat (uzależnioną od rodzaju dokonywanych wpisów) określa ustawa z dnia 28 lipca 2005 roku o kosztach sądowych w sprawach cywilnych.</li>
+                <li class="list-group-item">Taksę notarialną wraz z podatkiem VAT z tytułu dokonania określonej czynności notarialnej, której wysokość ustalana jest indywidualnie z notariuszem.</li>
+                <li class="list-group-item">Opłatę za wypisy aktu notarialnego, w wysokości 6,00 zł + VAT 23% za jedną stronę. Wypisy mają moc prawną oryginału aktu i wydawane są stronom oraz wysyłane są przez notariusza do instytucji, które ma on obowiązek zawiadomić o dokonanej czynności (sąd wieczystoksięgowy, spółdzielnia mieszkaniowa, urząd skarbowy, gmina, geodezja…).</li>
             </ul>
-            </p>
-        </section>
-        <section>
-            <h3>Formy płatności</h3>
-            <p>Wychodząc naprzeciw Państwa potrzebom kancelaria oferuje możliwość płatności kartami oraz BLIK. Istnieje możliwość dokonania przedpłaty przelewem, w tym celu prosimy o <a href="tel:775577898">kontakt telefoniczny</a>.</p>
-        </section>
-    </article>
+            <article>
+                <h3>Formy płatności</h3>
+                <p>Wychodząc naprzeciw Państwa potrzebom kancelaria oferuje możliwość płatności kartami oraz BLIK. Istnieje możliwość dokonania przedpłaty przelewem, w tym celu prosimy o <a href="tel:775577898">kontakt telefoniczny</a>.</p>
+            </article>
+        </article>
+    </section>
 </main>
 <!-- Messenger Wtyczka czatu Code -->
 <div id="fb-root"></div>
@@ -98,8 +152,11 @@
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 </script>
-<footer class="flex dark">
-    <p><a href="https://www.flaticon.com/authors/freepik" title="Icons attribution">All icons created by Freepik - Flaticon</a></p>
+<footer class="navbar bg-primary navbar-dark">
+    <div class="container-fluid text-center">
+        <p class="text-white mx-auto">&copy; 2022 Kancelaria Notarialna Anna Wawszczak</p>
+        <p class="text-white mx-auto">All icons created by <a class="text-white" href="https://www.flaticon.com/authors/freepik" title="Icons attribution">Freepik - Flaticon</a></p>
+    </div>
 </footer>
 </body>
 <script src="skrypt.js"></script>
