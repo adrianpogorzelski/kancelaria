@@ -23,10 +23,13 @@
 <header class="fixed-top border-bottom border-light">
     <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
         <div class="container-fluid">
-            <a class="navbar-brand m-0" href="index.html">
-                <img id="logo" src="img/logo.png" alt="Kancelaria Notarialna Anna Wawszczak: logo">
+            <a class="row navbar-brand m-0 p-0" href="index.html">
+                <img class="col p-0" width="50px" height="50px" id="logo" src="img/logo.png" alt="Kancelaria Notarialna Anna Wawszczak: logo">
+                <div class="col d-none d-sm-inline mt-0">
+                    <h1 class="small">Kancelaria Notarialna<br>Anna Wawszczak</h1>
+                </div>
             </a>
-            <div id="contact" class="col justify-content-start ps-1">
+            <div id="contact" class="col col-lg-3 justify-content-start ps-1">
                 <div class="text-white">
                     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
@@ -62,7 +65,7 @@
                             <li><a class="dropdown-item" href="czynnosci/postepowanie-spadkowe.html">POSTĘPOWANIE SPADKOWE</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link active" href="platnosci.html">PŁATNOŚCI</a></li>
+                    <li class="nav-item"><a class="nav-link" href="platnosci.html">PŁATNOŚCI</a></li>
                     <li class="nav-item"><a class="nav-link" href="pytania.html">PYTANIA I ODPOWIEDZI</a></li>
                     <li class="nav-item"><a class="nav-link" href="kontakt.html">KONTAKT</a></li>
                 </ul>
@@ -90,7 +93,7 @@
         </article>
         <article>
             <h3>Opłaty</h3>
-            <div class="card shadow-sm mb-3">
+            <div class="card mb-3">
                 <div class="card-body">
                     <h5 class="card-title align-content-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
@@ -100,21 +103,15 @@
                     </h5>
                     <p class="card-text">W kancelarii notarialnej nie obowiązuje stały cennik. Maksymalną wysokość wynagrodzenia notariusza określa rozporządzenia Ministra Sprawiedliwości z dnia 28 czerwca 2004 roku w sprawie maksymalnych stawek taksy notarialnej.</p>
                     <p class="card-text">Szczegółowe zestawienie kosztów związanych z planowaną czynnością można uzyskać podczas kontaktu z kancelarią - <a href="tel:775577898">telefonicznie</a>, <a href="mailto:notariusz@spychalskiego13.pl">mailowo</a>, za pomocą <a href="kontakt.html">formularza</a> lub <a href="kontakt.html#dojazd">osobiście</a> w kancelarii przy ul. Spychalskiego 13 w Opolu.</p>
-                    <!--
-                    <a class="card-link" href="tel:775577898">Telefon</a>
-                    <a class="card-link" href="mailto:notariusz@spychalskiego13.pl">e-mail</a>
-                    <a class="card-link" href="kontakt.html">Formularz kontaktowy</a>
-                    <a class="card-link" href="kontakt.html#dojazd">Wizyta osobista</a>
-                    -->
                 </div>
             </div>
             <p>W zależności od rodzaju dokonywanej czynności notarialnej poniesiecie Państwo następujące opłaty:</p>
-            <ul class="list-group shadow-sm mb-3">
-                <li class="list-group-item">Podatek od czynności cywilnoprawnych, którego płatnikiem jest notariusz, tzn. że podczas umowy notariusz pobierze od Państwa podatek, a potem odprowadzi tę kwotę na konto właściwego organu podatkowego. Wysokość podatku oraz okoliczność jego wystąpienia przy dokonywaniu konkretnej czynności określa ustawa z dnia 9 września 2000 roku o podatku od czynności cywilnoprawnych.</li>
-                <li class="list-group-item">Podatek od spadków i darowizn, którego płatnikiem jest notariusz, tzn. że podczas umowy notariusz pobierze od Państwa podatek, a potem odprowadzi tę kwotę na konto właściwego organu podatkowego. Wysokość podatku, a także okoliczność jego wystąpienia przy dokonywaniu konkretnej czynności określa ustawa z dnia 28 lipca 1983 roku o podatku od spadków i darowizn. Podatek nie występuje przy czynnościach dokonywanych pomiędzy najbliższą rodziną.</li>
-                <li class="list-group-item">Opłaty sądowe pobierane przez notariusza od wniosków wieczystoksięgowych zawartych w aktach notarialnych, które przekazywane są na rachunki bankowe właściwych sądów. Wysokość opłat (uzależnioną od rodzaju dokonywanych wpisów) określa ustawa z dnia 28 lipca 2005 roku o kosztach sądowych w sprawach cywilnych.</li>
-                <li class="list-group-item">Taksę notarialną wraz z podatkiem VAT z tytułu dokonania określonej czynności notarialnej, której wysokość ustalana jest indywidualnie z notariuszem.</li>
-                <li class="list-group-item">Opłatę za wypisy aktu notarialnego, w wysokości 6,00 zł + VAT 23% za jedną stronę. Wypisy mają moc prawną oryginału aktu i wydawane są stronom oraz wysyłane są przez notariusza do instytucji, które ma on obowiązek zawiadomić o dokonanej czynności (sąd wieczystoksięgowy, spółdzielnia mieszkaniowa, urząd skarbowy, gmina, geodezja…).</li>
+            <ul>
+                <li>Podatek od czynności cywilnoprawnych, którego płatnikiem jest notariusz, tzn. że podczas umowy notariusz pobierze od Państwa podatek, a potem odprowadzi tę kwotę na konto właściwego organu podatkowego. Wysokość podatku oraz okoliczność jego wystąpienia przy dokonywaniu konkretnej czynności określa ustawa z dnia 9 września 2000 roku o podatku od czynności cywilnoprawnych.</li>
+                <li>Podatek od spadków i darowizn, którego płatnikiem jest notariusz, tzn. że podczas umowy notariusz pobierze od Państwa podatek, a potem odprowadzi tę kwotę na konto właściwego organu podatkowego. Wysokość podatku, a także okoliczność jego wystąpienia przy dokonywaniu konkretnej czynności określa ustawa z dnia 28 lipca 1983 roku o podatku od spadków i darowizn. Podatek nie występuje przy czynnościach dokonywanych pomiędzy najbliższą rodziną.</li>
+                <li>Opłaty sądowe pobierane przez notariusza od wniosków wieczystoksięgowych zawartych w aktach notarialnych, które przekazywane są na rachunki bankowe właściwych sądów. Wysokość opłat (uzależnioną od rodzaju dokonywanych wpisów) określa ustawa z dnia 28 lipca 2005 roku o kosztach sądowych w sprawach cywilnych.</li>
+                <li>Taksę notarialną wraz z podatkiem VAT z tytułu dokonania określonej czynności notarialnej, której wysokość ustalana jest indywidualnie z notariuszem.</li>
+                <li>Opłatę za wypisy aktu notarialnego, w wysokości 6,00 zł + VAT 23% za jedną stronę. Wypisy mają moc prawną oryginału aktu i wydawane są stronom oraz wysyłane są przez notariusza do instytucji, które ma on obowiązek zawiadomić o dokonanej czynności (sąd wieczystoksięgowy, spółdzielnia mieszkaniowa, urząd skarbowy, gmina, geodezja…).</li>
             </ul>
             <article>
                 <h3>Formy płatności</h3>
