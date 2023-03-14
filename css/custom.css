@@ -20,7 +20,7 @@
 }
 
 #hero {
-  background-image: url('img/panorama.webp');
+  background-image: url('../img/panorama.webp');
   background-size: cover;
 }
 
