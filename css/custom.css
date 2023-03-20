@@ -14,6 +14,10 @@
   padding-left: 0.1rem
 }
 
+main {
+  text-align: justify;
+}
+
 #hero {
   background-image: url('../img/panorama.webp');
   background-size: cover;
