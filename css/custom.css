@@ -35,3 +35,29 @@ section:first-of-type {
   margin-top: 4rem;
   padding-top: 1rem
 }
+
+.bi-clipboard2-plus {
+  cursor: pointer;
+}
+
+.copy-message {
+  z-index: 2;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border-radius: 5px;
+  animation: fadeOut 3s ease-in-out;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
