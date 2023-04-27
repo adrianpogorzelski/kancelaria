@@ -36,6 +36,10 @@ section:first-of-type {
   padding-top: 1rem
 }
 
+.bi-clipboard2-plus {
+  cursor: pointer;
+}
+
 .copy-message {
   z-index: 2;
   position: fixed;
