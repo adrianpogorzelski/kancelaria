@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html data-theme="kancelaria" lang="pl">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -57,38 +57,82 @@
 
 <!-- *** BODY *** -->
 <body>
-    <header class="container mx-auto h-20">
-        <div class="navbar bg-base-100">
+
+    <header class="navbar bg-base-100">
+        <div class="navbar-start">
+
+            <!-- Mobile dropdown -->
+            <nav class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li>
+                        <a>Czynności</a>
+                        <ul class="p-2">
+                            <li><a>Zakres czynności</a></li>
+                            <li><a>Dokumenty</a></li>
+                            <li>
+                                <a>Informacje o czynnościach</a>
+                                <ul class="p-2">
+                                    <li><a>Najem okazjonalny</a></li>
+                                    <li><a>Postępowanie spadkowe</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a>Płatności</a></li>
+                    <li><a>Pytania i odpowiedzi</a></li>
+                    <li><a>Kontakt</a></li>
+                </ul>
+            </nav>
 
             <!-- Brand -->
-            <a class="navbar-start p-0 h-full btn btn-ghost normal-case text-base hover:bg-base-100">
-                <img width="60rem" height="auto" id="logo" src="img/AW.png" alt="Kancelaria Notarialna Anna Wawszczak: logo" class="m-0">
-                <h1 class="hidden">Kancelaria Notarialna <span>Anna Wawszczak</span></h1>
+            <a class="btn btn-ghost normal-case text-md hover:bg-base-100 p-0">
+                <img id="logo" src="img/AW.png" alt="Kancelaria Notarialna Anna Wawszczak: logo" class="m-0 h-10">
+                <div>
+                    <h1 class="hidden lg:block">Kancelaria notarialna</h1>
+                    <h1 class="hidden lg:block text-start">Anna Wawszczak</h1>
+                </div>
             </a>
+        </div>
 
-            <!-- Kontakt -->
-            <div class="navbar-end h-full">
-                <a href="tel:775577898">
-                    <i class="fa-solid fa-phone fa-2xl me-3"></i>
-                    <span class="hidden text-xs lg:text-sm">77 55 77 898</span>
-                </a>
-                <a href="tel:533987456" class="mx-4">
-                    <i class="fa-solid fa-mobile fa-2xl me-3"></i>
-                    <span class="hidden text-xs lg:text-sm">533 987 456</span>
-                </a>
-                <a href="mailto:notariusz@spychalskiego13.pl">
-                    <i class="fa-solid fa-envelope fa-2xl me-1"></i>
-                    <span class="hidden text-xs lg:text-sm">notariusz@spychalskiego13.pl</span>
-                </a>
-            </div>
+        <!-- Desktop menu -->
+        <nav class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li tabindex="0">
+                    <details>
+                        <summary>Czynności</summary>
+                        <ul class="p-2">
+                            <li><a>Zakres czynności</a></li>
+                            <li><a>Dokumenty</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li><a>Płatności</a></li>
+                <li><a>Częste pytania</a></li>
+                <li><a>Kontakt</a></li>
+            </ul>
+        </nav>
 
+        <!-- Contact -->
+        <div class="navbar-end">
+            <a href="tel:775577898">
+                <i class="fa-solid fa-phone fa-lg me-3"></i>
+                <span class="hidden">77 55 77 898</span>
+            </a>
+            <a href="tel:533987456" class="mx-4">
+                <i class="fa-solid fa-mobile fa-lg me-3"></i>
+                <span class="hidden">533 987 456</span>
+            </a>
+            <a href="mailto:notariusz@spychalskiego13.pl">
+                <i class="fa-solid fa-envelope fa-lg me-1"></i>
+                <span class="hidden">notariusz@spychalskiego13.pl</span>
+            </a>
         </div>
     </header>
 
-    <!-- NAWIGACJA -->
-    <nav class="navbar bg-primary">
 
-    </nav>
 --------
 
     <div class="fixed-top">
