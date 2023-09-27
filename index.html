@@ -57,8 +57,8 @@
 
 <!-- *** BODY *** -->
 <body>
-    <div class="fixed w-full z-[1]">
-    <header class="navbar bg-base-100">
+    <div class="fixed w-full z-[1] bg-base-100">
+    <header class="navbar bg-base-100 container mx-auto">
         <div class="navbar-start">
             <!-- Brand -->
             <a class="btn btn-ghost normal-case sm:uppercase hover:bg-base-100 p-0" href="index.html">
@@ -229,24 +229,26 @@
         </section>
     </main>
 
-    <footer class="footer p-10 bg-primary text-base-100">
-        <nav>
+    <footer class="p-10 bg-primary text-base-100">
+        <div class="container mx-auto footer">
+        <nav class="flex-col">
             <header class="footer-title">O kancelarii</header>
-            <a class="link link-hover">Strona główna</a>
-            <a class="link link-hover">Płatności</a>
-            <a class="link link-hover">Pytania i odpowiedzi</a>
-            <a class="link link-hover">Kontakt</a>
+            <a class="link link-hover" href="index.html">Strona główna</a>
+            <a class="link link-hover" href="platnosci.html">Płatności</a>
+            <a class="link link-hover" href="pytania.html">Pytania i odpowiedzi</a>
+            <a class="link link-hover" href="kontakt.html">Kontakt</a>
         </nav>
         <nav>
             <header class="footer-title">Czynności</header>
-            <a class="link link-hover">Zakres czynności</a>
-            <a class="link link-hover">Dokumenty</a>
+            <a class="link link-hover" href="czynnosci.html">Zakres czynności</a>
+            <a class="link link-hover" href="dokumenty.html">Dokumenty</a>
         </nav>
         <nav>
             <header class="footer-title">Szczegóły czynności</header>
-            <a class="link link-hover">Najem okazjonalny</a>
-            <a class="link link-hover">Postępowanie spadkowe</a>
+            <a class="link link-hover" href="najem-okazjonalny.html">Najem okazjonalny</a>
+            <a class="link link-hover" href="postepowanie-spadkowe.html">Postępowanie spadkowe</a>
         </nav>
+        </div>
     </footer>
     <footer class="footer footer-center px-10 py-4 border-t bg-primary text-base-100 border-base-300">
         <p class="text-center">&copy; 2022 Kancelaria Notarialna Anna Wawszczak</p>
