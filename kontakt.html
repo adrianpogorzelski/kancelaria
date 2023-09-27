@@ -168,64 +168,69 @@
             </div>
 
             <!-- Form -->
-            <form id="formularz" class="card bg-base-100 shadow-xl" name="formularz" method="POST" data-netlify="true">
-                <div class="card-body">
+            <section class="card">
+                <div class="card-body bg-base-100 shadow-xl">
                     <h3 class="card-title">Formularz kontaktowy</h3>
 
-                    <!-- Name -->
-                    <div class="form-control">
-                        <label class="label" for="name">
-                            <span class="label-text">Imię</span>
-                        </label>
-                        <input id="name" type="text" placeholder="Podaj imię..." class="input input-bordered input-primary" required/>
-                    </div>
+                    <form id="formularz" name="formularz" method="POST" data-netlify="true">
+                        <input type="hidden" name="form-name" value="formularz" />
 
-                    <!-- E-mail -->
-                    <div class="form-control">
-                        <label class="label" for="email">
-                            <span class="label-text">Adres e-mail</span>
-                        </label>
-                        <input id="email" type="email" placeholder="Podaj Twój adres e-mail..." class="input input-bordered input-primary" required/>
-                    </div>
+                        <!-- Name -->
+                        <div class="form-control">
+                            <label class="label" for="name">
+                                <span class="label-text">Imię</span>
+                            </label>
+                            <input id="name" type="text" placeholder="Podaj imię..." class="input input-bordered input-primary" required/>
+                        </div>
 
-                    <!-- Phone -->
-                    <div class="form-control">
-                        <label class="label" for="phone">
-                            <span class="label-text">Numer telefonu</span>
-                        </label>
-                        <input id="phone" type="tel" placeholder="Podaj Twój numer telefonu..." class="input input-bordered input-primary" />
-                    </div>
+                        <!-- E-mail -->
+                        <div class="form-control">
+                            <label class="label" for="email">
+                                <span class="label-text">Adres e-mail</span>
+                            </label>
+                            <input id="email" type="email" placeholder="Podaj Twój adres e-mail..." class="input input-bordered input-primary" required/>
+                        </div>
 
-                    <!-- Phone check -->
-                    <div class="form-control">
-                        <label class="label cursor-pointer" for="phone-check">
-                            <span class="label-text">Proszę o kontakt telefoniczny</span>
-                            <input id="phone-check" type="checkbox" class="toggle toggle-primary" unchecked />
-                        </label>
-                    </div>
+                        <!-- Phone -->
+                        <div class="form-control">
+                            <label class="label" for="phone">
+                                <span class="label-text">Numer telefonu</span>
+                            </label>
+                            <input id="phone" type="tel" placeholder="Podaj Twój numer telefonu..." class="input input-bordered input-primary" />
+                        </div>
 
-                    <!-- Message -->
-                    <div class="form-control">
-                        <label class="label" for="message">
-                            <span class="label-text">Treść wiadomości</span>
-                        </label>
-                        <textarea id="message" placeholder="Wpisz treść wiadomości..." class="textarea textarea-bordered textarea-primary h-24" required/></textarea>
-                    </div>
+                        <!-- Phone check -->
+                        <div class="form-control">
+                            <label class="label cursor-pointer" for="phone-check">
+                                <span class="label-text">Proszę o kontakt telefoniczny</span>
+                                <input id="phone-check" type="checkbox" class="toggle toggle-primary" unchecked />
+                            </label>
+                        </div>
 
-                    <!-- Rodo -->
-                    <div class="form-control">
-                        <label class="label cursor-pointer" for="rodo">
+                        <!-- Message -->
+                        <div class="form-control">
+                            <label class="label" for="message">
+                                <span class="label-text">Treść wiadomości</span>
+                            </label>
+                            <textarea id="message" placeholder="Wpisz treść wiadomości..." class="textarea textarea-bordered textarea-primary h-24" required/></textarea>
+                        </div>
+
+                        <!-- Rodo -->
+                        <div class="form-control">
+                            <label class="label cursor-pointer" for="rodo">
                             <span class="label-text">
                                 Zgadzam się na przetwarzanie danych osobowych podanych w formularzu przez Kancelarię Notarialną Anny Wawszczak w celu kontaktu i przygotowania do przeprowadzenia czynności notarialnej
                             </span>
-                            <input id="rodo" type="checkbox" class="toggle toggle-primary" unchecked required/>
-                        </label>
-                    </div>
+                                <input id="rodo" type="checkbox" class="toggle toggle-primary" unchecked required/>
+                            </label>
+                        </div>
 
-                    <!-- Submit -->
-                    <button type="submit" class="btn btn-primary btn-wide place-self-center">Wyślij</button>
+                        <!-- Submit -->
+                        <button type="submit" class="btn btn-primary btn-wide">Wyślij</button>
+
+                    </form>
                 </div>
-            </form>
+            </section>
         </section>
 
     </main>
