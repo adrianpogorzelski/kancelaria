@@ -110,7 +110,7 @@
     </nav>
 </div>
 
-    <main class="container mx-auto">
+    <main>
         <div class="h-20 mb-5"></div>
 
         <!-- Breadcrumbs -->
@@ -122,31 +122,18 @@
         </div>
 
         <!-- Contact -->
-        <section class="grid md:grid-cols-2 gap-4 py-5">
+        <section class="container mx-auto grid md:grid-cols-2 gap-4 py-3 px-3 sm:px-0">
             <div>
-                <address>
-                    <i class="fa-solid fa-map-location-dot fa-2xl my-auto me-5"></i>
-                    <h3 class="text-2xl font-bold">Kancelaria notarialna Anna Wawszczak</h3>
-                    <p>ul. Spychalskiego 13 lok. 101A (1 piętro)</p>
-                    <p>45-716 Opole</p>
+                <h3 class="text-3xl font-bold">Kancelaria notarialna Anna Wawszczak</h3>
+
+                <address class="py-3">
+                    <i class="fa-solid fa-map-location-dot fa-lg md:me-1"></i>
+                    ul. Stanisława Spychalskiego 13,
+                    lokal 101A,
+                    54-129 Opole
                 </address>
 
-                <div class="py-3 flex-col">
-                        <i class="fa-regular fa-calendar-days fa-2xl my-auto me-5 pe-2"></i>
-                        <h4 class="text-xl font-bold">Godziny otwarcia</h4>
-                        <ul class="grid grid-cols-2">
-                            <li>Poniedziałek</li><li>9:00 - 17:00</li>
-                            <li>Wtorek</li><li>9:00 - 16:00</li>
-                            <li>Środa</li><li>10:30 - 18:30</li>
-                            <li>Czwartek</li><li>9:00 - 16:00</li>
-                            <li>Piątek</li><li>9:00 - 17:00</li>
-                            <li>Sobota</li><li>po ustaleniu terminu z wyprzedzeniem</li>
-                        </ul>
-                        <h5 class="pt-1 text-xl">Indywidualne terminy</h5>
-                        <p>Skontaktuj się z kancelarią, aby umówić indywidualny termin poza godzinami, w których pracuje notariusz: sobota, wczesne godziny poranne lub późne popołudniowe.</p>
-                </div>
-
-                <div class="flex flex-col py-1">
+                <div class="flex flex-col py-3">
                     <a href="tel:775577898">
                         <i class="fa-solid fa-phone fa-lg me-3"></i>
                         77 55 77 898
@@ -165,11 +152,29 @@
                     <p>NIP: 754 299 28 52</p>
                     <p>REGON: 523 540 579</p>
                 </div>
+
+                <div class="py-3 flex-col">
+                    <div class="flex py-2">
+                        <i class="fa-regular fa-calendar-days fa-lg my-auto pe-2"></i>
+                        <h4 class="text-xl font-bold">Godziny otwarcia</h4>
+                    </div>
+                        <ul class="grid grid-cols-2">
+                            <li>Poniedziałek</li><li>9:00 - 17:00</li>
+                            <li>Wtorek</li><li>9:00 - 16:00</li>
+                            <li>Środa</li><li>10:30 - 18:30</li>
+                            <li>Czwartek</li><li>9:00 - 16:00</li>
+                            <li>Piątek</li><li>9:00 - 17:00</li>
+                            <li>Sobota</li><li>po ustaleniu terminu z wyprzedzeniem</li>
+                        </ul>
+                        <h5 class="pt-1 text-xl">Indywidualne terminy</h5>
+                        <p>Skontaktuj się z kancelarią, aby umówić indywidualny termin poza godzinami, w których pracuje notariusz: sobota, wczesne godziny poranne lub późne popołudniowe.</p>
+                </div>
+
             </div>
 
             <!-- Form -->
             <section class="card">
-                <div class="card-body bg-base-100 shadow-xl">
+                <div class="card-body border shadow-xl rounded-lg">
                     <h3 class="card-title">Formularz kontaktowy</h3>
 
                     <form id="formularz" name="formularz" method="POST" data-netlify="true">
@@ -226,47 +231,49 @@
                         </div>
 
                         <!-- Submit -->
-                        <button type="submit" class="btn btn-primary btn-wide">Wyślij</button>
-
+                        <div class="form-control pt-3">
+                        <button type="submit" class="btn btn-primary btn-wide mx-auto">Wyślij</button>
+                        </div>
                     </form>
                 </div>
             </section>
         </section>
 
+        <section id="dojazd" class="container mx-auto my-5 px-3 sm:px-0">
+            <h3 class="text-3xl font-bold divider">Dojazd</h3>
+            <p class="py-3">Kancelaria notarialna Anny Wawszczak jest zlokalizowana na opolskim Zaodrzu, przy ulicy Stanisława Spychalskiego. W pobliżu zbiegają się ulica Wrocławska i plac Piłsudskiego.<p>
+
+            <div id="mapa">
+                <iframe title="Lokalizacja kancelarii notariusz Anny Wawszczak w Opolu" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2528.812804480113!2d17.9125785!3d50.6677361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471052fd9dc0543b%3A0x26b56dd919d20a2!2sStanis%C5%82awa%20Spychalskiego%2013%2C%2046-020%20Opole!5e0!3m2!1spl!2spl!4v1656449942574!5m2!1spl!2spl" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <p class="py-3">Dojazd od centrum Opola możliwy jest przez Most Piastowski, przy którym krzyżują się ulice Piastowska i Katedralna. Dojazd od zachodniej strony, z dzielnic Zaodrze, Szczepanowice, osiedla Dambonia, oraz okolicznych miejscowości (Chmielowice, Chróścina, Mechnice, itd), umożliwia ulica Niemodlińska i Most Zaodrzański.</p>
+
+            <div class="inline-flex py-1">
+                <i class="fa-solid fa-square-parking fa-lg my-auto pe-2"></i>
+                <h4 class="text-xl font-bold">Parkingi</h4>
+            </div>
+
+            <p class="pb-3">W pobliżu kancelarii <b>nie obowiązuje strefa płatnego parkowania</b>, miejsca postojowe znajdują się w bezpośrednim pobliżu biurowca.</p>
+
+            <div class="inline-flex py-1">
+                <i class="fa-solid fa-bus fa-lg my-auto pe-2"></i>
+                <h4 class="text-xl font-bold">Komunikacja miejska</h4>
+            </div>
+            <p>Bezpośrednio przed wejściem do kancelarii znajduje się <strong>przystanek autobusowy Spychalskiego</strong> (nr 347/348). Dojazd jest możliwy liniami:</p>
+            <ul class="inline-flex py-3">
+                <li class="badge">5</li>
+                <li class="badge">9</li>
+                <li class="badge">13</li>
+                <li class="badge">15</li>
+                <li class="badge">25</li>
+            </ul>
+            <p><a href="https://jakdojade.pl/opole/trasa/?fn=&tn=Spychalskiego" target="_blank" class="link">Sprawdź dojazd komunikacją miejską</a></p>
+
+        </section>
+
     </main>
 
-    <!--
-
-
-                    <button type="submit" class="btn btn-primary">Wyślij</button>
-                </form>
-            </article>
-        </div>
-    </section>
-
-    <article id="dojazd">
-        <h3 class="display-3 mb-4 border-bottom">Dojazd</h3>
-        <p class="lead">Kancelaria notarialna Anny Wawszczak jest zlokalizowana na opolskim Zaodrzu, przy ulicy Stanisława Spychalskiego. W pobliżu zbiegają się ulica Wrocławska i plac Piłsudskiego.<p>
-        <p>Dojazd od centrum Opola możliwy jest przez Most Piastowski, przy którym krzyżują się ulice Piastowska i Katedralna. Dojazd od zachodniej strony, z dzielnic Zaodrze, Szczepanowice, osiedla Dambonia, oraz okolicznych miejscowości (Chmielowice, Chróścina, Mechnice, itd), umożliwia ulica Niemodlińska i Most Zaodrzański.</p>
-        <div id="mapa">
-            <iframe title="Lokalizacja kancelarii notariusz Anny Wawszczak w Opolu" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2528.812804480113!2d17.9125785!3d50.6677361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471052fd9dc0543b%3A0x26b56dd919d20a2!2sStanis%C5%82awa%20Spychalskiego%2013%2C%2046-020%20Opole!5e0!3m2!1spl!2spl!4v1656449942574!5m2!1spl!2spl" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <h4 class="mt-3">Parkingi</h4>
-        <p>W pobliżu kancelarii <b>nie obowiązuje strefa płatnego parkowania</b>, miejsca postojowe znajdują się w bezpośrednim pobliżu biurowca.</p>
-        <h4>Komunikacja miejska</h4>
-        <p>Bezpośrednio przed wejściem do kancelarii znajduje się <strong>przystanek autobusowy Spychalskiego</strong> (nr 347/348). Dojazd jest możliwy liniami:</p>
-        <ul>
-            <li>5</li>
-            <li>9</li>
-            <li>13</li>
-            <li>15</li>
-            <li>25</li>
-        </ul>
-        <p><a href="https://jakdojade.pl/opole/trasa/?fn=&tn=Spychalskiego" target="_blank">Sprawdź dojazd komunikacją miejską</a></p>
-    </article>
-</main>
-
--->
     <footer class="p-10 bg-primary text-base-100">
         <div class="container mx-auto footer">
             <nav class="flex-col">
