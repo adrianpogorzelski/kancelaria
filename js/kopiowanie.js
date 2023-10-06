@@ -6,16 +6,16 @@ const numerDepozytu = "04 1050 1575 1000 0097 6910 2667";
 
 rorButton.addEventListener('click', () => {
     navigator.clipboard.writeText(numerRor)
-    copyMessage.classList.remove('d-none');
+    copyMessage.classList.remove('hidden');
     setTimeout(() => {
-        copyMessage.classList.add('d-none');
+        copyMessage.classList.add('hidden');
     }, 3000);
 });
 
 depozytButton.addEventListener('click', () => {
     navigator.clipboard.writeText(numerDepozytu)
-    copyMessage.classList.remove('d-none');
+    copyMessage.classList.remove('hidden');
     setTimeout(() => {
-        copyMessage.classList.add('d-none');
+        copyMessage.classList.add('hidden');
     }, 3000);
 });
