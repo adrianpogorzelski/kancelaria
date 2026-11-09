@@ -1,0 +1,14 @@
+---
+interface Props {
+  title?: string;
+  class?: string;
+}
+const { title = "Informacja", class: className } = Astro.props;
+---
+
+<aside class:list={["card border bg-base-100 shadow-xl", className]} aria-label={title}>
+  <div class="card-body">
+    <p class="card-title">{title}</p>
+    <slot />
+  </div>
+</aside>

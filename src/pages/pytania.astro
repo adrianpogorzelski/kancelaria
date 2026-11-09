@@ -1,0 +1,41 @@
+---
+import Base from "../layouts/Base.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import { getCollection, render } from "astro:content";
+
+const groups = ["Praca kancelarii", "Czynności notarialne", "Opłaty"] as const;
+
+const entries = (await getCollection("faq")).sort((a, b) => a.data.order - b.data.order);
+const items = await Promise.all(
+  entries.map(async (entry) => ({ entry, Content: (await render(entry)).Content }))
+);
+---
+
+<Base
+  title="Pytania i odpowiedzi – Kancelaria Notarialna Anna Wawszczak, Opole"
+  description="Najczęstsze pytania do notariusza: godziny pracy, czynności z dojazdem, poświadczenie podpisu, spadek, koszty i płatności kartą lub BLIKiem. Opole-Zaodrze."
+>
+  <div class="wrap pb-10">
+    <Breadcrumbs current="Pytania i odpowiedzi" />
+
+    <h1 class="border-b pb-3 text-5xl">Pytania i odpowiedzi</h1>
+
+    {
+      groups.map((group) => (
+        <section class="py-4">
+          <h2 class="divider py-5 text-3xl font-bold">{group}</h2>
+          {items
+            .filter((i) => i.entry.data.group === group)
+            .map(({ entry, Content }) => (
+              <details name="faq" class="collapse collapse-arrow my-1 border bg-base-100">
+                <summary class="collapse-title text-xl font-medium">{entry.data.question}</summary>
+                <div class="collapse-content md-body">
+                  <Content />
+                </div>
+              </details>
+            ))}
+        </section>
+      ))
+    }
+  </div>
+</Base>

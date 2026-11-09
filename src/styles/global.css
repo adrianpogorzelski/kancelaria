@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+/* DaisyUI 5: jeden wbudowany motyw, żeby strona nie przełączała się na ciemny. */
+@plugin "daisyui" {
+  themes: light --default;
+}
+
+/* Motyw "kancelaria": kolory z dotychczasowego tailwind.config.js,
+   pozostałe wartości odtworzone z obecnego style.css. */
+@plugin "daisyui/theme" {
+  name: "kancelaria";
+  default: true;
+  prefersdark: false;
+  color-scheme: light;
+
+  --color-base-100: #ffffff;
+  --color-base-200: hsl(0 0% 93%);
+  --color-base-300: hsl(0 0% 86%);
+  --color-base-content: hsl(0 0% 19%);
+
+  --color-primary: #1e3a8a;
+  --color-primary-content: hsl(240 30% 92%);
+  --color-secondary: #7c2d12;
+  --color-secondary-content: hsl(16 40% 90%);
+  --color-accent: #14532d;
+  --color-accent-content: hsl(133 14% 88%);
+  --color-neutral: #111827;
+  --color-neutral-content: hsl(226 5% 85%);
+
+  --color-info: hsl(198 93% 60%);
+  --color-info-content: hsl(198 100% 12%);
+  --color-success: hsl(158 64% 52%);
+  --color-success-content: hsl(158 100% 10%);
+  --color-warning: hsl(43 96% 56%);
+  --color-warning-content: hsl(43 100% 11%);
+  --color-error: hsl(0 91% 71%);
+  --color-error-content: hsl(0 100% 14%);
+
+  --radius-selector: 1.9rem;
+  --radius-field: 0.5rem;
+  --radius-box: 1rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+}
+
+/* Tailwind 4 nie centruje już .container, więc własny kontener strony. */
+@utility wrap {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 72rem;
+  padding-inline: 1rem;
+}
+
+/* Tailwind 4: domyślny kolor ramek to currentColor (w v3 był szary). */
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-base-300);
+  }
+}
+
+/* Treść odpowiedzi w FAQ (renderowana z Markdown). */
+.md-body p + p,
+.md-body p + ul,
+.md-body ul + p {
+  margin-top: 0.75rem;
+}
+.md-body ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+}
+.md-body a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.md-body a:hover {
+  color: var(--color-primary);
+}
+
+/* Dłuższe artykuły (najem okazjonalny, postępowanie spadkowe). */
+.article h2 {
+  margin-top: 1.75rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+}
+.article p {
+  margin-top: 0.75rem;
+}
+.article ul {
+  margin-top: 0.75rem;
+  list-style: disc;
+  padding-left: 1.25rem;
+}
+.article li + li {
+  margin-top: 0.25rem;
+}
+.article a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}

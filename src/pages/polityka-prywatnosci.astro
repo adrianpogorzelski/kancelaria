@@ -1,0 +1,178 @@
+---
+import Base from "../layouts/Base.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import Todo from "../components/Todo.astro";
+import { site } from "../data/site";
+
+const p = site.privacy;
+---
+
+<Base
+  title="Polityka prywatności – Kancelaria Notarialna Anna Wawszczak, Opole"
+  description="Informacja o przetwarzaniu danych osobowych na stronie internetowej Kancelarii Notarialnej Anny Wawszczak w Opolu: formularz kontaktowy, hosting, mapa."
+  noindex={!p.ready}
+>
+  <div class="wrap pb-10">
+    <Breadcrumbs current="Polityka prywatności" />
+
+    {
+      !p.ready && (
+        <div role="alert" class="alert alert-warning mb-4">
+          <span>
+            Wersja robocza. Tekst wymaga uzupełnienia oznaczonych miejsc i akceptacji przez notariusza (oraz
+            inspektora ochrony danych, jeśli został wyznaczony). Po uzupełnieniu ustaw
+            <code>privacy.ready = true</code> w <code>src/data/site.ts</code>.
+          </span>
+        </div>
+      )
+    }
+
+    <article class="article">
+      <h1 class="border-b pb-3 text-5xl">Polityka prywatności</h1>
+      <p>
+        Ostatnia aktualizacja: {p.updated ?? <Todo>data</Todo>}
+      </p>
+
+      <h2>1. Administrator danych</h2>
+      <p>
+        Administratorem danych osobowych przetwarzanych w związku z korzystaniem z tej strony internetowej
+        jest notariusz <b>{site.owner}</b>, prowadząca <b>{site.name}</b>, {site.address.street},
+        {site.address.unit}, {site.address.zip} {site.address.city}, NIP: {site.nip}, REGON: {site.regon}.
+      </p>
+      <p>
+        Kontakt w sprawach ochrony danych: e-mail <a href={`mailto:${site.email}`}>{site.email}</a>,
+        telefon <a href={`tel:${site.phones[0].tel}`}>{site.phones[0].label}</a>.
+      </p>
+      <p>
+        {
+          p.iod === null ? (
+            <Todo>informacja o inspektorze ochrony danych (dane kontaktowe) albo o jego braku</Todo>
+          ) : p.iod.toLowerCase() === "brak" ? (
+            "Administrator nie wyznaczył inspektora ochrony danych."
+          ) : (
+            <>Inspektor ochrony danych: {p.iod}.</>
+          )
+        }
+      </p>
+
+      <h2>2. Zakres tej polityki</h2>
+      <p>
+        Polityka dotyczy wyłącznie danych osób odwiedzających stronę i kontaktujących się z kancelarią za
+        jej pośrednictwem. Dane osób korzystających z czynności notarialnych są przetwarzane na innych
+        zasadach. Informacje o tym przekazywane są w kancelarii przy dokonywaniu czynności.
+      </p>
+
+      <h2>3. Jakie dane przetwarzamy, w jakim celu i na jakiej podstawie</h2>
+      <p><b>Formularz kontaktowy.</b></p>
+      <ul>
+        <li>
+          Dane: imię, adres e-mail, numer telefonu (opcjonalnie), treść wiadomości oraz informacja, czy
+          prosisz o kontakt telefoniczny.
+        </li>
+        <li>Cel: odpowiedź na Twoją wiadomość i kontakt w sprawie planowanej czynności notarialnej.</li>
+        <li>
+          Podstawa prawna: Twoja zgoda (art. 6 ust. 1 lit. a RODO), wyrażana przez zaznaczenie pola przy
+          formularzu.
+        </li>
+        <li>
+          Okres przechowywania: {p.retention ?? <Todo>okres przechowywania wiadomości</Todo>}
+        </li>
+      </ul>
+
+      <p><b>Kontakt telefoniczny i e-mailowy poza formularzem.</b></p>
+      <ul>
+        <li>Dane: dane, które sam przekazujesz (np. numer telefonu, adres e-mail, treść wiadomości).</li>
+        <li>Cel: udzielenie odpowiedzi i umówienie spotkania.</li>
+        <li>
+          Podstawa prawna: prawnie uzasadniony interes administratora, polegający na prowadzeniu
+          korespondencji (art. 6 ust. 1 lit. f RODO).
+        </li>
+      </ul>
+
+      <p><b>Dane techniczne przy odwiedzaniu strony.</b></p>
+      <ul>
+        <li>
+          Dane: adres IP, data i godzina wejścia, adres żądanej strony, informacje o przeglądarce i
+          urządzeniu. Są one przetwarzane przez dostawcę hostingu w logach serwera.
+        </li>
+        <li>Cel: zapewnienie działania i bezpieczeństwa strony.</li>
+        <li>Podstawa prawna: prawnie uzasadniony interes administratora (art. 6 ust. 1 lit. f RODO).</li>
+      </ul>
+
+      <p>
+        Podanie danych w formularzu jest dobrowolne, ale imię, adres e-mail i treść wiadomości są
+        potrzebne, abyśmy mogli odpowiedzieć. Nie podejmujemy zautomatyzowanych decyzji i nie profilujemy
+        osób odwiedzających stronę.
+      </p>
+
+      <h2>4. Odbiorcy danych</h2>
+      <p>Dane mogą być powierzone podmiotom, które pomagają w obsłudze strony i kancelarii:</p>
+      <ul>
+        <li>
+          dostawca hostingu i obsługi formularza kontaktowego: Netlify, Inc.
+          (<a href="https://www.netlify.com/privacy/" target="_blank" rel="noopener noreferrer">polityka prywatności</a>)
+          oraz jego podwykonawcy, np. w zakresie filtrowania spamu,
+        </li>
+        <li>dostawca poczty e-mail: {p.mailProvider ?? <Todo>nazwa dostawcy poczty kancelarii</Todo>},</li>
+        <li>
+          podmioty uprawnione do uzyskania danych na podstawie przepisów prawa (np. sądy, organy
+          państwowe).
+        </li>
+      </ul>
+
+      <h2>5. Przekazywanie danych poza Europejski Obszar Gospodarczy</h2>
+      <p>
+        Dostawca hostingu ma siedzibę w Stanach Zjednoczonych, więc dane mogą być tam przetwarzane.
+        Podstawa takiego przekazania: <Todo>mechanizm przekazania, np. decyzja o odpowiednim stopniu ochrony
+        albo standardowe klauzule umowne; do potwierdzenia na podstawie dokumentów dostawcy</Todo>.
+      </p>
+
+      <h2>6. Pliki cookies, mapa i linki zewnętrzne</h2>
+      <ul>
+        <li>
+          Strona <b>nie używa własnych plików cookies</b> ani narzędzi analitycznych lub marketingowych.
+        </li>
+        <li>
+          Na stronie „Kontakt” dostępna jest mapa Google. <b>Ładuje się dopiero po kliknięciu „Pokaż
+          mapę”.</b> Wtedy Google otrzymuje Twój adres IP i może zapisać pliki cookies, zgodnie z własną
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">polityką prywatności</a>.
+          Bez kliknięcia żadne dane nie są przekazywane Google.
+        </li>
+        <li>
+          Link do profilu kancelarii na Facebooku prowadzi do zewnętrznego serwisu. Dane są tam
+          przetwarzane dopiero po przejściu na jego stronę, na zasadach określonych przez Facebook.
+        </li>
+      </ul>
+
+      <h2>7. Twoje prawa</h2>
+      <p>Masz prawo do:</p>
+      <ul>
+        <li>dostępu do swoich danych i otrzymania ich kopii,</li>
+        <li>sprostowania danych,</li>
+        <li>usunięcia danych lub ograniczenia ich przetwarzania,</li>
+        <li>przenoszenia danych (gdy podstawą jest zgoda),</li>
+        <li>sprzeciwu wobec przetwarzania opartego na prawnie uzasadnionym interesie,</li>
+        <li>
+          wycofania zgody w dowolnym momencie, bez wpływu na zgodność z prawem przetwarzania, którego
+          dokonano przed jej wycofaniem.
+        </li>
+      </ul>
+      <p>
+        Aby skorzystać z tych praw, napisz na adres <a href={`mailto:${site.email}`}>{site.email}</a> lub
+        skontaktuj się telefonicznie.
+      </p>
+
+      <h2>8. Skarga do organu nadzorczego</h2>
+      <p>
+        Jeśli uważasz, że dane są przetwarzane niezgodnie z prawem, możesz złożyć skargę do Prezesa Urzędu
+        Ochrony Danych Osobowych (ul. Stawki 2, 00-193 Warszawa).
+      </p>
+
+      <h2>9. Zmiany polityki</h2>
+      <p>
+        Politykę możemy aktualizować, np. gdy zmieni się sposób działania strony lub przepisy. Aktualna
+        wersja jest zawsze dostępna na tej stronie.
+      </p>
+    </article>
+  </div>
+</Base>

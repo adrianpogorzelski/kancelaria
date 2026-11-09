@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://spychalskiego13.pl/sitemap-index.xml

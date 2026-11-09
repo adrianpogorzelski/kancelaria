@@ -1,0 +1,100 @@
+---
+import Base from "../layouts/Base.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import InfoBox from "../components/InfoBox.astro";
+import { getCollection, render } from "astro:content";
+
+const docs = (await getCollection("documents")).sort((a, b) => a.data.order - b.data.order);
+const items = await Promise.all(
+  docs.map(async (entry) => ({ entry, Content: (await render(entry)).Content }))
+);
+---
+
+<Base
+  title="Dokumenty do czynności notarialnych – Kancelaria Notarialna Anna Wawszczak, Opole"
+  description="Jakie dokumenty przynieść do notariusza: sprzedaż i darowizna mieszkania lub działki, postępowanie spadkowe. Kancelaria w Opolu-Zaodrzu."
+>
+  <div class="wrap pb-10">
+    <Breadcrumbs current="Dokumenty" />
+
+    <h1 class="border-b pb-3 text-5xl">Dokumenty</h1>
+
+    <InfoBox class="my-6">
+      <p>
+        Do dokonania czynności w kancelarii notarialnej konieczne jest posiadanie
+        <strong>dokumentu tożsamości</strong> (dowodu osobistego, paszportu, karty pobytu). W przypadku
+        działania strony przez pełnomocnika należy przedłożyć oryginał pełnomocnictwa.
+      </p>
+    </InfoBox>
+
+    <section class="my-6">
+      <p>Sporządzenie każdej czynności wymaga wskazania danych osób uczestniczących w transakcji:</p>
+      <ul class="mt-3 space-y-3">
+        <li>
+          Dla osób fizycznych:
+          <ul class="mt-1 list-disc pl-5">
+            <li>imiona</li>
+            <li>nazwiska</li>
+            <li>imiona rodziców</li>
+            <li>PESEL</li>
+            <li>adres zamieszkania</li>
+            <li>adres do korespondencji (opcjonalnie)</li>
+            <li>numer dowodu osobistego lub paszportu</li>
+            <li>stan cywilny</li>
+          </ul>
+        </li>
+        <li>
+          Dla spółek:
+          <ul class="mt-1 list-disc pl-5">
+            <li>numer KRS</li>
+            <li>informacja o osobie reprezentującej podmiot</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section class="mb-5">
+      <h2 class="divider mb-5 text-3xl font-bold">Dodatkowe dokumenty</h2>
+
+      <InfoBox>
+        <p>
+          Szczegółowy wykaz dokumentów wymaganych do transakcji można ustalić podczas kontaktu z
+          kancelarią: <a class="link" href="tel:+48775577898">telefonicznie</a>,
+          <a class="link" href="mailto:notariusz@spychalskiego13.pl">mailowo</a>, za pomocą
+          <a class="link" href="/kontakt">formularza</a> lub
+          <a class="link" href="/kontakt#dojazd">osobiście</a> w kancelarii przy ul. Spychalskiego 13 w
+          Opolu.
+        </p>
+      </InfoBox>
+
+      <p class="my-5">Przykładowe dokumenty niezbędne do sporządzenia najczęstszych umów:</p>
+
+      {
+        items.map(({ entry, Content }) => (
+          <details name="dokumenty" class="collapse collapse-arrow my-1 border bg-base-100">
+            <summary class="collapse-title text-xl font-medium">{entry.data.title}</summary>
+            <div class="collapse-content md-body">
+              <Content />
+            </div>
+          </details>
+        ))
+      }
+
+      <p class="mt-5">
+        Jeżeli przedmiot umowy (np. nieruchomość) został nabyty między innymi w drodze dziedziczenia (bez
+        ograniczenia czasowego) lub zapisu windykacyjnego, darowizny, zasiedzenia, nieodpłatnego zniesienia
+        współwłasności (dokonanych po 1 stycznia 2007 roku), notariusz może dokonać jego zbycia lub
+        obciążenia wyłącznie po przedłożeniu przez stronę zaświadczenia wydanego przez Naczelnika Urzędu
+        Skarbowego w trybie art. 19 ust. 6 ustawy o podatku od spadków i darowizn, tj. potwierdzającego, że
+        nabycie było zwolnione od podatku, że należny podatek został zapłacony albo zobowiązanie podatkowe
+        wygasło wskutek przedawnienia.
+      </p>
+      <p class="mt-3">
+        W umowie należy określić wartość rynkową przedmiotu umowy (np. nieruchomości). W tym celu nie jest
+        wymagane sporządzenie żadnego dokumentu (np. operatu), najłatwiej porównać ceny podobnych
+        nieruchomości (biorąc pod uwagę położenie, wielkość, stan techniczny) w serwisach internetowych z
+        ogłoszeniami sprzedaży.
+      </p>
+    </section>
+  </div>
+</Base>

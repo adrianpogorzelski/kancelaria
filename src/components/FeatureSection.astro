@@ -1,0 +1,31 @@
+---
+// Powtarzalny blok „zdjęcie + tekst + przycisk” ze strony głównej.
+interface Props {
+  title: string;
+  image: string;
+  alt: string;
+  reverse?: boolean;
+  href?: string;
+  cta?: string;
+}
+const { title, image, alt, reverse = false, href, cta } = Astro.props;
+---
+
+<section class="wrap py-10">
+  <div class:list={["flex flex-col items-center gap-8 md:flex-row", reverse && "md:flex-row-reverse"]}>
+    <img
+      src={image}
+      alt={alt}
+      width="384"
+      height="192"
+      loading="lazy"
+      decoding="async"
+      class="h-48 w-full max-w-sm rounded-box object-cover shadow-xl"
+    />
+    <div class="space-y-4">
+      <h2 class="text-3xl font-bold">{title}</h2>
+      <div class="space-y-3"><slot /></div>
+      {href && cta && <a href={href} class="btn btn-primary">{cta}</a>}
+    </div>
+  </div>
+</section>

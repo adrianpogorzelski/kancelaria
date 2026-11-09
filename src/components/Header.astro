@@ -1,0 +1,33 @@
+---
+import Icon from "./Icon.astro";
+import Nav from "./Nav.astro";
+import { site } from "../data/site";
+---
+
+<header class="sticky top-0 z-50 bg-base-100 shadow-sm">
+  <div class="wrap flex items-center justify-between gap-4 py-2">
+    <a href="/" class="flex items-center gap-3">
+      <img src="/img/AW.png" alt="" width="40" height="40" class="h-10 w-auto" />
+      <span class="leading-tight">
+        <span class="block font-semibold">{site.owner}</span>
+        <span class="block text-sm text-base-content/70">Notariusz w Opolu</span>
+      </span>
+    </a>
+
+    <div class="hidden items-center gap-5 text-sm md:flex lg:text-base">
+      {
+        site.phones.map((p) => (
+          <a href={`tel:${p.tel}`} class="inline-flex items-center gap-2 hover:underline">
+            <Icon name={p.kind === "mobile" ? "mobile" : "phone"} />
+            <span>{p.label}</span>
+          </a>
+        ))
+      }
+      <a href={`mailto:${site.email}`} class="inline-flex items-center gap-2 hover:underline">
+        <Icon name="mail" />
+        <span>{site.email}</span>
+      </a>
+    </div>
+  </div>
+  <Nav />
+</header>

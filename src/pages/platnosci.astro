@@ -1,0 +1,142 @@
+---
+import Base from "../layouts/Base.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import InfoBox from "../components/InfoBox.astro";
+import { site } from "../data/site";
+
+const accounts = [
+  {
+    label: "Rachunek do wpłat podatków, opłat sądowych i wynagrodzenia notariusza",
+    number: site.bank.main,
+  },
+  {
+    label:
+      "Rachunek depozytowy – wyłącznie do wpłaty środków na depozyt notarialny związany z dokonywaną czynnością",
+    number: site.bank.deposit,
+  },
+];
+---
+
+<Base
+  title="Płatności i opłaty notarialne – Kancelaria Notarialna Anna Wawszczak, Opole"
+  description="Płatności kartą i BLIKiem, numery rachunków kancelarii, opłaty przy czynnościach notarialnych: taksa notarialna, podatki, opłaty sądowe, wypisy aktów."
+>
+  <div class="wrap pb-10">
+    <Breadcrumbs current="Płatności" />
+
+    <h1 class="border-b pb-3 text-5xl">Płatności</h1>
+
+    <InfoBox class="my-6">
+      <p>
+        Wychodząc naprzeciw Państwa potrzebom, kancelaria oferuje możliwość
+        <strong>płatności kartami</strong> oraz <strong>BLIK</strong>. Istnieje możliwość dokonania
+        przedpłaty przelewem, w tym celu prosimy o
+        <a class="link" href="tel:+48775577898">kontakt telefoniczny</a>.
+      </p>
+    </InfoBox>
+
+    <section class="my-8">
+      <h2 class="divider mb-5 text-3xl font-bold">Numery rachunków</h2>
+      <p class="mb-4 text-sm">Bank: {site.bank.name}</p>
+
+      <div class="space-y-5">
+        {
+          accounts.map((a) => (
+            <div class="gap-3 md:flex md:items-center md:justify-between">
+              <p class="md:max-w-xl">{a.label}:</p>
+              <p class="mt-1 flex flex-wrap items-center gap-3 md:mt-0">
+                <strong class="font-mono text-lg">{a.number}</strong>
+                <button
+                  type="button"
+                  class="btn btn-sm btn-outline btn-primary"
+                  data-copy={a.number.replaceAll(" ", "")}
+                  aria-label={`Kopiuj numer rachunku: ${a.label}`}
+                >
+                  Kopiuj
+                </button>
+              </p>
+            </div>
+          ))
+        }
+      </div>
+      <p id="copy-status" role="status" class="mt-3 min-h-6 text-sm font-medium text-primary"></p>
+    </section>
+
+    <section class="my-8">
+      <h2 class="divider mb-5 text-3xl font-bold">Opłaty</h2>
+
+      <InfoBox>
+        <p>
+          W kancelarii notarialnej nie obowiązuje stały cennik. Maksymalną wysokość wynagrodzenia
+          notariusza określa rozporządzenie Ministra Sprawiedliwości z dnia 28 czerwca 2004 roku w sprawie
+          maksymalnych stawek taksy notarialnej.
+        </p>
+        <p>
+          Szczegółowe zestawienie kosztów związanych z planowaną czynnością można uzyskać podczas kontaktu
+          z kancelarią: <a class="link" href="tel:+48775577898">telefonicznie</a>,
+          <a class="link" href="mailto:notariusz@spychalskiego13.pl">mailowo</a>, za pomocą
+          <a class="link" href="/kontakt">formularza</a> lub
+          <a class="link" href="/kontakt#dojazd">osobiście</a> w kancelarii przy ul. Spychalskiego 13 w
+          Opolu.
+        </p>
+      </InfoBox>
+
+      <p class="my-5">
+        W zależności od rodzaju dokonywanej czynności notarialnej poniesiecie Państwo następujące opłaty:
+      </p>
+      <ul class="list-disc space-y-3 pl-5">
+        <li>
+          Podatek od czynności cywilnoprawnych, którego płatnikiem jest notariusz, tzn. że podczas umowy
+          notariusz pobierze od Państwa podatek, a potem odprowadzi tę kwotę na konto właściwego organu
+          podatkowego. Wysokość podatku oraz okoliczność jego wystąpienia przy dokonywaniu konkretnej
+          czynności określa ustawa z dnia 9 września 2000 roku o podatku od czynności cywilnoprawnych.
+        </li>
+        <li>
+          Podatek od spadków i darowizn, którego płatnikiem jest notariusz, tzn. że podczas umowy notariusz
+          pobierze od Państwa podatek, a potem odprowadzi tę kwotę na konto właściwego organu podatkowego.
+          Wysokość podatku, a także okoliczność jego wystąpienia przy dokonywaniu konkretnej czynności
+          określa ustawa z dnia 28 lipca 1983 roku o podatku od spadków i darowizn. Podatek nie występuje
+          przy czynnościach dokonywanych pomiędzy najbliższą rodziną.
+        </li>
+        <li>
+          Opłaty sądowe pobierane przez notariusza od wniosków wieczystoksięgowych zawartych w aktach
+          notarialnych, które przekazywane są na rachunki bankowe właściwych sądów. Wysokość opłat
+          (uzależnioną od rodzaju dokonywanych wpisów) określa ustawa z dnia 28 lipca 2005 roku o kosztach
+          sądowych w sprawach cywilnych.
+        </li>
+        <li>
+          Taksę notarialną wraz z podatkiem VAT z tytułu dokonania określonej czynności notarialnej, której
+          wysokość ustalana jest indywidualnie z notariuszem.
+        </li>
+        <li>
+          Opłatę za wypisy aktu notarialnego, w wysokości 6,00 zł + VAT 23% za jedną stronę. Wypisy mają
+          moc prawną oryginału aktu i wydawane są stronom oraz wysyłane są przez notariusza do instytucji,
+          które ma on obowiązek zawiadomić o dokonanej czynności (sąd wieczystoksięgowy, spółdzielnia
+          mieszkaniowa, urząd skarbowy, gmina, geodezja…).
+        </li>
+      </ul>
+    </section>
+  </div>
+</Base>
+
+<script>
+  // Kopiowanie numeru rachunku (bez spacji, żeby wkleił się w formularz banku).
+  const status = document.getElementById("copy-status");
+  let timer: number | undefined;
+  const show = (text: string) => {
+    if (!status) return;
+    status.textContent = text;
+    window.clearTimeout(timer);
+    timer = window.setTimeout(() => (status.textContent = ""), 3000);
+  };
+  document.querySelectorAll<HTMLButtonElement>("[data-copy]").forEach((btn) => {
+    btn.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(btn.dataset.copy ?? "");
+        show("Skopiowano numer rachunku.");
+      } catch {
+        show("Nie udało się skopiować. Zaznacz numer i skopiuj go ręcznie.");
+      }
+    });
+  });
+</script>

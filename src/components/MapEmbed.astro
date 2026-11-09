@@ -1,0 +1,43 @@
+---
+import { site } from "../data/site";
+---
+
+<!-- Mapa Google ładuje się dopiero po kliknięciu, żeby bez zgody nie przekazywać danych do Google. -->
+<div
+  id="mapa"
+  data-src={site.mapsEmbed}
+  class="flex h-[450px] w-full flex-col items-center justify-center gap-3 rounded-box border bg-base-200 p-4 text-center"
+>
+  <p class="max-w-md text-sm">
+    Mapa pochodzi z serwisów Google.
+    {
+      site.privacy.ready && (
+        <>
+          {" "}
+          Szczegóły w <a class="link" href="/polityka-prywatnosci">polityce prywatności</a>.
+        </>
+      )
+    }
+  </p>
+  <div class="flex flex-wrap justify-center gap-3">
+    <button type="button" class="btn btn-primary" data-load-map>Pokaż mapę</button>
+    <a href={site.mapsUrl} target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-primary">
+      Otwórz w Mapach Google
+    </a>
+  </div>
+</div>
+
+<script>
+  const box = document.getElementById("mapa");
+  box?.querySelector<HTMLButtonElement>("[data-load-map]")?.addEventListener("click", () => {
+    const iframe = document.createElement("iframe");
+    iframe.src = box.dataset.src ?? "";
+    iframe.title = "Lokalizacja kancelarii notariusz Anny Wawszczak w Opolu";
+    iframe.className = "h-full w-full";
+    iframe.loading = "lazy";
+    iframe.referrerPolicy = "no-referrer-when-downgrade";
+    iframe.allowFullscreen = true;
+    box.className = "h-[450px] w-full overflow-hidden rounded-box border";
+    box.replaceChildren(iframe);
+  });
+</script>

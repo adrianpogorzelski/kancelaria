@@ -1,0 +1,108 @@
+---
+import Icon from "./Icon.astro";
+import { site } from "../data/site";
+import { cleanPath } from "../lib/url";
+
+const current = cleanPath(Astro.url.pathname);
+const isCurrent = (href?: string) => (href ? cleanPath(href) === current : false);
+---
+
+<nav aria-label="Główne" class="bg-primary text-primary-content">
+  <div class="wrap flex items-center">
+    <!-- Mobile -->
+    <details class="dropdown sm:hidden">
+      <summary
+        class="btn btn-ghost btn-sm my-1 text-primary-content hover:text-base-content active:text-base-content"
+        aria-label="Menu"
+      >
+        <Icon name="menu" class="size-6" />
+        <span>Menu</span>
+      </summary>
+      <ul class="dropdown-content menu z-50 mt-1 w-64 rounded-box bg-base-100 p-2 text-base-content shadow-lg">
+        {
+          site.nav.map((item) =>
+            item.children ? (
+              <li>
+                <span class="menu-title">{item.label}</span>
+                <ul>
+                  {item.children.map((c) => (
+                    <li>
+                      <a
+                        href={c.href}
+                        class:list={[isCurrent(c.href) && "menu-active"]}
+                        aria-current={isCurrent(c.href) ? "page" : undefined}
+                      >
+                        {c.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+            ) : (
+              <li>
+                <a
+                  href={item.href}
+                  class:list={[isCurrent(item.href) && "menu-active"]}
+                  aria-current={isCurrent(item.href) ? "page" : undefined}
+                >
+                  {item.label}
+                </a>
+              </li>
+            )
+          )
+        }
+      </ul>
+    </details>
+
+    <!-- Desktop -->
+    <ul class="menu menu-horizontal hidden w-full px-0 sm:flex justify-center gap-1 text-sm lg:text-base">
+      {
+        site.nav.map((item) =>
+          item.children ? (
+            <li>
+              <details>
+                <summary>{item.label}</summary>
+                <ul class="z-50 w-64 rounded-box bg-base-100 p-2 text-base-content shadow-lg">
+                  {item.children.map((c) => (
+                    <li>
+                      <a
+                        href={c.href}
+                        class:list={[isCurrent(c.href) && "menu-active"]}
+                        aria-current={isCurrent(c.href) ? "page" : undefined}
+                      >
+                        {c.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </details>
+            </li>
+          ) : (
+            <li>
+              <a
+                href={item.href}
+                class:list={[isCurrent(item.href) && "menu-active"]}
+                aria-current={isCurrent(item.href) ? "page" : undefined}
+              >
+                {item.label}
+              </a>
+            </li>
+          )
+        )
+      }
+    </ul>
+  </div>
+</nav>
+
+<script>
+  // Zamyka rozwinięte menu po kliknięciu poza nim i klawiszem Escape.
+  const closeAll = (except?: EventTarget | null) => {
+    document.querySelectorAll<HTMLDetailsElement>("nav details[open]").forEach((d) => {
+      if (!except || !d.contains(except as Node)) d.removeAttribute("open");
+    });
+  };
+  document.addEventListener("click", (e) => closeAll(e.target));
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeAll();
+  });
+</script>

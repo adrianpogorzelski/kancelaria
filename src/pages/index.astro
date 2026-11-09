@@ -1,0 +1,97 @@
+---
+import Base from "../layouts/Base.astro";
+import FeatureSection from "../components/FeatureSection.astro";
+import LocalBusinessJsonLd from "../components/LocalBusinessJsonLd.astro";
+import { site } from "../data/site";
+
+const mainPhone = site.phones[0];
+---
+
+<Base
+  title="Notariusz Opole – Zaodrze | Kancelaria Notarialna Anna Wawszczak"
+  description="Kancelaria notarialna w Opolu-Zaodrzu, ul. Spychalskiego 13. Najem okazjonalny, spadki, sprzedaż nieruchomości. Bezpłatne informacje, parking bez opłat."
+>
+  <LocalBusinessJsonLd slot="head" />
+
+  <section class="relative isolate overflow-hidden text-white">
+    <img
+      src="/img/panorama.webp"
+      alt=""
+      width="1600"
+      height="600"
+      fetchpriority="high"
+      class="absolute inset-0 -z-10 h-full w-full object-cover"
+    />
+    <div class="absolute inset-0 -z-10 bg-neutral/70"></div>
+    <div class="wrap py-16 text-center md:py-24">
+      <h1 class="text-4xl font-bold md:text-5xl">Notariusz w Opolu – Zaodrze</h1>
+      <p class="mt-3 text-xl">{site.name}</p>
+      <!-- 
+      <p class="mx-auto mt-4 max-w-2xl text-lg">
+        Akty notarialne, postępowania spadkowe, najem okazjonalny. Bezpłatne informacje o
+        czynnościach – telefonicznie, e-mailem lub w kancelarii.
+      </p>
+      -->
+      <address class="mt-6 not-italic">
+        {site.address.street}, {site.address.unit}, {site.address.zip} {site.address.city}
+      </address>
+      <p>Czynna {site.hours.text}, {site.hours.range}</p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a href={`tel:${mainPhone.tel}`} class="btn btn-lg border-white bg-white text-primary hover:bg-base-200">
+          Zadzwoń: {mainPhone.label}
+        </a>
+        <a href="/kontakt#dojazd" class="btn btn-lg btn-outline border-white text-white hover:bg-white hover:text-primary">
+          Sprawdź dojazd
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <FeatureSection
+    title="Lokalizacja"
+    image="/img/budynek.webp"
+    alt={`Budynek przy ${site.address.street} w Opolu, w którym mieści się kancelaria`}
+    reverse
+    href="/kontakt#dojazd"
+    cta="Sprawdź dojazd"
+  >
+    <p>
+      Kancelaria mieści się w Opolu, przy ulicy <b>{site.address.streetFull.replace("ul. ", "")}</b>, na
+      pierwszym piętrze budynku (opolskie Zaodrze, budynek położony pomiędzy Odrą a Kanałem Ulgi).
+      Położenie kancelarii zapewnia wygodny dojazd z Zaodrza, Wójtowej Wsi, Szczepanowic oraz pobliskich
+      miejscowości. W okolicach kancelarii <strong>nie obowiązuje płatna strefa parkowania</strong>, a
+      bezpośrednio przed budynkiem znajduje się <b>przystanek komunikacji miejskiej</b> (przystanek
+      {site.transport.stop}).
+    </p>
+  </FeatureSection>
+
+  <FeatureSection
+    title="Godziny otwarcia"
+    image="/img/sekretariat.webp"
+    alt="Sekretariat kancelarii notarialnej"
+    href="/kontakt"
+    cta="Skontaktuj się"
+  >
+    <p>
+      Kancelaria czynna jest <b>{site.hours.text}</b> w godzinach <b>{site.hours.range}</b>.
+    </p>
+    <p>
+      Spotkanie z notariuszem w innym terminie możliwe jest po wcześniejszym umówieniu. W sytuacjach tego
+      wymagających notariusz może dokonać czynności z dojazdem do domu.
+    </p>
+  </FeatureSection>
+
+  <FeatureSection
+    title="Czynności"
+    image="/img/konferencyjny.jpg"
+    alt="Sala konferencyjna w kancelarii notarialnej"
+    reverse
+    href="/czynnosci"
+    cta="Informacje o czynnościach"
+  >
+    <p>
+      Notariusz udziela <b>bezpłatnych informacji</b> dotyczących dokonywanych czynności notarialnych,
+      telefonicznie, za pomocą poczty elektronicznej lub podczas spotkania w siedzibie kancelarii.
+    </p>
+  </FeatureSection>
+</Base>

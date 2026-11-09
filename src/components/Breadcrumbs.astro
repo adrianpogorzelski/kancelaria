@@ -1,0 +1,15 @@
+---
+interface Props {
+  current: string;
+  trail?: { label: string; href: string }[];
+}
+const { current, trail = [] } = Astro.props;
+---
+
+<nav aria-label="Ścieżka nawigacji" class="breadcrumbs py-4 text-sm">
+  <ul>
+    <li><a href="/">Strona główna</a></li>
+    {trail.map((t) => <li><a href={t.href}>{t.label}</a></li>)}
+    <li aria-current="page">{current}</li>
+  </ul>
+</nav>

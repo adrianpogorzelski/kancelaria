@@ -1,0 +1,107 @@
+---
+import Base from "../layouts/Base.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import { site } from "../data/site";
+
+// Taksa = 1/10 minimalnego wynagrodzenia za pracę (dane w site.ts, aktualizować co roku).
+const taksa = (site.minimumWage.amount / 10).toLocaleString("pl-PL", {
+  minimumFractionDigits: 2,
+  maximumFractionDigits: 2,
+});
+---
+
+<Base
+  title="Najem okazjonalny u notariusza w Opolu – Kancelaria Notarialna Anna Wawszczak"
+  description="Najem okazjonalny: wymagane dokumenty, oświadczenie najemcy o poddaniu się egzekucji u notariusza, koszt taksy notarialnej i eksmisja najemcy. Opole-Zaodrze."
+>
+  <div class="wrap pb-10">
+    <Breadcrumbs current="Najem okazjonalny" trail={[{ label: "Czynności", href: "/czynnosci" }]} />
+
+    <article class="article">
+      <h1 class="border-b pb-3 text-5xl">Najem okazjonalny</h1>
+
+      <p>
+        Umowa najmu okazjonalnego to typ umowy najmu, który zapewnia właścicielowi dodatkową ochronę przed
+        nieuczciwymi lokatorami, którzy nie chcą opuścić lokalu pomimo zakończenia stosunku najmu.
+      </p>
+      <p>Do skutecznego zawarcia umowy najmu okazjonalnego konieczne jest spełnienie kilku przesłanek:</p>
+      <ul>
+        <li>umowa zawarta jest na piśmie, na czas oznaczony, nie dłuższy niż 10 lat</li>
+        <li>
+          właściciel (wynajmujący) to osoba fizyczna, nieprowadząca działalności gospodarczej w zakresie
+          wynajmowania lokali
+        </li>
+        <li>
+          najemca przedkłada do umowy oświadczenie, w którym wskazuje inny lokal, w którym będzie mógł
+          zamieszkać w przypadku ustania stosunku najmu, oraz oświadczenie właściciela tego lokalu o
+          wyrażeniu zgody na zamieszkanie najemcy
+        </li>
+        <li>
+          najemca sporządza u notariusza oświadczenie, w którym poddaje się egzekucji i zobowiązuje się do
+          opróżnienia i wydania lokalu używanego na podstawie umowy najmu
+        </li>
+        <li>
+          wynajmujący zgłasza zawarcie umowy najmu okazjonalnego lokalu naczelnikowi urzędu skarbowego w
+          terminie 14 dni od dnia rozpoczęcia najmu
+        </li>
+      </ul>
+      <p>
+        Notariusz sporządza oświadczenie o poddaniu się egzekucji po okazaniu podpisanej przez obie strony
+        umowy najmu oraz załączników przedłożonych przez najemcę.
+      </p>
+      <p>
+        Do sporządzenia oświadczenia wymagana jest wyłącznie obecność najemcy. Wynajmujący nie musi
+        przychodzić do notariusza.
+      </p>
+
+      <h2>Najemca nie chce się wyprowadzić, co dalej?</h2>
+      <p>
+        Po wygaśnięciu lub rozwiązaniu umowy najmu okazjonalnego, jeżeli najemca dobrowolnie nie opróżni
+        lokalu będącego przedmiotem umowy, wynajmujący wezwie go do opróżnienia lokalu w drodze pisemnego
+        żądania opróżnienia lokalu (opatrzonego notarialnie poświadczonym podpisem wynajmującego).
+      </p>
+      <p>W żądaniu, o którym mowa powyżej, wynajmujący wskaże w szczególności:</p>
+      <ul>
+        <li>dane wynajmującego oraz najemcy</li>
+        <li>wskazanie umowy najmu i przyczyny ustania stosunku z niej wynikającego</li>
+        <li>termin, w którym najemca ma opróżnić lokal, nie krótszy niż 7 dni od dnia doręczenia żądania najemcy</li>
+      </ul>
+      <p>
+        W przypadku bezskutecznego upływu ww. terminu 7 dni (tzn. jeżeli najemca nadal nie opuścił lokalu)
+        wynajmujący może złożyć do sądu wniosek o nadanie klauzuli wykonalności na akt notarialny –
+        oświadczenie najemcy o poddaniu się egzekucji.
+      </p>
+      <p>
+        Z aktem notarialnym opatrzonym klauzulą wykonalności można udać się do komornika, który na
+        podstawie wniosku przeprowadzi postępowanie skutkujące eksmisją najemcy do wskazanego przez niego
+        wcześniej lokalu.
+      </p>
+
+      <h2>Czy cudzoziemiec może zawrzeć umowę najmu okazjonalnego?</h2>
+      <p>
+        <b>Tak</b>, ale oświadczenie, w którym wskaże adres, pod który ewentualnie się przeprowadzi, musi
+        wskazywać <b>adres na terytorium Polski</b>. W przeciwnym razie komornik nie będzie mógł
+        przeprowadzić eksmisji.
+      </p>
+
+      <h2>Ile kosztuje umowa najmu okazjonalnego?</h2>
+      <p>
+        Zawarcie umowy najmu okazjonalnego jest <b>bezpłatne</b>, jest to umowa, którą zawierają między
+        sobą właściciel lokalu i najemca. Jedynie
+        <b>oświadczenie o poddaniu się egzekucji najemcy w związku z zawartą umową najmu okazjonalnego
+        wymaga formy aktu notarialnego</b>. Taksa notarialna za sporządzenie takiego oświadczenia, zgodnie
+        z ustawą z dnia 21 czerwca 2001 roku o ochronie praw lokatorów, mieszkaniowym zasobie gminy i o
+        zmianie Kodeksu cywilnego, wynosi nie więcej niż 1/10 minimalnego wynagrodzenia za pracę. W {site.minimumWage.year}
+        roku taksa notarialna wynosi zatem {taksa} zł netto, należy do niej doliczyć podatek VAT i koszt
+        wypisu.
+      </p>
+
+      <h2>Kto płaci za najem okazjonalny?</h2>
+      <p>
+        Strony muszą same postanowić, kto ponosi koszt sporządzenia oświadczenia najemcy o poddaniu się
+        egzekucji. Kwestia ta nie jest uregulowana w przepisach. Popularne jest ponoszenie kosztów
+        sporządzenia oświadczenia po połowie przez najemcę i wynajmującego.
+      </p>
+    </article>
+  </div>
+</Base>
